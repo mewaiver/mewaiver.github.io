@@ -1,10 +1,21 @@
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <footer className="py-3">
+    <footer className="py-3 mt-4 bg-dark text-light">
       <Container className="text-center">
-        <p>&copy; {new Date().getFullYear()} Tech Chain. All rights reserved.</p>
+        <Row>
+          <Col>
+            <p>&copy; {new Date().getFullYear()} Tech Chain. All rights reserved.</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <a href="/privacy-policy" className="text-light mx-2">Privacy Policy</a>
+            <a href="/terms-of-service" className="text-light mx-2">Terms of Service</a>
+            <a href="/contact" className="text-light mx-2">Contact Us</a>
+          </Col>
+        </Row>
       </Container>
     </footer>
   );

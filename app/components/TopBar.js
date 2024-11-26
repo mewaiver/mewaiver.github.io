@@ -27,9 +27,9 @@ const TopBar = () => {
 
       <div className="container">
         <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <Link href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-
-            <Image src="images/logo.png" alt="Logo" className="navbar-logo d-inline-block align-top" />
+          <Link href="/" className="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4">Tech Chain</span>
+            {/* <Image src="images/logo.png" alt="Logo" className="navbar-logo d-inline-block align-top" /> */}
 
           </Link>
           <ul className="nav nav-pills">
@@ -40,7 +40,7 @@ const TopBar = () => {
             </li>
             <li className="nav-item">
               <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>
-                About
+                Quem Somos
               </Link>
             </li>
             <li className="nav-item">

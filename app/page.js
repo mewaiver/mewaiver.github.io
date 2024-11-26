@@ -4,12 +4,12 @@ import { getAllPosts } from './services/posts';
 
 export default async function Home() {
   const posts = await getAllPosts();
-  const uniqueCategories = Array.from(new Set(posts.map(post => post.category)));
-  const sortedCategories = uniqueCategories.sort((a, b) => a.localeCompare(b));
+  //const uniqueCategories = Array.from(new Set(posts.map(post => post.category)));
+  //const sortedCategories = uniqueCategories.sort((a, b) => a.localeCompare(b));
   
   return (
     <Row>
-      <Col xs={12} md={8}>
+      <Col xs={12} md={12}>
         <Row>
           {posts.map((post) => (
             <Col xs={12} sm={6} md={4} key={post.slug} className='mt-3'>
@@ -26,15 +26,7 @@ export default async function Home() {
             </Col>
           ))}
         </Row>
-      </Col>
-      <Col xs={12} md={4}>
-        <h4>Categories</h4>
-        {sortedCategories.map((category) => (
-          <Row key={category}>
-            <Link href={`/categories/${category}`} className="text-decoration-none">{category}</Link>
-          </Row>
-        ))}
-      </Col>
+      </Col>      
     </Row>
   );
 }
