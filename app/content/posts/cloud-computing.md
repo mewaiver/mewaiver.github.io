@@ -6,6 +6,7 @@ developers skills."
 category: cloud-computing
 author: "Tiago Souza"
 image: "https://cdn.pixabay.com/photo/2024/01/26/08/07/ai-generated-8533603_1280.jpg"
+draft: false
 ---
 
 In cloud environments, particularly when setting up a Virtual Private Cloud (VPC), certain configurations typically come first due to their foundational nature and their role in establishing the network infrastructure. Here's a general order of configuration that is often followed:

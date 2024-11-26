@@ -5,6 +5,7 @@ excerpt: "The Outbox Pattern is a design pattern in microservices architecture t
 category: "engineering"
 author: "Tiago Souza"
 image: "https://cdn.pixabay.com/photo/2012/04/18/15/02/gears-37281_1280.png"
+draft: false
 ---
 
 The "Outbox Pattern" is a design pattern commonly used in microservices architecture to ensure consistency and reliability when integrating multiple services asynchronously. In distributed systems, maintaining data consistency across different services can be challenging due to network failures, service outages, or other issues. The Outbox Pattern addresses this challenge by decoupling the act of modifying data from the act of notifying other services about those modifications.

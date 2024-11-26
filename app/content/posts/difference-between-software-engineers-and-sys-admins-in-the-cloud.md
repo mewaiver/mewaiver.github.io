@@ -5,6 +5,7 @@ excerpt: "The key differences between software engineers and system administrato
 category: "engineering"
 author: "Tiago Souza"
 image: "https://images.unsplash.com/photo-1573496546639-d1c0722d1674?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+draft: false
 ---
 
 In the rapidly evolving landscape of technology, the roles of software engineers and system administrators (sys admins) have become increasingly specialized, particularly in the context of cloud computing. While both professions are essential to the development and maintenance of software applications and IT infrastructure, they serve distinct functions that contribute to the overall success of cloud-based solutions. This essay explores the key differences between software engineers and sys admins in the cloud environment, focusing on their roles, responsibilities, and the skills required for each position.

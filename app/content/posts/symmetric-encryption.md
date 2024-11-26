@@ -5,6 +5,7 @@ excerpt: "Learn about the role of symmetric encryption, why it matters, and how 
 category: python
 author: "Tiago Souza"
 image: "https://cdn.pixabay.com/photo/2015/12/13/15/32/cryptographic-1091257_1280.jpg"
+draft: false
 ---
 
 The need for secure communication has never been greater. From protecting sensitive data to ensuring privacy in online transactions, encryption is a cornerstone of modern cybersecurity. One fundamental method is **symmetric encryption**, which Python supports through various cryptography libraries.

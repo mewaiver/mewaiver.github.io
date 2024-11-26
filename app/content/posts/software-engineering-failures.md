@@ -5,6 +5,7 @@ excerpt: "Recent high-profile failures in software engineering underscore the ur
 category: "engineering"
 author: "Tiago Souza"
 image: "https://cdn.pixabay.com/photo/2014/08/12/08/18/words-416435_1280.jpg"
+draft: false
 ---
 
 The software engineering field has experienced numerous high-profile failures in recent years, highlighting the need for improved development practices, better testing, and more robust quality assurance. Here are some examples of software engineering failures that have made headlines:

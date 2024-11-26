@@ -5,6 +5,7 @@ excerpt: "DevOps has emerged as one of the most sought-after skills among softwa
 category: "engineering"
 author: "Tiago Souza"
 image: "https://cdn.pixabay.com/photo/2022/05/12/03/19/binary-code-7190628_1280.jpg"
+draft: false
 ---
 
 A few years ago, 'DevOps' emerged as a new trend in software engineering, promising to bring many benefits to the table. 

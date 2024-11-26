@@ -3,7 +3,7 @@ import { Col, Image, Row } from 'react-bootstrap';
 import { getAllPosts } from './services/posts';
 
 export default async function Home() {
-  const posts = await getAllPosts();
+  const posts = (await getAllPosts()).filter(p => !p?.draft);
   //const uniqueCategories = Array.from(new Set(posts.map(post => post.category)));
   //const sortedCategories = uniqueCategories.sort((a, b) => a.localeCompare(b));
   
