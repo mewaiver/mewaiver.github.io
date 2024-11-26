@@ -4,11 +4,13 @@ import hljs from 'highlight.js/lib/core';
 import bash from 'highlight.js/lib/languages/bash';
 import javascript from 'highlight.js/lib/languages/javascript';
 import python from 'highlight.js/lib/languages/python';
+import java from 'highlight.js/lib/languages/java'
 import 'highlight.js/styles/github-dark.css';
 import './Post.css'
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('python', python);
 hljs.registerLanguage('bash', bash);
+hljs.registerLanguage('java', java)
 
 
 const Post = ({ title, date, content, category, author }) => {
