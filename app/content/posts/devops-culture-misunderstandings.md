@@ -1,9 +1,10 @@
 ---
-title: "The Challenges of DevOps Culture: Misunderstandings and Their Impact"
+title: "The Challenges of DevOps Culture, Misunderstandings and Their Impact"
 date: "2023-02-14"
 excerpt: "DevOps has emerged as one of the most sought-after skills among software engineers, but even though the term has been prevalent in the industry for a long time, it is still widely misunderstood."
 category: "engineering"
 author: "Tiago Souza"
+image: "https://cdn.pixabay.com/photo/2022/05/12/03/19/binary-code-7190628_1280.jpg"
 ---
 
 A few years ago, 'DevOps' emerged as a new trend in software engineering, promising to bring many benefits to the table. 

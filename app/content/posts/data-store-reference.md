@@ -4,6 +4,7 @@ date: "2018-02-19"
 excerpt: "Weaknesses and strengths of different data stores and a brief overview to when to use each."
 category: "databases"
 author: "Tiago Souza"
+image: "https://cdn.pixabay.com/photo/2019/08/14/05/04/data-4404730_1280.jpg"
 ---
 
 #### Relational database management systems (MySQL, PostgreSQL) 

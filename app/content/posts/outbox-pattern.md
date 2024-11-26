@@ -4,6 +4,7 @@ date: "1000-01-01"
 excerpt: "The Outbox Pattern is a design pattern in microservices architecture that ensures reliable event delivery by persisting events in a database table (outbox) as part of a transaction, allowing for at-least-once delivery and idempotent processing by receivers."
 category: "engineering"
 author: "Tiago Souza"
+image: "https://cdn.pixabay.com/photo/2012/04/18/15/02/gears-37281_1280.png"
 ---
 
 The "Outbox Pattern" is a design pattern commonly used in microservices architecture to ensure consistency and reliability when integrating multiple services asynchronously. In distributed systems, maintaining data consistency across different services can be challenging due to network failures, service outages, or other issues. The Outbox Pattern addresses this challenge by decoupling the act of modifying data from the act of notifying other services about those modifications.

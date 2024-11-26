@@ -4,6 +4,7 @@ date: "2016-03-18"
 excerpt: "A structured approach to building scalable, maintainable, and secure applications."
 category: "engineering"
 author: "Tiago Souza"
+image: "https://cdn.pixabay.com/photo/2024/05/21/19/57/computer-8779040_1280.jpg"
 ---
 
 In the realm of software development and system design, the architecture of an application plays a crucial role in determining its performance, scalability, and maintainability. One of the most widely adopted architectural patterns is the Three-Tier Architecture. This model separates an application into three distinct layers: the presentation layer, the application layer, and the data layer. Each layer has its own responsibilities and communicates with the others to create a cohesive system. In this post, we will explore the components of Three-Tier Architecture, its advantages, and its applications in modern software development.

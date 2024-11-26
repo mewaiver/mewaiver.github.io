@@ -1,16 +1,20 @@
 import Link from 'next/link';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Image, Row } from 'react-bootstrap';
 import { getAllPosts } from './services/posts';
 
 export default async function Home() {
   const posts = await getAllPosts();
   const uniqueCategories = Array.from(new Set(posts.map(post => post.category)));
   const sortedCategories = uniqueCategories.sort((a, b) => a.localeCompare(b));
+  
   return (
     <Row>
       <Col xs={12} md={8}>
+        <Row>
           {posts.map((post) => (
-              <div key={post.slug} className='card mt-3'>
+            <Col xs={12} sm={6} md={4} key={post.slug} className='mt-3'>
+              <div className='card'>
+                <Image src={post.image} className="card-img-top" />
                 <div className="card-body">
                   <Link href={`/posts/${post.slug}`} className="text-decoration-none">
                     <h5 className="card-title">{post.title}</h5>
@@ -19,15 +23,17 @@ export default async function Home() {
                   <p className="card-text">{post.excerpt}</p>
                 </div>
               </div>
+            </Col>
           ))}
+        </Row>
       </Col>
       <Col xs={12} md={4}>
         <h4>Categories</h4>
         {sortedCategories.map((category) => (
-            <Row key={category}>
-              <Link href={`/categories/${category}`} className="text-decoration-none">{category}</Link>
-            </Row>
-          ))}
+          <Row key={category}>
+            <Link href={`/categories/${category}`} className="text-decoration-none">{category}</Link>
+          </Row>
+        ))}
       </Col>
     </Row>
   );
