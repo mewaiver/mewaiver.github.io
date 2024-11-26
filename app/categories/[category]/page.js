@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 
 export default async function CategoryPage({ params }) {
 
-  const { category } = params;
+  const { category } = await params;
 
   const allPosts = await getAllPosts();
   
