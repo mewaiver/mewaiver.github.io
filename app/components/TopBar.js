@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { Image } from 'react-bootstrap';
+import './TopBar.css'
 
 const TopBar = () => {
   const pathname = usePathname();
@@ -22,10 +24,13 @@ const TopBar = () => {
 
   return (
     <>
+
       <div className="container">
         <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <Link href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <span className="fs-4">Tech Chain</span>
+
+            <Image src="images/logo.png" alt="Logo" className="navbar-logo d-inline-block align-top" />
+
           </Link>
           <ul className="nav nav-pills">
             <li className="nav-item">
