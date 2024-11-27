@@ -32,7 +32,7 @@ const Dashboard = () => {
         datasets: [
             {
                 label: 'Paixão dos usuários',
-                data: [88, 12], // 88% passionate, 12% not passionate
+                data: [73, 27], // 88% passionate, 12% not passionate
                 backgroundColor: ['rgba(75, 192, 192, 0.6)', 'rgba(255, 99, 132, 0.6)'],
             },
         ],
@@ -44,7 +44,7 @@ const Dashboard = () => {
         datasets: [
             {
                 label: 'Taxa Retorno Visitantes',
-                data: [49, 51], // 49% return weekly, 51% not return weekly
+                data: [59, 41], // 49% return weekly, 51% not return weekly
                 backgroundColor: ['rgba(75, 192, 192, 0.6)', 'rgba(255, 159, 64, 0.6)'],
             },
         ],

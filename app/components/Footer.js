@@ -12,10 +12,10 @@ const Footer = () => {
         </Row>
         <Row>
           <Col>
-            <a href="/privacy-policy" className="text-light mx-2">Política de Privacidade</a>
-            <a href="/terms-of-service" className="text-light mx-2">Termos de serviço</a>
-            <a href="/contact" className="text-light mx-2">Contact Us</a>
-            <Link href="/credits">Créditos</Link>
+            <Link href="/privacy-policy" className="text-light mx-2">Política de Privacidade</Link>
+            <Link href="/terms-of-service" className="text-light mx-2">Termos de serviço</Link>
+            <Link href="/contact" className="text-light mx-2">Contato</Link>
+            <Link href="/credits" className="text-light mx-2">Créditos</Link>
           </Col>
         </Row>
       </Container>
