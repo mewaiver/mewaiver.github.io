@@ -44,6 +44,11 @@ const TopBar = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/dashboard" className={`nav-link ${pathname === '/dashboard' ? 'active' : ''}`}>
+                Analítica
+              </Link>
+            </li>
+            <li className="nav-item">
               <button className="nav-link" onClick={toggleTheme} aria-label="Toggle theme">
                 {isDarkMode ? (
                   <i className="bi bi-sun"></i>

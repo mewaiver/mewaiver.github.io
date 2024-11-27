@@ -12,8 +12,8 @@ const Footer = () => {
         </Row>
         <Row>
           <Col>
-            <a href="/privacy-policy" className="text-light mx-2">Privacy Policy</a>
-            <a href="/terms-of-service" className="text-light mx-2">Terms of Service</a>
+            <a href="/privacy-policy" className="text-light mx-2">Política de Privacidade</a>
+            <a href="/terms-of-service" className="text-light mx-2">Termos de serviço</a>
             <a href="/contact" className="text-light mx-2">Contact Us</a>
             <Link href="/credits">Créditos</Link>
           </Col>
