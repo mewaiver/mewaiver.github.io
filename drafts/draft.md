@@ -1,9 +1,8 @@
 ---
 title: ""
-date: "1000-01-01"
+date: "2015-10-23"
 excerpt: ""
 category: ""
 author: ""
 image: ""
 ---
-
