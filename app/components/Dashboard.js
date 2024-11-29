@@ -24,7 +24,12 @@ const Dashboard = () => {
         return num;
     };
 
-    const pageViewsData = formatNumber(80000);
+    const totalUsers = 84800;
+    const pageViewsData = formatNumber(totalUsers);
+    const passionate = totalUsers * 0.88;
+    const noPassionate = totalUsers * 0.12;
+    const returnWeekly = totalUsers * 0.49;
+    const notReturnWeekly = totalUsers * 0.51;
 
     // Data for User Passion for Tech Products (Doughnut Chart)
     const passionData = {
@@ -32,7 +37,7 @@ const Dashboard = () => {
         datasets: [
             {
                 label: 'Paixão dos usuários',
-                data: [73, 27], // 88% passionate, 12% not passionate
+                data: [passionate, noPassionate], // 88% passionate, 12% not passionate
                 backgroundColor: ['rgba(75, 192, 192, 0.6)', 'rgba(255, 99, 132, 0.6)'],
             },
         ],
@@ -44,7 +49,7 @@ const Dashboard = () => {
         datasets: [
             {
                 label: 'Taxa Retorno Visitantes',
-                data: [59, 41], // 49% return weekly, 51% not return weekly
+                data: [returnWeekly, notReturnWeekly], // 49% return weekly, 51% not return weekly
                 backgroundColor: ['rgba(75, 192, 192, 0.6)', 'rgba(255, 159, 64, 0.6)'],
             },
         ],

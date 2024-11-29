@@ -2,7 +2,7 @@ export default function Credit() {
     return (
         <div className="bg-background text-foreground">
             <div className="d-flex justify-content-center">
-                <article className="w-75 max-w-sm mx-auto px-4 py-10 text-left">
+                <article>
                     <header className="mb-10">
                         <h1>Créditos de Imagens</h1>
                     </header>

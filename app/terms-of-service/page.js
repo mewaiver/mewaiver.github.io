@@ -2,9 +2,9 @@ export default function TermsOfService() {
     return (
         <div className="bg-background text-foreground">
             <div className="d-flex justify-content-center">
-                <article className="w-75 max-w-sm mx-auto px-4 py-10 text-left">
+                <article>
 
-                    <h1>Termos de Serviço - TechChain</h1>
+                    <h1>Termos de Serviço</h1>
 
                     <div>
                         <h2>1. Responsabilidades do Usuário</h2>
