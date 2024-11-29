@@ -5,6 +5,7 @@ excerpt: "O JBoss EAP 8 no Azure oferece uma solução robusta e escalável para
 category: "cloud-computing"
 author: "Tiago Souza"
 image: "https://plus.unsplash.com/premium_photo-1683288125222-5dc6c7e1122e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+draft: true
 ---
 
 A transformação digital tem impulsionado as empresas a adotarem soluções em nuvem para melhorar a eficiência, escalabilidade e agilidade de seus processos. Nesse contexto, o Red Hat JBoss Enterprise Application Platform (EAP) 8 surge como uma solução robusta para o desenvolvimento e a implementação de aplicações Java, agora disponível na plataforma Azure da Microsoft.
