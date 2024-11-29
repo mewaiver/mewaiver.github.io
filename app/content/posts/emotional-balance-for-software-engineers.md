@@ -1,6 +1,6 @@
 ---
 title: "Equilíbrio Emocional: A Chave para o Sucesso e Bem-Estar dos Engenheiros de Software"
-date: "2020-07-30"
+date: "2021-01-04"
 excerpt: "O equilíbrio emocional é essencial para que engenheiros de software enfrentem desafios com resiliência, tomem decisões assertivas e mantenham um desempenho sustentável em um ambiente de trabalho altamente dinâmico e exigente."
 category: "engineering"
 author: "Diego Andrade"
