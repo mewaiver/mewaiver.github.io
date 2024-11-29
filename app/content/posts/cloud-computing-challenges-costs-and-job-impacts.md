@@ -1,6 +1,6 @@
 ---
 title: "Desafios da Computação em Nuvem: Custos Elevados e Impactos no Emprego de TI"
-date: "2019-07-15"
+date: "2021-11-04"
 excerpt: "A computação em nuvem oferece benefícios como flexibilidade e escalabilidade, mas também apresenta desafios significativos, como custos elevados e o impacto no emprego de profissionais de TI."
 category: "cloud-computing"
 author: "Kai Dorneles"
