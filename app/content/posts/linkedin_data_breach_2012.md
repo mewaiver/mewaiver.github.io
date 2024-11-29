@@ -1,6 +1,6 @@
 ---
 title: "Vazamento de Dados do LinkedIn: 117 Milhões de E-mails e Senhas Expostos em Novo Hack"
-date: "2016-12-04"
+date: "2020-08-04"
 excerpt: "Um hack do LinkedIn de 2012 ainda está causando problemas, com a recente divulgação de e-mails e senhas de 117 milhões de membros."
 category: "security"
 author: "Tiago Souza"

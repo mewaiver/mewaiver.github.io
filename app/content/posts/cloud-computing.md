@@ -1,6 +1,6 @@
 ---
 title: "Computação em Nuvem: O Futuro da Tecnologia e da Inovação"
-date: "2019-07-03"
+date: "2019-04-03"
 excerpt: "A computação em nuvem, também conhecida como *cloud computing*, transformou a maneira como empresas e indivíduos acessam e utilizam recursos computacionais."
 category: cloud-computing
 author: "Tiago Souza"

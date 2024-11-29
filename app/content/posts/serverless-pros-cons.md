@@ -1,6 +1,6 @@
 ---
 title: "Serverless Functions: Vantagens e Desafios na Era da Computação em Nuvem"
-date: "2019-06-13"
+date: "2020-04-04"
 excerpt: "Descubra como as Serverless Functions podem transformar o desenvolvimento de aplicações, equilibrando inovação e desafios na computação em nuvem."
 category: "cloud-computing"
 author: "Kai Dorneles"

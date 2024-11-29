@@ -1,6 +1,6 @@
 ---
 title: "Uma visão geral das especificações Java EE para aplicativos empresariais"
-date: "2014-04-29"
+date: "2020-06-04"
 excerpt: "O Java EE (Enterprise Edition) fornece um conjunto abrangente de especificações para o desenvolvimento de aplicativos corporativos escaláveis, seguros e robustos em Java."
 category: "engineering"
 author: "Diego Andrade"

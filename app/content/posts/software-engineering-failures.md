@@ -1,6 +1,6 @@
 ---
 title: "Abordando Falhas na Engenharia de Software: A Necessidade de Melhores Práticas e Garantia de Qualidade"
-date: "2019-07-21"
+date: "2020-03-04"
 excerpt: "Falhas recentes de alto perfil na engenharia de software ressaltam a necessidade urgente de práticas de desenvolvimento aprimoradas, testes melhorados e medidas de garantia de qualidade mais robustas."
 category: "engineering"
 author: "Tiago Souza"
