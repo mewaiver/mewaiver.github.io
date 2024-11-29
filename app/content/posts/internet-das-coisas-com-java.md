@@ -1,6 +1,6 @@
 ---
 title: "Internet das Coisas com Java"
-date: "2023-01-04"
+date: "2020-11-04"
 excerpt: "A Internet das Coisas (IoT) permite a interconexão de dispositivos físicos à internet, possibilitando a coleta e troca de dados de forma eficiente e inovadora."
 category: "iot"
 author: "Tiago Souza"
