@@ -1,6 +1,6 @@
 ---
 title: "Avaliando soluções de blockchain na BMW"
-date: "2019-03-06"
+date: "2021-05-04"
 excerpt: "Este artigo avalia a viabilidade de soluções de blockchain, focando em Ethereum e AWS QLDB. Através de uma análise detalhada, discutimos como essas tecnologias podem otimizar processos e melhorar a transparência na cadeia de suprimentos automotiva."
 category: "abstract"
 author: "Tiago Souza"

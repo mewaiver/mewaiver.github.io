@@ -1,6 +1,6 @@
 ---
 title: "Impactos da Descontinuação de Serviços da AWS: Desafios e Estratégias para Empresas"
-date: "2024-11-27"
+date: "2021-08-04"
 excerpt: "Com a descontinuação de serviços importantes da AWS, como Cloud9, CodeCommit e CloudSearch, muitas organizações enfrentam desafios significativos. A migração para novas plataformas, o impacto nos custos operacionais, e a adaptação das equipes podem afetar a produtividade e a segurança."
 category: "cloud-computing"
 author: "Diego Andrade"

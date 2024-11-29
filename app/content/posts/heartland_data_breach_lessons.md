@@ -1,6 +1,6 @@
 ---
 title: "Lições Cruciais de Segurança Cibernética"
-date: "2015-04-24"
+date: "2021-02-04"
 excerpt: "Descubra como a violação de dados da Heartland Payment Systems em 2008 expôs falhas críticas na segurança cibernética e ofereceu lições valiosas para empresas de todos os setores."
 category: "security"
 author: "Kai Dorneles"

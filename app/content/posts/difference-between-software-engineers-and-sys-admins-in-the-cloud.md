@@ -1,6 +1,6 @@
 ---
 title: "A Diferença Entre Engenheiros de Software e Administradores de Sistemas na Nuvem."
-date: "2021-02-13"
+date: "2021-06-04"
 excerpt: "As principais diferenças entre engenheiros de software e administradores de sistemas na nuvem, enfatizando seus papéis distintos, responsabilidades e a importância da colaboração na criação de soluções baseadas em nuvem eficientes e escaláveis."
 category: "engineering"
 author: "Tiago Souza"

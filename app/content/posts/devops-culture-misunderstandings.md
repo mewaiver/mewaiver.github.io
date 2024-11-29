@@ -1,6 +1,6 @@
 ---
 title: "Os Desafios da Cultura DevOps, Mal-entendidos e Seu Impacto."
-date: "2023-02-14"
+date: "2021-07-04"
 excerpt: "DevOps surgiu como uma das habilidades mais procuradas entre os engenheiros de software, mas, embora o termo tenha sido amplamente utilizado na indústria por um longo tempo, ainda é amplamente mal compreendido."
 category: "engineering"
 author: "Diego Andrade"

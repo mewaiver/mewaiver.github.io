@@ -1,6 +1,6 @@
 ---
 title: "A Transformação Digital e a Nova Globalização: O Caminho para um Mundo Conectado e Inovador"
-date: "2015-09-20"
+date: "2021-03-04"
 excerpt: "A transformação digital está redefinindo as fronteiras da globalização, criando um mundo mais interconectado onde empresas e indivíduos podem colaborar e inovar de maneiras antes impensáveis."
 category: "engineering"
 author: "Kai Dorneles"
