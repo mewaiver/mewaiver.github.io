@@ -1,6 +1,6 @@
 ---
 title: "Blockchain para Empresas: Revolucionando a Segurança e a Transparência nas Transações Financeiras."
-date: "2021-01-04"
+date: "2023-01-04"
 excerpt: "A tecnologia blockchain está revolucionando a segurança e a transparência nas transações financeiras para empresas, permitindo a manutenção de registros imutáveis e a confiança descentralizada."
 category: "blockchain"
 author: "Tiago Souza"
