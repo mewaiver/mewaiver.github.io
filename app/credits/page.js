@@ -3,7 +3,7 @@ export default function Credit() {
         <div className="bg-background text-foreground">
             <div className="d-flex justify-content-center">
                 <article>
-                    <header className="mb-10">
+                    <header className="text-center mb-4">
                         <h1>Créditos de Imagens</h1>
                     </header>
                     <div className="text-justify">

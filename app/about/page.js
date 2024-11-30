@@ -4,8 +4,8 @@ export default function About() {
       <div className="container">
         <div className="d-flex justify-content-center">
           <article>
-            <header className="mb-4">
-              <h1>Sobre Nós - TechChain</h1>
+            <header className="text-center mb-4">
+              <h1>Sobre Nós</h1>
             </header>
             <div className="text-justify">
               <p>

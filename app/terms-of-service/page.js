@@ -3,9 +3,9 @@ export default function TermsOfService() {
         <div className="bg-background text-foreground">
             <div className="d-flex justify-content-center">
                 <article>
-
-                    <h1>Termos de Serviço</h1>
-
+                    <header className="text-center mb-4">
+                        <h1>Termos de Serviço</h1>
+                    </header>
                     <div>
                         <h2>1. Responsabilidades do Usuário</h2>
                         <h3>Elegibilidade</h3>

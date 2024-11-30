@@ -4,8 +4,8 @@ export default function TermsOfService() {
             <div className="container">
                 <div className="d-flex justify-content-center">
                     <article>
-                        <header className="mb-4">
-                            <h1>Termos de Serviço</h1>
+                        <header className="text-center mb-4">
+                            <h1>Políticas de Privacidade</h1>
                         </header>
                         <section>
                             <h2>1. Responsabilidades do Usuário</h2>
