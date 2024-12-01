@@ -1,6 +1,6 @@
 ---
 title: "JBoss EAP 8 no Azure: Potencializando Aplicações Java na Nuvem"
-date: "2024-07-26"
+date: "2024-1o-04"
 excerpt: "O JBoss EAP 8 no Azure oferece uma solução robusta e escalável para o desenvolvimento e a implementação de aplicações Java na nuvem, facilitando a transformação digital das empresas."
 category: "cloud-computing"
 author: "Tiago Souza"
