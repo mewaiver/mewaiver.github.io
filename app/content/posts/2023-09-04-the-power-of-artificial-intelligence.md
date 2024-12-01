@@ -1,10 +1,10 @@
 ---
-title: ""
-date: "2023-04-04"
-excerpt: ""
-category: ""
-author: ""
-image: ""
+title: "Transformando Setores e Criando Novas Oportunidades com Inteligência Artificial"
+date: "2023-09-04"
+excerpt: "A inteligência artificial (IA) tem sido um dos campos mais dinâmicos e promissores da ciência e tecnologia nos últimos anos, transformando diversos setores e criando novas oportunidades para inovação."
+category: "ai"
+author: "Diego Andrade"
+image: "https://cdn.pixabay.com/photo/2020/06/12/20/33/decision-5291766_1280.jpg"
 ---
 
 A inteligência artificial (IA) tem sido um dos campos mais dinâmicos e promissores da ciência e tecnologia nos últimos anos, transformando diversos setores e criando novas oportunidades para inovação. Desde a sua origem, em meados do século XX, a IA evoluiu consideravelmente, com avanços tecnológicos que têm moldado o futuro de diversas áreas, como saúde, educação, mobilidade e entretenimento. Neste contexto, exploraremos algumas das inovações mais recentes em IA e suas aplicações.

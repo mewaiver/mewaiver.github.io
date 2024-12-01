@@ -1,10 +1,10 @@
 ---
 title: "Comparação de Custos entre Nuvens Públicas e Infraestrutura Interna"
-date: "2023-04-04"
-excerpt: ""
-category: ""
-author: ""
-image: ""
+date: "2023-08-04"
+excerpt: "Nos últimos anos, a evolução tecnológica tem transformado a forma como as empresas gerenciam seus recursos de TI. O debate sobre a escolha entre a nuvem pública e a infraestrutura interna (on-premises) tem ganhado relevância, principalmente em relação aos custos operacionais, escalabilidade e flexibilidade."
+category: "cloud-computing"
+author: "Diego Andrade"
+image: "https://cdn.pixabay.com/photo/2018/09/26/09/24/board-3704096_1280.jpg"
 ---
 
 Nos últimos anos, a evolução tecnológica tem transformado a forma como as empresas gerenciam seus recursos de TI. O debate sobre a escolha entre a nuvem pública e a infraestrutura interna (on-premises) tem ganhado relevância, principalmente em relação aos custos operacionais, escalabilidade e flexibilidade. A nuvem pública, que oferece soluções de computação como serviço (IaaS, PaaS, SaaS), permite às empresas acessar recursos de TI sob demanda, enquanto a infraestrutura interna exige investimento e manutenção constante em hardware e software próprios. A comparação de custos entre essas duas abordagens é crucial para muitas organizações que buscam otimizar suas operações.

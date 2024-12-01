@@ -1,10 +1,10 @@
 ---
-title: "Como a IA não tem inteligência suficiente para substituir humanos"
-date: "2023-04-04"
-excerpt: ""
-category: ""
-author: ""
-image: ""
+title: "IA não tem inteligência suficiente para substituir humanos"
+date: "2023-09-04"
+excerpt: "Nos últimos anos, a Inteligência Artificial (IA) tem avançado de maneira impressionante, com tecnologias capazes de realizar tarefas complexas que, até pouco tempo, eram exclusivas dos seres humanos."
+category: "ai"
+author: "Kai Dorneles"
+image: "https://cdn.pixabay.com/photo/2023/06/05/19/06/robot-8043125_1280.jpg"
 ---
 
 Nos últimos anos, a Inteligência Artificial (IA) tem avançado de maneira impressionante, com tecnologias capazes de realizar tarefas complexas que, até pouco tempo, eram exclusivas dos seres humanos. Desde assistentes virtuais que compreendem nossas solicitações até sistemas de IA que diagnosticam doenças e criam obras de arte, a máquina tem mostrado um desempenho extraordinário. Contudo, apesar desses avanços, é importante compreender que a IA ainda está longe de ter a inteligência suficiente para substituir o ser humano em diversas áreas da vida.

@@ -1,10 +1,10 @@
 ---
-title: ""
-date: "2023-04-04"
-excerpt: ""
-category: ""
-author: ""
-image: ""
+title: "Tendências que Estão Redefinindo o Futuro do E-commerce"
+date: "2023-11-04"
+excerpt: "O e-commerce, ou comércio eletrônico, tem experimentado uma evolução acelerada nos últimos anos, impulsionada principalmente pela transformação digital, mudanças no comportamento do consumidor e o avanço das tecnologias."
+category: "digital"
+author: "Kai Dorneles"
+image: "https://cdn.pixabay.com/photo/2020/08/04/18/43/cyber-monday-5463567_1280.jpg"
 ---
 
 O e-commerce, ou comércio eletrônico, tem experimentado uma evolução acelerada nos últimos anos, impulsionada principalmente pela transformação digital, mudanças no comportamento do consumidor e o avanço das tecnologias. O que antes era uma maneira prática de fazer compras, com produtos sendo comprados por meio de sites de vendas, hoje é um universo complexo e dinâmico que envolve plataformas digitais, social commerce, inteligência artificial e muito mais. A seguir, exploramos algumas das principais tendências que estão moldando o futuro do e-commerce e transformando a experiência de compra.
