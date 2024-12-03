@@ -1,6 +1,8 @@
 'use client';
 
+import { addDoc, collection } from 'firebase/firestore';
 import { useState } from 'react';
+import { db } from '../services/firebase';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -21,37 +23,30 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Basic validation
+
     if (!formData.name || !formData.email || !formData.message) {
       setStatus('Please fill in all fields.');
       return;
     }
-  
+
     setStatus('Sending...');
-    
+
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+
+      await addDoc(collection(db, 'contacts'), {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        timestamp: new Date(),
       });
-      
-      if (response.ok) {
-        setStatus('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        const errorData = await response.json();
-        setStatus(errorData.message || 'Something went wrong, please try again.');
-      }
+
+      setStatus('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error saving data to Firestore:', error);
       setStatus('An error occurred. Please try again.');
     }
   };
-  
 
   return (
     <div className="bg-light text-dark">

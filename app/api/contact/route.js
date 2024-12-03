@@ -12,8 +12,8 @@ export async function POST(req) {
     host: 'sandbox.smtp.mailtrap.io',
     port: 2525,
     auth: {
-      user: 'a7583437f8201d',
-      pass: '978c9cc959f628',
+      user: '',
+      pass: '',
     },
   });
 
