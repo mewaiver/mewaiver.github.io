@@ -27,7 +27,11 @@ const TopBar = () => {
       <div className="container">
         <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <Link href="/" className="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-            <Image src="images/dark_logo.png" alt="Logo" className='logo' />
+            { isDarkMode ? 
+              <Image src="images/dark_logo.png" alt="Logo" className='logo' />
+              :
+              <Image src="images/white_logo.png" alt="Logo" className='logo' />
+            }
           </Link>
           <ul className="nav nav-pills">
             <li className="nav-item">
