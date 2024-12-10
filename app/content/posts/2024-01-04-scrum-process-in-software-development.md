@@ -3,7 +3,7 @@ title: "Scrum vs. Kanban Kaizen: Desvantagens do Scrum e a Flexibilidade do Kanb
 date: "2024-01-04"
 excerpt: "O Scrum e o Kanban Kaizen são duas metodologias ágeis amplamente utilizadas para gestão de projetos, especialmente no desenvolvimento de software e em equipes multifuncionais."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2017/06/04/20/48/plan-2372176_1280.jpg"
 ---
 

@@ -3,7 +3,7 @@ title: "Por que Entrevistas Técnicas com Leetcode, HackerRank e Puzzles Não Fu
 date: "2020-09-04"
 excerpt: "O uso de plataformas como Leetcode, HackerRank e outros sites de codificação, assim como a prática de aplicar puzzles lógicos durante entrevistas técnicas, tem sido uma prática comum em muitos processos seletivos para desenvolvedores."
 category: "egineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 

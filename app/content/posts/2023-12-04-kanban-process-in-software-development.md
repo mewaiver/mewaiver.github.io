@@ -3,7 +3,7 @@ title: "Kanban: Um Processo Prático no Desenvolvimento de Software"
 date: "2023-12-04"
 excerpt: "Kanban é um método de gerenciamento de fluxo de trabalho que vem se mostrando cada vez mais eficaz no desenvolvimento de software. Ele foi originalmente desenvolvido na década de 1940 para ajudar as empresas a otimizar seus processos de produção, mas desde então foi adaptado para uma variedade de outros contextos, incluindo o desenvolvimento de software."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2019/03/14/08/21/kanban-4054379_1280.jpg"
 ---
 

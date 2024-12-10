@@ -3,7 +3,7 @@ title: "Tecnologias Emergentes para a Agricultura Inteligente"
 date: "2022-09-04"
 excerpt: "Este artigo explora as tecnologias emergentes da Internet das Coisas (IoT) aplicadas à agricultura inteligente, abordando inovações como drones, redes sem fio, computação em nuvem e blockchain, e discute suas aplicações para otimizar processos agrícolas, como monitoramento, gestão de água, controle de doenças e gestão da cadeia de suprimentos."
 category: "iot"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2013/08/28/00/54/field-176602_1280.jpg"
 ---
 

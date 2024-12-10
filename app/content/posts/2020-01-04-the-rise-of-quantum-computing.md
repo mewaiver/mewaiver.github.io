@@ -3,7 +3,7 @@ title: "A ascensão da computação quântica: o que isso significa para o futur
 date: "2020-01-04"
 excerpt: "Nos últimos anos, a computação quântica emergiu como uma das fronteiras mais promissoras e revolucionárias da tecnologia moderna."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg"
 ---
 

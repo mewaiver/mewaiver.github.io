@@ -3,7 +3,7 @@ title: "O que se sabe sobre Agricultura Inteligente usando IoT"
 date: "2022-10-04"
 excerpt: "A agricultura inteligente, impulsionada pela Internet das Coisas (IoT), está revolucionando o setor agrícola ao permitir monitoramento em tempo real, automação de processos e otimização de recursos, resultando em maior eficiência, sustentabilidade e produtividade na produção de alimentos."
 category: "iot"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2020/06/23/06/44/dji-5331566_1280.jpg"
 ---
 

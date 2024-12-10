@@ -3,7 +3,7 @@ title: "Benefícios e desvantagens da arquitetura de microsserviços"
 date: "2020-07-04"
 excerpt: "A arquitetura de microsserviços é uma abordagem de desenvolvimento de software que divide uma aplicação em serviços menores e independentes, cada um responsável por uma funcionalidade específica. Essa abordagem tem seus benefícios e desvantagens, e considerá-los pode ajudar na tomada de decisões mais informadas."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2023/01/03/08/12/bitcoin-7693848_1280.png"
 draft: false
 ---

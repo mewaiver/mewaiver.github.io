@@ -3,7 +3,7 @@ title: "Zero Trust: Uma Abordagem de Segurança em Evolução"
 date: "2022-02-04"
 excerpt: "A implementação de uma estratégia de segurança baseada em Zero Trust é uma abordagem eficaz para proteger os ativos digitais contra ataques cibernéticos, reduzindo o risco de ataques e melhorando a visibilidade e a segurança."
 category: "security"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2019/07/07/06/32/trust-4321822_1280.jpg"
 ---
 

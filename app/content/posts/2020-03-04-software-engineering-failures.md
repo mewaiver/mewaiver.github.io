@@ -3,7 +3,7 @@ title: "Abordando Falhas na Engenharia de Software: A Necessidade de Melhores Pr
 date: "2020-03-04"
 excerpt: "Falhas recentes de alto perfil na engenharia de software ressaltam a necessidade urgente de práticas de desenvolvimento aprimoradas, testes melhorados e medidas de garantia de qualidade mais robustas."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2014/08/12/08/18/words-416435_1280.jpg"
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "O que é o Kanban Kaizen e quais seus benefícios ?"
 date: "2024-08-04"
 excerpt: "Kanban Kaizen é a combinação de duas metodologias de gestão de processos e melhoria contínua: Kanban e Kaizen. Ambas têm como objetivo melhorar a eficiência e a qualidade nos processos de trabalho, mas de maneiras complementares."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://plus.unsplash.com/premium_photo-1661963588720-838fd19183ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 

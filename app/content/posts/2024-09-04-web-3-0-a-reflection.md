@@ -3,7 +3,7 @@ title: "Web 3.0 Uma Reflexão"
 date: "2024-09-04"
 excerpt: "A Web 3.0 também promete melhorar a segurança online, graças à utilização de tecnologias como criptografia e blockchain. Isso permite que os usuários protejam seus dados e identidades online de forma mais eficaz."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2015/11/16/16/41/web-1045994_1280.jpg"
 draft: false
 ---

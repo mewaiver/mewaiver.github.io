@@ -3,7 +3,7 @@ title: "Como o Linux Kernel Revolucionou os Sistemas Operacionais e Transformou 
 date: "2024-05-04"
 excerpt: "O **Linux Kernel** tem desempenhado um papel central na revolução dos sistemas operacionais modernos.  Ele não apenas alterou a forma como sistemas operacionais são desenvolvidos e usados, mas também teve um impacto profundo em várias áreas da computação, desde servidores até dispositivos móveis, e contribuiu para a democratização da tecnologia de software."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2022/05/19/18/44/linux-7207969_1280.jpg"
 draft: false
 ---

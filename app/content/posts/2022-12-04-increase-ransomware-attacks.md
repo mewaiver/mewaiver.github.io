@@ -3,7 +3,7 @@ title: "A Escalada dos Ataques de Ransomware: Desafios e Respostas na Segurança
 date: "2022-12-04"
 excerpt: "O aumento dos ataques de ransomware em 2022 destacou a necessidade urgente de uma abordagem mais robusta e integrada para a segurança cibernética."
 category: "security"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2019/06/18/13/58/computer-4282378_1280.jpg"
 ---
 

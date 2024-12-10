@@ -3,7 +3,7 @@ title: "Internet das Coisas com Java"
 date: "2020-11-04"
 excerpt: "A Internet das Coisas (IoT) permite a interconexão de dispositivos físicos à internet, possibilitando a coleta e troca de dados de forma eficiente e inovadora."
 category: "iot"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2016/01/08/15/03/arduino-1128227_1280.jpg"
 ---
 

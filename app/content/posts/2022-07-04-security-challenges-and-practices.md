@@ -3,7 +3,7 @@ title: "Desafios e Práticas de Segurança em um SaaS"
 date: "2022-07-04"
 excerpt: "Os desafios de segurança em um ambiente SaaS são significativos, mas podem ser mitigados por meio da implementação de práticas robustas, como autenticação multifator, criptografia de dados e treinamento contínuo dos funcionários."
 category: "security"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2024/05/21/19/57/computer-8779036_1280.jpg"
 ---
 

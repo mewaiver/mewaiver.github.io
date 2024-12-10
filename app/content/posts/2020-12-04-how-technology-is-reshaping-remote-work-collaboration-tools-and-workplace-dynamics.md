@@ -3,7 +3,7 @@ title: "Como a tecnologia está remodelando o trabalho remoto"
 date: "2020-12-04"
 excerpt: "A ascensão de serviços de armazenamento e compartilhamento de arquivos baseados em nuvem, como Google Drive, Dropbox e Microsoft OneDrive, também foi transformadora."
 category: "engineering"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2020/02/24/07/51/digital-nomads-4875466_1280.jpg"
 ---
 

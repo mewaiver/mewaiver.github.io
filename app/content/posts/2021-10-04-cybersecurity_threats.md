@@ -3,7 +3,7 @@ title: "As 5 maiores ameaças à segurança cibernética de um banco"
 date: "2021-10-04"
 excerpt: "Sem medidas sólidas de cibersegurança, os dados sensíveis do seu banco podem estar em risco."
 category: "security"
-author: "Tiago Souza"
+author: "Pedro Duprat"
 image: "https://images.pexels.com/photos/5475763/pexels-photo-5475763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 ---
 
