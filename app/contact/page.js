@@ -40,11 +40,11 @@ export default function Contact() {
         timestamp: new Date(),
       });
 
-      setStatus('Message sent successfully!');
+      setStatus('Mensagem enviada com sucesso!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error saving data to Firestore:', error);
-      setStatus('An error occurred. Please try again.');
+      setStatus('Ocorreu um erro. Tente novamente mais tarde.');
     }
   };
 
