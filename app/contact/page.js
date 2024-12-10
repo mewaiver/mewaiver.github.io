@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-light text-dark">
+    <div>
       <div className="container py-5">
         <div className="row justify-content-center">
           <article className="col-lg-8 col-md-10">

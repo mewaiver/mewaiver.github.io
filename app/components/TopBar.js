@@ -44,6 +44,11 @@ const TopBar = () => {
                 Quem Somos
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`}>
+                Contato
+              </Link>
+            </li>
             <li className="nav-item">
               <Link href="/dashboard" className={`nav-link ${pathname === '/dashboard' ? 'active' : ''}`}>
                 Analítica
@@ -57,7 +62,7 @@ const TopBar = () => {
                   <i className="bi bi-moon"></i>
                 )}
               </button>
-            </li>
+            </li>            
           </ul>
         </header>
       </div>
