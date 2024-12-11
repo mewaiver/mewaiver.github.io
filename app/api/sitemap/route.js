@@ -1,40 +1,22 @@
 import fs from 'fs';
 import path from 'path';
 
-export const dynamic = "force-static";
-export const revalidate = 60;
+const blogDirectory = path.join(process.cwd(), 'app/content/posts');
+const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');
 
-export async function GET() {
+const mdxFilePaths = getAllMdxFilePaths(blogDirectory);
+const sitemap = mdxFilePaths.map((filePath) => {
+  const slug = path.basename(filePath, '.mdx');
+  const url = `https://www.techchain.com.br/blog/${slug}`;
+  return { url };
+});
 
-  const blogDirectory = path.join(process.cwd(), 'app/content/posts');
+sitemap.push({
+  url: 'https://www.techchain.com.br/',
+});
 
-   const mdxFilePaths = getAllMdxFilePaths(blogDirectory);
-
-  const sitemap = mdxFilePaths.map((filePath) => {
-    const slug = path.basename(filePath, '.mdx');
-    const category = path.basename(path.dirname(filePath));
-    const url = `https://www.techchain.com.br/blog/${slug}`;
-    const lastModified = fs.statSync(filePath).mtime;
-    return {
-      url,
-      lastModified,
-    };
-  });
-
-  sitemap.push(
-    {
-      url: 'https://www.techchain.com.br/',
-      lastModified: new Date(),
-    }
-  );
-
-  const xml = generateSitemapXml(sitemap);
-  return new Response(xml, {
-    headers: {
-      'Content-Type': 'application/xml',
-    },
-  });
-}
+const xml = generateSitemapXml(sitemap);
+fs.writeFileSync(sitemapPath, xml);
 
 function getAllMdxFilePaths(directory) {
   const fileNames = fs.readdirSync(directory);
@@ -53,11 +35,10 @@ function getAllMdxFilePaths(directory) {
 
 function generateSitemapXml(sitemap) {
   const urlset = sitemap
-    .map(({ url, lastModified }) => {
+    .map(({ url }) => {
       return `
         <url>
           <loc>${url}</loc>
-          <lastmod>${lastModified.toISOString()}</lastmod>
         </url>
       `;
     })
@@ -66,5 +47,5 @@ function generateSitemapXml(sitemap) {
   return `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
     ${urlset}
-  </urlset>`;
+  </urlset>`.trim();
 }
