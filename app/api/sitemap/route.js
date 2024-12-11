@@ -1,23 +1,19 @@
 import fs from 'fs';
 import path from 'path';
 
-// This will ensure the route is treated as a static route
-export const dynamic = "force-static"; // or "force-dynamic" if you want it to be dynamic
-export const revalidate = 60; // Set revalidation time in seconds
+export const dynamic = "force-static";
+export const revalidate = 60;
 
 export async function GET() {
-  debugger
-  // Path to the directory containing your MDX files
-  const blogDirectory = path.join(process.cwd(), 'app/content/posts'); // your blog directory may be different
 
-  // Retrieve all MDX file paths recursively
-  const mdxFilePaths = getAllMdxFilePaths(blogDirectory);
+  const blogDirectory = path.join(process.cwd(), 'app/content/posts');
 
-  // Generate URLs and add them to the sitemap
+   const mdxFilePaths = getAllMdxFilePaths(blogDirectory);
+
   const sitemap = mdxFilePaths.map((filePath) => {
-    const slug = path.basename(filePath, '.mdx'); // remove the .mdx extension from the file name to get the slug
+    const slug = path.basename(filePath, '.mdx');
     const category = path.basename(path.dirname(filePath));
-    const url = `http://localhost:3000/blog/${slug}`; // Updated URL to localhost
+    const url = `https://www.techchain.com.br/blog/${slug}`;
     const lastModified = fs.statSync(filePath).mtime;
     return {
       url,
@@ -25,16 +21,13 @@ export async function GET() {
     };
   });
 
-  // Add other URLs to the sitemap
   sitemap.push(
     {
-      url: 'http://localhost:3000', // Updated URL to localhost
+      url: 'https://www.techchain.com.br/',
       lastModified: new Date(),
     }
-    // Add other URLs here
   );
 
-  // Return the sitemap as XML
   const xml = generateSitemapXml(sitemap);
   return new Response(xml, {
     headers: {
@@ -43,7 +36,6 @@ export async function GET() {
   });
 }
 
-// Recursively retrieve all MDX file paths
 function getAllMdxFilePaths(directory) {
   const fileNames = fs.readdirSync(directory);
   const filePaths = fileNames.map((fileName) => {
@@ -59,7 +51,6 @@ function getAllMdxFilePaths(directory) {
   return [].concat(...filePaths);
 }
 
-// Function to generate XML for the sitemap
 function generateSitemapXml(sitemap) {
   const urlset = sitemap
     .map(({ url, lastModified }) => {
