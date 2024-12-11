@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 const blogDirectory = path.join(process.cwd(), 'app/content/posts');
 const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');
@@ -49,3 +49,5 @@ function generateSitemapXml(sitemap) {
     ${urlset}
   </urlset>`.trim();
 }
+
+console.log('Sitemap generated at:', sitemapPath);
