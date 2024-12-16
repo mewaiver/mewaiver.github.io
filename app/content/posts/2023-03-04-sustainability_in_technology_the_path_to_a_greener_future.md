@@ -3,7 +3,7 @@ title: "Sustentabilidade em Tecnologia: Caminhos para um Futuro Verde e Digital"
 date: "2023-03-04"
 excerpt: "A sustentabilidade em tecnologia não é mais uma opção, mas uma necessidade premente para garantir que o progresso não prejudique o meio ambiente, mas o preserve para as gerações futuras."
 category: "sustainability"
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2020/02/07/20/40/energy-4828337_1280.jpg"
 ---
 

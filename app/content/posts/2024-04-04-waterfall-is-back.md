@@ -4,7 +4,7 @@ date: "2024-04-04"
 excerpt: "Nos últimos anos, muito se tem discutido sobre a possível volta do modelo Waterfall no desenvolvimento de software e em outros campos de gestão de projetos."
 category: "engineering"
 draft: false
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://images.unsplash.com/photo-1488215545351-57e673dc3789?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 

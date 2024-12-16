@@ -3,7 +3,7 @@ title: "A virtualização é um risco à segurança ?"
 date: "2022-06-04"
 excerpt: "A virtualização, embora traga eficiência e flexibilidade, também apresenta riscos significativos, como vulnerabilidades de segurança, isolamento inadequado e complexidade da infraestrutura, que podem comprometer a integridade dos dados e a segurança das organizações."
 category: "security"
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2022/06/17/12/53/time-7267862_1280.jpg"
 ---
 

@@ -3,7 +3,7 @@ title: "Segurança no iOS: Proteja Seu Dispositivo contra Ameaças e Vírus"
 date: "2022-11-04"
 excerpt: "Embora o iOS seja conhecido por sua segurança robusta, ele não está completamente imune a ameaças, como malware, phishing e vulnerabilidades de sistema. A Apple implementa várias camadas de segurança, mas riscos ainda existem, especialmente com ataques de zero-day, ransomware, e explorações de vulnerabilidades."
 category: "security"
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2021/01/06/07/26/iphone-5893379_1280.jpg"
 ---
 

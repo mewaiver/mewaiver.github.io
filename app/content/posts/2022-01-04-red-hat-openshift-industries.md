@@ -3,7 +3,7 @@ title: "Red Hat OpenShift: Transformando a Entrega de Software em Diversas Indú
 date: "2022-01-04"
 excerpt: "Descubra como o Red Hat OpenShift está revolucionando o desenvolvimento e a implantação de aplicações em setores como saúde, finanças e e-commerce."
 category: "engineering"
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2014/08/28/16/57/container-429947_1280.jpg"
 ---
 

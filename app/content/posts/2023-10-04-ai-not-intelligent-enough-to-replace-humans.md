@@ -3,7 +3,7 @@ title: "IA não tem inteligência suficiente para substituir humanos"
 date: "2023-09-04"
 excerpt: "Nos últimos anos, a Inteligência Artificial (IA) tem avançado de maneira impressionante, com tecnologias capazes de realizar tarefas complexas que, até pouco tempo, eram exclusivas dos seres humanos."
 category: "ai"
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2023/06/05/19/06/robot-8043125_1280.jpg"
 ---
 

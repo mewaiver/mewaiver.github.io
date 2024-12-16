@@ -3,7 +3,7 @@ title: "Como melhorar a qualidade e a manutenção do seu software"
 date: "2021-04-04"
 excerpt: "Refatorar código é essencial para garantir a qualidade e a manutenibilidade de um software ao longo do tempo. Neste post, exploramos as melhores práticas para refatoração, como manter uma suíte de testes, refatorar em pequenos passos e aplicar princípios de design para melhorar a legibilidade e eficiência do código, sem alterar seu comportamento."
 category: "engineering"
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2020/05/30/10/01/update-5238354_1280.jpg"
 ---
 

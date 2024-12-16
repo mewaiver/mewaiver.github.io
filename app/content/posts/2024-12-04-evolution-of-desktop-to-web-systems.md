@@ -3,7 +3,7 @@ title: "A Evolução dos Sistemas Desktop para Web: Uma Jornada de Inovação e 
 date: "2024-12-04"
 excerpt: "A evolução dos sistemas desktop para web é um processo que tem ocorrido ao longo das últimas décadas, impulsionado pelo avanço da tecnologia e pela necessidade de maior flexibilidade e acessibilidade."
 category: "engineering"
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg"
 draft: false
 ---

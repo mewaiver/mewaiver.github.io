@@ -3,7 +3,7 @@ title: "WebAssembly: Benefícios e Desafios"
 date: "2024-07-04"
 excerpt: "WebAssembly (WASM) é uma tecnologia que permite executar código compilado em navegadores web, oferecendo benefícios como melhor desempenho, segurança e portabilidade, mas também apresenta desafios como complexidade de implementação, limitações de recursos e necessidade de suporte a linguagens de programação."
 category: "engineering"
-author: "Kai Dorneles"
+author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2016/12/14/11/48/processor-1906082_1280.jpg"
 draft: false
 ---
