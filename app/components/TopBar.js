@@ -44,11 +44,11 @@ const TopBar = () => {
                 Quem Somos
               </Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`}>
                 Contato
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link href="/dashboard" className={`nav-link ${pathname === '/dashboard' ? 'active' : ''}`}>
                 Analítica
