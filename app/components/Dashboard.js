@@ -67,24 +67,34 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="text-center">
-            <h1>Analítica</h1>
-
-            <Row className="justify-content-center">
-                <Col xs={12} sm={6} md={4} className="mb-4">
-                    <h3>Visualizações por mês</h3>
-                    <p style={{ fontSize: '8em' }}>{pageViewsData}</p>
-                </Col>
-                <Col xs={12} sm={6} md={4} className="mb-4">
-                    <h3>Amor por tecnologia</h3>
-                    <Doughnut data={passionData} />
-                </Col>
-                <Col xs={12} sm={6} md={4} className="mb-4">
-                    <h3>Retorno dos visitantes</h3>
-                    <Doughnut data={returnRateData} />
-                </Col>
-            </Row>
-        </div>
+        <>
+            <div className="text-center">
+                <h1>Analítica</h1>
+                <Row className="justify-content-center">
+                    <Col xs={12} sm={6} md={4} className="mb-4">
+                        <h3>Visualizações por mês</h3>
+                        <p style={{ fontSize: '8em' }}>{pageViewsData}</p>
+                    </Col>
+                    <Col xs={12} sm={6} md={4} className="mb-4">
+                        <h3>Amor por tecnologia</h3>
+                        <Doughnut data={passionData} />
+                    </Col>
+                    <Col xs={12} sm={6} md={4} className="mb-4">
+                        <h3>Retorno dos visitantes</h3>
+                        <Doughnut data={returnRateData} />
+                    </Col>
+                </Row>
+            </div>
+            <p>
+                Esses dados nos ajudam a entender melhor o comportamento e as preferências dos nossos visitantes, 
+                permitindo que possamos melhorar continuamente a experiência do usuário.
+                As métricas apresentadas incluem o número total de visualizações de página, 
+                a porcentagem de usuários apaixonados por tecnologia 
+                e a taxa de retorno semanal dos visitantes. 
+                Esses insights nos fornecem valiosas informações sobre 
+                o engajamento e a fidelidade do nosso público, sempre com o objetivo de trazer os melhores conteúdos.
+            </p>
+        </>
     );
 };
 
