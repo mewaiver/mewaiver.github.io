@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Image } from 'react-bootstrap';
 import './TopBar.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const TopBar = () => {
   const pathname = usePathname();
@@ -24,48 +25,48 @@ const TopBar = () => {
 
   return (
     <>
-      <div className="container">
-        <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <Link href="/" className="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+      <nav className={`navbar navbar-expand-lg fixed-top ${isDarkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'} shadow`}>
+        <div className="container">
+          <Link href="/" className="navbar-brand">
             { isDarkMode ? 
               <Image src="/images/dark_logo.png" alt="Logo" className='logo' />
               :
               <Image src="/images/white_logo.png" alt="Logo" className='logo' />
             }
           </Link>
-          <ul className="nav nav-pills">
-            <li className="nav-item">
-              <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`} aria-current="page">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>
-                Quem Somos
-              </Link>
-            </li>
-            {/* <li className='nav-item'>
-              <Link href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`}>
-                Contato
-              </Link>
-            </li> */}
-            <li className="nav-item">
-              <Link href="/dashboard" className={`nav-link ${pathname === '/dashboard' ? 'active' : ''}`}>
-                Analítica
-              </Link>
-            </li>
-            <li className="nav-item">
-              <button className="nav-link" onClick={toggleTheme} aria-label="Toggle theme">
-                {isDarkMode ? (
-                  <i className="bi bi-sun"></i>
-                ) : (
-                  <i className="bi bi-moon"></i>
-                )}
-              </button>
-            </li>            
-          </ul>
-        </header>
-      </div>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`} aria-current="page">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>
+                  Quem Somos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/dashboard" className={`nav-link ${pathname === '/dashboard' ? 'active' : ''}`}>
+                  Analítica
+                </Link>
+              </li>
+              <li className="nav-item">
+                <button className="link btn btn-link" onClick={toggleTheme} aria-label="Toggle theme">
+                  {isDarkMode ? (
+                    <i className="bi bi-sun"></i>
+                  ) : (
+                    <i className="bi bi-moon"></i>
+                  )}
+                </button>
+              </li>            
+            </ul>
+          </div>
+        </div>
+      </nav>
     </>
   );
 }

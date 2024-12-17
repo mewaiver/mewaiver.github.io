@@ -7,7 +7,7 @@ import Head from "./components/Head";
 
 export const metadata = {
   title: "Tech Chain",
-  description: "Chaining technology throught the time.",
+  description: "Chaining technology through the time.",
 };
 
 export default function RootLayout({ children }) {
