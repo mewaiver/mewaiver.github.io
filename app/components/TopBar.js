@@ -24,10 +24,10 @@ const TopBar = () => {
 
   return (
     <>
-      <nav className={`navbar navbar-expand-lg fixed-top ${isDarkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'} shadow`}>
+      <nav className="navbar navbar-expand-lg fixed-top shadow" style={{ backgroundColor: isDarkMode ? '#121212' : '#FFF' }}>
         <div className="container">
           <Link href="/" className="navbar-brand">
-            { isDarkMode ? 
+            {isDarkMode ?
               <Image src="/images/dark_logo.png" alt="Logo" className='logo' />
               :
               <Image src="/images/white_logo.png" alt="Logo" className='logo' />
@@ -61,7 +61,7 @@ const TopBar = () => {
                     <i className="bi bi-moon"></i>
                   )}
                 </button>
-              </li>            
+              </li>
             </ul>
           </div>
         </div>
