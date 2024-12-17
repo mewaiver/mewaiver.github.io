@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import Head from "./components/Head";
 
+
 export const metadata = {
   title: "Tech Chain",
   description: "Chaining technology through the time.",
@@ -13,6 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-bs-theme="dark">
+      
       <Head/>
       <GoogleAnalytics />
       <body>

@@ -6,11 +6,23 @@
         </url>
       
         <url>
+          <loc>https://www.techchain.com.br/blog/2020-01-08-sustainable-technology-innovations-for-a-greener-future.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2020-01-16-remote-work-changing-the-future.md</loc>
+        </url>
+      
+        <url>
           <loc>https://www.techchain.com.br/blog/2020-02-04-stakeholders-communication-challenge.md</loc>
         </url>
       
         <url>
           <loc>https://www.techchain.com.br/blog/2020-03-04-software-engineering-failures.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2020-03-08-postgres-vs-mysql-benefits.md</loc>
         </url>
       
         <url>
@@ -54,7 +66,15 @@
         </url>
       
         <url>
+          <loc>https://www.techchain.com.br/blog/2021-01-16-geth_vs_openethereum_comparison.md</loc>
+        </url>
+      
+        <url>
           <loc>https://www.techchain.com.br/blog/2021-02-04-heartland_data_breach_lessons.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2021-02-08-the-motivation-behind-writing-books-for-java-beginners-sharing-experience-and-contributing-to-security-and-best-practices-in-the-software-industry.md.md</loc>
         </url>
       
         <url>
@@ -79,6 +99,14 @@
       
         <url>
           <loc>https://www.techchain.com.br/blog/2021-08-04-deprecation-services-challenges-and-strategies.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2021-08-08-code_is_not_the_problem_controling_complexity_is.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2021-08-16-mongodb_vs_couchbase_pros_and_cons.md</loc>
         </url>
       
         <url>
@@ -110,6 +138,10 @@
         </url>
       
         <url>
+          <loc>https://www.techchain.com.br/blog/2022-03-08-redis-vs-memcached-understanding-the-differences.md</loc>
+        </url>
+      
+        <url>
           <loc>https://www.techchain.com.br/blog/2022-04-04-facebook-messager-phishing.md</loc>
         </url>
       
@@ -119,6 +151,10 @@
       
         <url>
           <loc>https://www.techchain.com.br/blog/2022-06-04-risks-of-virtualization.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2022-06-08-java-and-jca-in-the-development-of-canis-key-management-system-kms-a-technical-perspective.md.md</loc>
         </url>
       
         <url>
@@ -223,6 +259,18 @@
       
         <url>
           <loc>https://www.techchain.com.br/blog/2024-12-04-evolution-of-desktop-to-web-systems.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2025-01-04-devops-plataform-engineering.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2025-02-04-sre_vs_devops_vs_platform_engineering.md</loc>
+        </url>
+      
+        <url>
+          <loc>https://www.techchain.com.br/blog/2025-03-04-platform_engineer_vs_software_engineer.md</loc>
         </url>
       
         <url>

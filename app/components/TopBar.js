@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Image } from 'react-bootstrap';
 import './TopBar.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const TopBar = () => {
   const pathname = usePathname();
