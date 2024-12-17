@@ -4,8 +4,6 @@ import "./styles/globals.scss";
 import Footer from './components/Footer';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import Head from "./components/Head";
-import BootstrapClient from './components/BootstrapClient.js';
-
 
 export const metadata = {
   title: "Tech Chain",
@@ -15,7 +13,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-bs-theme="dark">
-      <BootstrapClient />
       <Head/>
       <GoogleAnalytics />
       <body>

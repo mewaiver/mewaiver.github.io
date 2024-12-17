@@ -10,6 +10,7 @@ const TopBar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
     const currentTheme = localStorage.getItem('theme') || 'light';
     setIsDarkMode(currentTheme === 'dark');
     document.body.setAttribute('data-bs-theme', currentTheme);
