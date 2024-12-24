@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TermsOfService() {
     return (
         <div className="bg-background text-foreground">
@@ -61,7 +63,10 @@ export default function TermsOfService() {
 
                         <section>
                             <h2>8. Informações de Contato</h2>
-                            <p>Se você tiver alguma dúvida ou preocupação sobre estes Termos de Serviço, entre em contato conosco em [Seu Endereço de E-mail].</p>
+                            <p>
+                                Se você tiver alguma dúvida ou preocupação sobre estes Termos de Serviço,
+                                contato conosco clicando <Link href="/contact">aqui</Link>.
+                            </p>
                         </section>
 
                         <footer className="mt-4">
