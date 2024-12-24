@@ -3,7 +3,7 @@ title: "Open Source: É Bom, Mas Também Tem Seus Desafios"
 date: "2024-06-04"
 excerpt: "Software de código aberto não é necessariamente livre de problemas. É importante avaliar cuidadosamente as opções de software de código aberto antes de adotá-las, considerando fatores como a estabilidade, a segurança e a compatibilidade com outros sistemas."
 category: "engineering"
-author: "Kai Donrneles"
+author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2016/11/18/21/30/open-sign-1836961_1280.jpg"
 draft: false
 ---
