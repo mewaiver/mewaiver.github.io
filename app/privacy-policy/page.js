@@ -64,8 +64,8 @@ export default function TermsOfService() {
                         <section>
                             <h2>8. Informações de Contato</h2>
                             <p>
-                                Se você tiver alguma dúvida ou preocupação sobre estes Termos de Serviço,
-                                contato conosco clicando <Link href="/contact">aqui</Link>.
+                                Se você tiver alguma dúvida ou preocupação sobre estas políticas,
+                                entre em contato conosco clicando <Link href="/contact">aqui</Link>.
                             </p>
                         </section>
 
