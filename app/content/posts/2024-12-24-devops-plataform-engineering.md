@@ -5,7 +5,7 @@ excerpt: "DevOps e Engenharia de Plataforma são dois conceitos essenciais para 
 category: "engineering"
 author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2016/10/07/14/38/lady-1721678_1280.jpg"
-draft: true
+draft: false
 ---
 
 Nos últimos anos, as empresas de tecnologia têm buscado cada vez mais maneiras de otimizar seus processos de desenvolvimento e entrega de software, com o objetivo de aumentar a eficiência, reduzir custos e melhorar a experiência do usuário. Dentro desse contexto, dois conceitos que se destacam são o **DevOps** e a **Engenharia de Plataforma**. Embora ambos envolvam a integração entre desenvolvimento e operações, eles possuem objetivos, práticas e focos distintos. Neste texto, abordaremos os benefícios e as diferenças entre esses dois campos, fornecendo uma visão mais clara para aqueles que buscam entender suas particularidades.
