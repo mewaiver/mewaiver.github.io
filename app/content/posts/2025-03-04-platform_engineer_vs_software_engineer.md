@@ -5,7 +5,7 @@ excerpt: "Engenheiros de plataforma e engenheiros de software têm responsabilid
 category: "engineering"
 author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2018/07/13/23/03/planning-3536759_1280.jpg"
-draft: true
+draft: false
 ---
 
 Nos modernos ambientes de desenvolvimento de software, duas funções fundamentais que muitas vezes são confundidas são as de **engenheiro de plataforma** e **engenheiro de software**. Embora ambas as funções envolvam o trabalho com tecnologia e software, elas têm responsabilidades, focos e objetivos distintos. A compreensão dessas diferenças pode ajudar as empresas a estruturar suas equipes de maneira mais eficaz e permitir que os profissionais se alinhem melhor com suas áreas de especialização.
