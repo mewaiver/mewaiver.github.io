@@ -1,5 +1,5 @@
 ---
-title: "O Conceito de "Monolith First" em Desenvolvimento de Software"
+title: "O Conceito de Monolith First em Desenvolvimento de Software"
 date: "2025-01-24"
 excerpt: "O Monolith First é uma abordagem de desenvolvimento de software que pode ser útil em várias situações, mas requer uma avaliação cuidadosa das necessidades específicas do projeto."
 category: "engineering"
