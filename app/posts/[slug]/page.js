@@ -20,7 +20,7 @@ const BlogPost = async ({ params }) => {
   const content = await markdownToHtml(post.content);
 
   return (
-    <Post title={post.title} date={post.date} content={content} category={post.category} author={post.author} />
+    <Post title={post.title} date={post.date} content={content} category={post.category} author={post.author} image={post.image}/>
   );
 }
 
