@@ -22,37 +22,34 @@ const Post = ({ title, date, content, category, author, image }) => {
         blocks.forEach((block) => {
             hljs.highlightBlock(block);
         });
-    }, [])
+
+        document.title = title;
+        
+        const metaImage = document.querySelector('meta[property="og:image"]');
+        if (metaImage) {
+            metaImage.setAttribute('content', image);
+        } else {
+            const newMetaImage = document.createElement('meta');
+            newMetaImage.setAttribute('property', 'og:image');
+            newMetaImage.content = image;
+            document.head.appendChild(newMetaImage);
+        }
+    }, []);
 
     const formattedAuthorName = author.replace(/\s+/g, '_');
 
     return (
         <>
-            <div style={{ position: 'relative', padding: '40px 20px', color: 'white' }}>
-                <Image 
-                    src={image} 
-                    alt="Background" 
-                    layout="fill" 
-                    objectFit="cover" 
-                    objectPosition="center" 
-                    style={{ position: 'absolute', top: 0, left: 0, zIndex: 0, width: '100%', height: '100%' }} 
-                />
-                
-                <div style={{ position: 'relative', zIndex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '20px' }}>
-                    <div className="text-center" style={{ zIndex: 2 }}>
-                        <h1 style={{ color: '#f8f9fa' }} className="display-4">{title}</h1>
-                        <div className="d-flex justify-content-start">
-                            <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
-                        </div>
-                        <div className="d-flex justify-content-start">
-                            <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
-                        </div>
-                    </div>
-                </div>
+            <h1 className="display-4">{title}</h1>
+
+            <div className="d-flex justify-content-start">
+                <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
+            </div>
+            <div className="d-flex justify-content-start">
+                <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
             </div>
             <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
         </>
-
     );
 }
 
