@@ -42,7 +42,7 @@ const Post = ({ title, date, content, category, author, image }) => {
         <>
             <h1 className="display-4">{title}</h1>
             <div className="d-flex justify-content-end">
-                <Image src={image} width={100} alt={author}></Image>                   
+                <Image src={image} width={100} alt={image}></Image>                   
             </div>
             <div className="d-flex justify-content-start">                
                 {/* <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>              */}
