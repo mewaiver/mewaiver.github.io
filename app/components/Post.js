@@ -29,26 +29,17 @@ const Post = ({ title, date, content, category, author, image }) => {
     return (
         <>
     <div style={{ position: 'relative', padding: '40px 20px', color: 'white' }}>
-        <Image 
-            src={image} 
-            alt="Background" 
-            layout="fill" 
-            objectFit="cover" 
-            objectPosition="center" 
-            style={{ zIndex: 1 }} 
-        />
-        <div 
-            className="overlay" 
-            style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                zIndex: 2
-            }}
-        />
+        <div style={{ position: 'relative', zIndex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+            <Image 
+                src={image} 
+                alt="Background" 
+                layout="fill" 
+                objectFit="cover" 
+                objectPosition="center" 
+                style={{ zIndex: 0 }} 
+            />
+        </div>
+        
         <div className="text-center" style={{ position: 'relative', zIndex: 3 }}>
             <h1 style={{ color: '#f8f9fa' }} className="display-4">{title}</h1>
             <div className="d-flex justify-content-start">
