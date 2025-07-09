@@ -41,11 +41,14 @@ const Post = ({ title, date, content, category, author, image }) => {
     return (
         <>
             <h1 className="display-4">{title}</h1>
-
-            <div className="d-flex justify-content-start">
-                <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
+            <div className="d-flex justify-content-end">
+                <Image src={image} width={100} alt={author}></Image>                   
+            </div>
+            <div className="d-flex justify-content-start">                
+                {/* <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>              */}
             </div>
             <div className="d-flex justify-content-start">
+                
                 <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
             </div>
             <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
