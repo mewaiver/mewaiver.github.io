@@ -28,41 +28,39 @@ const Post = ({ title, date, content, category, author, image }) => {
 
     return (
         <>
-            <div 
-                className="header-background" 
-                style={{
-                    position: 'relative',
-                    backgroundImage: `url(${image})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    padding: '40px 20px',
-                    color: 'white'
-                }}
-            >
-                <div 
-                    className="overlay" 
-                    style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                        zIndex: 1
-                    }}
-                />
-                <div className="text-center" style={{ position: 'relative', zIndex: 2 }}>
-                    <h1 style={{ color: '#f8f9fa' }} className="display-4">{title}</h1>
-                    <div className="d-flex justify-content-start">
-                        <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
-                    </div>
-                    <div className="d-flex justify-content-start">
-                        <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
-                    </div>
-                </div>
+    <div style={{ position: 'relative', padding: '40px 20px', color: 'white' }}>
+        <Image 
+            src={image} 
+            alt="Background" 
+            layout="fill" 
+            objectFit="cover" 
+            objectPosition="center" 
+            style={{ zIndex: 1 }} 
+        />
+        <div 
+            className="overlay" 
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                zIndex: 2
+            }}
+        />
+        <div className="text-center" style={{ position: 'relative', zIndex: 3 }}>
+            <h1 style={{ color: '#f8f9fa' }} className="display-4">{title}</h1>
+            <div className="d-flex justify-content-start">
+                <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
             </div>
-            <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
-        </>
+            <div className="d-flex justify-content-start">
+                <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
+            </div>
+        </div>
+    </div>
+    <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
+</>
     );
 }
 
