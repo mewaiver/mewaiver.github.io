@@ -22,30 +22,15 @@ const Post = ({ title, date, content, category, author, image }) => {
         blocks.forEach((block) => {
             hljs.highlightBlock(block);
         });
-
-        document.title = title;
-        
-        const metaImage = document.querySelector('meta[property="og:image"]');
-        if (metaImage) {
-            metaImage.setAttribute('content', image);
-        } else {
-            const newMetaImage = document.createElement('meta');
-            newMetaImage.setAttribute('property', 'og:image');
-            newMetaImage.content = image;
-            document.head.appendChild(newMetaImage);
-        }
     }, []);
 
     const formattedAuthorName = author.replace(/\s+/g, '_');
 
     return (
         <>
-            <h1 className="display-4">{title}</h1>
-            <div className="d-flex justify-content-end">
-                <Image src={image} width={100} alt={image}></Image>                   
-            </div>
+            <h1 className="display-4">{title}</h1>            
             <div className="d-flex justify-content-start">                
-                {/* <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>              */}
+                <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
             </div>
             <div className="d-flex justify-content-start">
                 
