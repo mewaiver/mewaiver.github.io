@@ -35,7 +35,7 @@ const Post = ({ title, date, content, category, author, image }) => {
                     layout="fill" 
                     objectFit="cover" 
                     objectPosition="center" 
-                    style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+                    style={{ position: 'absolute', top: 0, left: 0, zIndex: 0, width: '100%', height: '100%' }} 
                 />
                 
                 <div style={{ position: 'relative', zIndex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '20px' }}>
