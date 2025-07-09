@@ -14,7 +14,7 @@ hljs.registerLanguage('bash', bash);
 hljs.registerLanguage('java', java)
 
 
-const Post = ({ title, date, content, category, author }) => {
+const Post = ({ title, date, content, category, author, image }) => {
 
     useEffect(() => {
         import("bootstrap/dist/js/bootstrap");
@@ -28,20 +28,24 @@ const Post = ({ title, date, content, category, author }) => {
 
     return (
         <>
-            <div className="header-image">
-        <img 
-            src="https://images.unsplash.com/photo-1667124060133-c1074b0124be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-            alt="Header" 
-            className="img-fluid" 
-        />
-    </div>
-            <div className="text-center">
-                <h1 className="display-4">{title}</h1>
-                <div className="d-flex justify-content-start">
-                    <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
-                </div>
-                <div className="d-flex justify-content-start">
-                    <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
+            <div 
+                className="header-background" 
+                style={{
+                    backgroundImage: `url(${image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    padding: '40px 20px',
+                    color: 'white'
+                }}
+            >
+                <div className="text-center">
+                    <h1 className="display-4">{title}</h1>
+                    <div className="d-flex justify-content-start">
+                        <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
+                    </div>
+                    <div className="d-flex justify-content-start">
+                        <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
+                    </div>
                 </div>
             </div>
             <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
