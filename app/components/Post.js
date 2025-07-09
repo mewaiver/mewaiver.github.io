@@ -31,6 +31,7 @@ const Post = ({ title, date, content, category, author, image }) => {
             <div 
                 className="header-background" 
                 style={{
+                    position: 'relative',
                     backgroundImage: `url(${image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -38,7 +39,19 @@ const Post = ({ title, date, content, category, author, image }) => {
                     color: 'white'
                 }}
             >
-                <div className="text-center">
+                <div 
+                    className="overlay" 
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                        zIndex: 1
+                    }}
+                />
+                <div className="text-center" style={{ position: 'relative', zIndex: 2 }}>
                     <h1 className="display-4">{title}</h1>
                     <div className="d-flex justify-content-start">
                         <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
