@@ -28,30 +28,31 @@ const Post = ({ title, date, content, category, author, image }) => {
 
     return (
         <>
-    <div style={{ position: 'relative', padding: '40px 20px', color: 'white' }}>
-        <div style={{ position: 'relative', zIndex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-            <Image 
-                src={image} 
-                alt="Background" 
-                layout="fill" 
-                objectFit="cover" 
-                objectPosition="center" 
-                style={{ zIndex: 0 }} 
-            />
-        </div>
-        
-        <div className="text-center" style={{ position: 'relative', zIndex: 3 }}>
-            <h1 style={{ color: '#f8f9fa' }} className="display-4">{title}</h1>
-            <div className="d-flex justify-content-start">
-                <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
+            <div style={{ position: 'relative', padding: '40px 20px', color: 'white' }}>
+                <Image 
+                    src={image} 
+                    alt="Background" 
+                    layout="fill" 
+                    objectFit="cover" 
+                    objectPosition="center" 
+                    style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+                />
+                
+                <div style={{ position: 'relative', zIndex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '20px' }}>
+                    <div className="text-center" style={{ zIndex: 2 }}>
+                        <h1 style={{ color: '#f8f9fa' }} className="display-4">{title}</h1>
+                        <div className="d-flex justify-content-start">
+                            <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
+                        </div>
+                        <div className="d-flex justify-content-start">
+                            <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="d-flex justify-content-start">
-                <p className="text-muted mb-0 me-2 text-uppercase"> por {author} | {date}</p>
-            </div>
-        </div>
-    </div>
-    <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
-</>
+            <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
+        </>
+
     );
 }
 
