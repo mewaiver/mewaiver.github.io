@@ -52,7 +52,7 @@ const Post = ({ title, date, content, category, author, image }) => {
                     }}
                 />
                 <div className="text-center" style={{ position: 'relative', zIndex: 2 }}>
-                    <h1 className="display-4">{title}</h1>
+                    <h1 style={{ color: '#f8f9fa' }} className="display-4">{title}</h1>
                     <div className="d-flex justify-content-start">
                         <Image src={`/authors/${formattedAuthorName}.png`} width={100} alt={author}></Image>
                     </div>
