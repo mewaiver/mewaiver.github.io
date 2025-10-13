@@ -1,6 +1,6 @@
 ---
 title: "Melhores Práticas para Escrita de Testes"
-date: "2020-04-04"
+date: "2025-04-04"
 excerpt: "A escrita de testes é uma parte crucial do desenvolvimento de software, servindo como uma garantia de que o código funciona conforme o esperado. No entanto, simplesmente criar uma grande quantidade de testes não é suficiente; é vital que esses testes sejam bem elaborados e relevantes. Neste texto, discutiremos as melhores práticas para escrever testes eficazes, focando na qualidade em vez da quantidade."
 category: "engineering"
 author: "Pedro Duprat"
