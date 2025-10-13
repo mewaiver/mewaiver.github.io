@@ -1,10 +1,10 @@
----
-title: "Arquitetura de Software: O Modular Monolith"
+<img width="1600" height="1046" alt="image" src="https://github.com/user-attachments/assets/a7d67f0a-7043-45ba-8197-d1a583f38e2f" />---
+title: "Cobertura de testes no SonarQube"
 date: "2025-03-08"
 excerpt: "A cobertura de testes é um indicador fundamental na avaliação da qualidade do software, sendo frequentemente usado em ferramentas como o SonarQube. Entretanto, a busca por uma cobertura de testes extremamente alta pode gerar mais problemas do que benefícios. Neste texto, veremos as razões pelas quais essa prática não é recomendável."
 category: "engineering"
 author: "Diego Andrade"
-image: "https://images.unsplash.com/photo-1492355040260-cd982083603e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBAq0eUJvNvNOcdudD_mvq34bOPprIHw_Hg&s"
 draft: false
 ---
 
@@ -35,4 +35,5 @@ Uma alternativa mais adequada é adotar uma abordagem equilibrada, que priorize 
 ### Conclusão
 
 Embora a cobertura de testes no SonarQube possa oferecer insights valiosos sobre a saúde do código, a busca voraz por porcentagens altíssimas pode levar a resultados contraproducentes. A verdadeira qualidade do software deve ser medida não apenas pela quantidade de testes, mas pela eficácia e relevância desses testes na capacidade de garantir um produto robusto e confiável. A combinação de uma boa mentalidade de teste com uma cobertura sensata é o caminho mais eficaz para o desenvolvimento de software de alta qualidade.
+
 
