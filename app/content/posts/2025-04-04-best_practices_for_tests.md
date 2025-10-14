@@ -1,10 +1,10 @@
 ---
 title: "Melhores Práticas para Escrita de Testes"
 date: "2025-04-04"
-excerpt: "A escrita de testes é uma parte crucial do desenvolvimento de software, servindo como uma garantia de que o código funciona conforme o esperado. No entanto, simplesmente criar uma grande quantidade de testes não é suficiente; é vital que esses testes sejam bem elaborados e relevantes. Neste texto, discutiremos as melhores práticas para escrever testes eficazes, focando na qualidade em vez da quantidade."
+excerpt: "A escrita de testes é uma parte crucial do desenvolvimento de software, servindo como uma garantia de que o código funciona conforme o esperado."
 category: "engineering"
 author: "Pedro Duprat"
-image: "https://testgrid.io/blog/wp-content/uploads/2024/10/unit-testing.jpg"
+image: "https://videos.openai.com/vg-assets/assets%2Ftask_01k7fqvkaee7rvm8qrsddczs5w%2F1760391253_img_0.webp?se=2025-10-14T13%3A11%3A32Z&sp=r&sv=2024-08-04&sr=b&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-14T10%3A53%3A50Z&ske=2025-10-14T14%3A58%3A50Z&sks=b&skv=2024-08-04&sig=VGcSQ1JRPqMjsKqlJ7D2Ho%2BvsOFDVSmfN5iTHTaEcls%3D&az=oaivgprodscus"
 ---
 
 ## Melhores Práticas para Escrita de Testes
