@@ -4,7 +4,7 @@ date: "2025-04-04"
 excerpt: "A escrita de testes é uma parte crucial do desenvolvimento de software, servindo como uma garantia de que o código funciona conforme o esperado."
 category: "engineering"
 author: "Pedro Duprat"
-image: "https://videos.openai.com/vg-assets/assets%2Ftask_01k7fqvkaee7rvm8qrsddczs5w%2F1760391253_img_0.webp?se=2025-10-14T13%3A11%3A32Z&sp=r&sv=2024-08-04&sr=b&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-14T10%3A53%3A50Z&ske=2025-10-14T14%3A58%3A50Z&sks=b&skv=2024-08-04&sig=VGcSQ1JRPqMjsKqlJ7D2Ho%2BvsOFDVSmfN5iTHTaEcls%3D&az=oaivgprodscus"
+image: "https://images.unsplash.com/photo-1616046560582-41ac3c954715?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1172"
 ---
 
 ## Melhores Práticas para Escrita de Testes
