@@ -4,7 +4,7 @@ date: "2025-05-04"
 excerpt: "Nos sistemas críticos, especialmente em setores como o financeiro, a consistência e a confiabilidade dos dados são fundamentais."
 category: "engineering"
 author: "Pedro Duprat"
-image: "https://videos.openai.com/vg-assets/assets%2Ftask_01k7fqvkaee7rvm8qrsddczs5w%2F1760391253_img_1.webp?se=2025-10-14T13%3A11%3A32Z&sp=r&sv=2024-08-04&sr=b&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-14T10%3A53%3A50Z&ske=2025-10-14T14%3A58%3A50Z&sks=b&skv=2024-08-04&sig=QxXtTlnG20lROLDeGVdljIdvod1Y8vTGpI2dJqILUYQ%3D&az=oaivgprodscus"
+image: "/images/trust-in-enterprise-tests.jpeg"
 ---
 
 ## Testes de Integração e a Necessidade de Consistência em Sistemas Financeiros
