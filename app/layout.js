@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container";
 import TopBar from "./components/TopBar";
 import "./styles/globals.scss";
 import Footer from './components/Footer';
@@ -12,14 +11,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-bs-theme="dark">
+    <html lang="pt-BR">
       <Head/>
       <GoogleAnalytics />
       <body>
         <TopBar />
-        <Container fluid='md'>
+        <main className="site-main" id="main-content">
           {children}
-        </Container>
+        </main>
         <Footer />
       </body>
     </html>

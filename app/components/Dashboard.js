@@ -73,7 +73,7 @@ const Dashboard = () => {
                 <Row className="justify-content-center">
                     <Col xs={12} sm={6} md={4} className="mb-4">
                         <h3>Visualizações por mês</h3>
-                        <p style={{ fontSize: '8em' }}>{pageViewsData}</p>
+                        <p className="metric-number">{pageViewsData}</p>
                     </Col>
                     <Col xs={12} sm={6} md={4} className="mb-4">
                         <h3>Amor por tecnologia</h3>
