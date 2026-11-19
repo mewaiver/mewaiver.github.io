@@ -1,10 +1,11 @@
 
 import { getAllPosts } from '@/app/services/posts';
 import PostList from '@/app/components/PostList';
+import { categoryLabel } from '@/app/services/publicationLabels';
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
-  return posts.map((post) => ({ category: post.category }));
+  return [...new Set(posts.map(post => post.category).filter(Boolean))].map(category => ({ category }));
 }
 
 export default async function CategoryPage({ params }) {
@@ -13,12 +14,12 @@ export default async function CategoryPage({ params }) {
 
   const allPosts = await getAllPosts();
   
-  const filteredPosts = allPosts.filter(post => post.category === category);
+  const filteredPosts = allPosts.filter(post => !post.draft && post.category === category);
 
   return (
     <div className="post-list-page">
-      <h1>Posts in {category}</h1>
-      {filteredPosts.length > 0 ? <PostList posts={filteredPosts} /> : <p>No posts found in this category.</p>}
+      <h1>Publicações em {categoryLabel(category)}</h1>
+      {filteredPosts.length > 0 ? <PostList posts={filteredPosts} /> : <p>Nenhuma publicação nesta categoria.</p>}
     </div>
   );
 }

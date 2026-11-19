@@ -1,50 +1,74 @@
 ---
-title: "Java e JCA no Desenvolvimento do CANIS Key Management System (KMS): Uma Perspectiva Técnica"
+title: "CANIS: análise arquitetural de um serviço de gestão de chaves com Java e JCA"
 date: "2022-06-08"
-excerpt: "A combinação da linguagem Java com a Java Cryptography Architecture (JCA) foi essencial para o desenvolvimento de um sistema robusto e seguro de gerenciamento de chaves. A JCA proporcionou as ferramentas necessárias para implementar criptografia forte, gerenciamento seguro de chaves e autenticação dos dados, assegurando a integridade e confidencialidade das informações sensíveis."
-category: "engineering"
-author: "Tiago Souza"
-image: "https://images.unsplash.com/photo-1667124060133-c1074b0124be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+updated: "2026-11-19"
+category: "security"
+type: "whitepaper"
+authors:
+  - name: "Tiago Souza"
+abstract: >-
+  Sistemas que processam dados sensíveis dependem de políticas verificáveis para geração, armazenamento, uso e rotação de chaves criptográficas. Este trabalho examina a arquitetura descrita para o CANIS, um serviço de gestão de chaves implementado em Java e integrado a aplicações por um protocolo próprio, CANISP. O objetivo é separar as garantias oferecidas pelas APIs da Java Cryptography Architecture (JCA) das garantias que dependem da implementação e da operação do serviço. A metodologia consiste em decompor o fluxo de chaves, identificar fronteiras de confiança, comparar mecanismos de persistência e definir critérios reproduzíveis para uma avaliação futura. A análise indica que JCA oferece interfaces para geração de chaves, cifragem autenticada, assinaturas e repositórios de chaves, mas nenhuma dessas interfaces demonstra, isoladamente, controle de acesso, isolamento de material privado ou resistência à substituição de chaves. O armazenamento em arquivos .dat e o protocolo CANISP, mencionados na descrição original, exigem especificação, revisão e testes independentes antes de sustentar alegações de segurança. São propostos controles para autenticação mútua, trilhas de auditoria, rotação, proteção em repouso e tratamento de falhas. Não foram disponibilizados código, modelo de ameaças formal nem resultados de benchmark; portanto, as conclusões são arquiteturais e não constituem validação empírica do CANIS.
+keywords: ["key management", "JCA", "Java", "cryptography", "CANIS"]
+version: "v1.0"
+is_whitepaper: true
+bibtex: |
+  @techreport{2022-06-08-java-and-jca-in-the-development-of-canis-key-management-system-kms-a-technical-perspective-md,
+    title = {CANIS: análise arquitetural de um serviço de gestão de chaves com Java e JCA},
+    author = {Tiago Souza},
+    year = {2022},
+    url = {https://www.techchain.com.br/posts/2022-06-08-java-and-jca-in-the-development-of-canis-key-management-system-kms-a-technical-perspective.md},
+    note = {Versão v1.0; revisão editorial em 2026-11-19}
+  }
 ---
 
-O projeto CANIS, um sistema de gerenciamento de chaves (KMS) personalizado, foi desenvolvido para facilitar a gestão de chaves públicas e privadas em um ambiente de aplicativos que lidam com informações sensíveis. O CANIS adota o protocolo exclusivo CANISP (Canis Protocol), que define a forma como as aplicações interagem com o sistema para realizar a criptografia e a descriptografia dos dados. Dado que a segurança e a integridade dos dados são de extrema importância em sistemas que lidam com informações confidenciais, a escolha das tecnologias para a implementação de um KMS robusto e seguro é essencial. Nesse contexto, o uso do Java, em conjunto com a API de Criptografia do Java (JCA - Java Cryptography Architecture), foi fundamental para garantir a eficiência, a segurança e a flexibilidade do CANIS. Neste texto, explicaremos como o Java e o JCA se destacaram como tecnologias essenciais no desenvolvimento do CANIS, detalhando sua contribuição para a criptografia, o gerenciamento de chaves e a estrutura geral do projeto.
+## 1. Introdução
 
-### **1. Java como Linguagem de Programação**
+Um serviço de gestão de chaves (KMS) concentra operações cuja falha pode comprometer a confidencialidade e a autenticidade de vários sistemas. O problema central do CANIS é permitir que aplicações usem chaves sem ampliar desnecessariamente o acesso ao material privado. A descrição original relata um serviço Java, um protocolo de integração denominado CANISP e persistência em arquivos `.dat`; não apresenta especificação pública do protocolo, código verificável ou resultados experimentais. Este texto trata esses elementos como **arquitetura relatada**, não como propriedades comprovadas.
 
-A escolha do Java como linguagem de programação para o desenvolvimento do CANIS foi motivada por várias razões, muitas das quais se relacionam à segurança, portabilidade e robustez que a linguagem oferece. O Java é amplamente utilizado em sistemas que exigem alto nível de segurança e confiabilidade, o que o torna ideal para um sistema de gerenciamento de chaves.
+As contribuições são: (i) delimitar as responsabilidades de JCA e do serviço; (ii) formular um modelo de ameaças e controles de referência; e (iii) estabelecer critérios de avaliação para uma implementação auditável. A análise cobre geração, armazenamento e uso de chaves. Certificação de módulos criptográficos e validação de produção ficam fora do escopo.
 
-#### **Portabilidade e Desempenho**
-O CANIS foi projetado para ser uma solução de gerenciamento de chaves que poderia ser integrada facilmente em diferentes ambientes, sem a necessidade de modificações significativas no código. A portabilidade do Java, proporcionada pela sua máquina virtual (JVM), permite que o CANIS seja executado em diversas plataformas, incluindo servidores Linux, Windows e outras plataformas de cloud. Isso torna o CANIS uma solução viável em ambientes heterogêneos, onde a interoperabilidade é uma exigência.
+## 2. Fundamentação e trabalhos relacionados
 
-#### **Gerenciamento de Exceções e Robustez**
-Java é uma linguagem que facilita o gerenciamento de exceções, o que é crucial em sistemas de segurança. No CANIS, é fundamental que qualquer falha no processo de criptografia ou na gestão de chaves seja tratada de forma apropriada, sem comprometer a integridade do sistema. O tratamento eficiente de exceções no Java garante que falhas sejam detectadas rapidamente e que as informações sensíveis sejam protegidas, evitando que dados críticos sejam corrompidos ou expostos.
+A JCA oferece interfaces extensíveis por provedores para `KeyPairGenerator`, `Cipher`, `Signature` e `KeyStore`. O tipo de repositório, a política de senha e o provedor determinam como o material é protegido; a presença da classe `KeyStore` não prova que a chave privada permaneça inacessível ao processo ou ao operador [1]. A orientação de gestão de chaves do NIST exige considerar ciclo de vida, metadados, acesso, recuperação e comprometimento, além da escolha de algoritmo [2].
 
-### **2. JCA (Java Cryptography Architecture)**
+Para dados cifrados, um modo autenticado como AES-GCM permite verificar integridade e confidencialidade no mesmo procedimento. A segurança depende, entre outros fatores, de não repetir a combinação chave–IV e de preservar a autenticidade dos metadados associados [1, 3]. Assinaturas digitais verificam a origem de mensagens quando a chave pública utilizada é autenticada; um hash isolado, como SHA-256, detecta diferenças, mas não autentica quem produziu o dado.
 
-A JCA é um framework robusto que fornece as ferramentas necessárias para trabalhar com criptografia em Java. Ao projetar o CANIS, a JCA foi crucial para a implementação de suas funcionalidades de criptografia e gerenciamento de chaves. A flexibilidade da JCA permite a implementação de diversas técnicas de criptografia, como criptografia simétrica, assimétrica e funções hash, o que a torna ideal para o uso no CANIS.
+## 3. Metodologia e arquitetura do sistema
 
-#### **Gerenciamento de Chaves**
-No CANIS, a segurança das chaves públicas e privadas é de extrema importância. A JCA oferece classes e interfaces que permitem o gerenciamento eficiente dessas chaves, garantindo que elas sejam armazenadas e manipuladas de forma segura. A JCA fornece o `KeyStore`, um repositório seguro onde as chaves podem ser armazenadas de maneira criptografada. No contexto do CANIS, o repositório de chaves foi fundamental para garantir que as chaves privadas, usadas para descriptografar dados, ficassem protegidas de acessos não autorizados.
+O fluxo de referência separa quatro papéis: aplicação cliente, serviço CANIS, armazenamento de chaves e operador. A aplicação solicita uma operação por CANISP; o serviço autentica o solicitante, autoriza a operação para uma chave identificada, executa a primitiva criptográfica e registra um evento de auditoria. A especificação de CANISP deve definir formato, versão, autenticação, proteção contra repetição, semântica de erro e transporte seguro. Nada disso pode ser inferido apenas do uso de JCA.
 
-O sistema CANIS precisa ser capaz de gerar chaves públicas e privadas, além de permitir que as chaves sejam recuperadas e utilizadas para criptografar e descriptografar arquivos. A JCA facilita essas operações, pois oferece APIs de alto nível para gerar pares de chaves, bem como funções para a troca segura de chaves usando os algoritmos apropriados, como RSA e ECDSA (Elliptic Curve Digital Signature Algorithm).
+| Fronteira | Ativo ou operação | Controle a verificar | Evidência necessária |
+| --- | --- | --- | --- |
+| Cliente → CANISP | Pedido de cifragem/assinatura | Identidade, autorização por chave, antirreplay | Especificação e testes de protocolo |
+| CANIS → provedor JCA | Chave em uso | Escolha de algoritmo, IV único, limpeza de memória quando aplicável | Código e testes criptográficos |
+| CANIS → `.dat`/keystore | Chave privada em repouso | Cifragem, integridade, permissões, backup e rotação | Formato e testes de restauração |
+| Operador → CANIS | Administração | Separação de funções e auditoria | Política e logs verificáveis |
 
-#### **Algoritmos Criptográficos**
-A JCA suporta uma variedade de algoritmos criptográficos essenciais para a segurança do CANIS. No caso do CANIS, a criptografia assimétrica (utilizando chaves públicas e privadas) é o pilar da segurança, pois as chaves públicas são usadas para criptografar dados, enquanto as chaves privadas são usadas para decriptá-los. O Java oferece suporte para os algoritmos de criptografia RSA e ECC (Elliptic Curve Cryptography), ambos essenciais para a implementação de um sistema KMS seguro e escalável.
+O arquivo `.dat` relatado pode ser um contêiner de metadados ou de chaves; o formato não foi publicado. Uma avaliação deve primeiro determinar se material privado é exportável, como a senha mestra é fornecida, onde os segredos residem durante a execução e como ocorre a revogação. Quando o requisito é impedir extração de chaves, uma implementação de `KeyStore` baseada em token ou HSM deve ser comparada a um arquivo local [1].
 
-Além disso, a JCA permite a integração de algoritmos de hash, como SHA-256, que são fundamentais para garantir a integridade dos dados no CANIS. O hash é utilizado para verificar se os dados não foram alterados durante o processo de criptografia e de transmissão, protegendo os dados contra adulterações.
+**Plano de avaliação:** implementar cargas idênticas para geração, assinatura, verificação, cifragem e rotação; registrar versão do JDK, provedor, hardware e tamanho das mensagens. Executar testes de recuperação após falha de energia, acesso não autorizado, troca de chave pública e reutilização de IV. [TODO: Insert Benchmark Metric / Diagram — latência p50/p95/p99, operações/s, taxa de erro e diagrama de confiança.]
 
-#### **Assinaturas Digitais**
-As assinaturas digitais são um componente importante para garantir a autenticidade e integridade dos dados no CANIS. O JCA também oferece suporte para a criação e verificação de assinaturas digitais utilizando algoritmos como RSA e DSA (Digital Signature Algorithm). O CANIS pode usar assinaturas digitais para garantir que as chaves públicas armazenadas sejam autênticas, evitando que elas sejam substituídas ou adulteradas por partes não autorizadas.
+## 4. Avaliação e análise de trade-offs
 
-#### **Integração com o CANISP**
-O protocolo CANISP (Canis Protocol) foi projetado para facilitar a comunicação entre as aplicações e o CANIS. A JCA é fundamental para essa comunicação segura, pois permite que os dados transmitidos entre as aplicações sejam criptografados de forma eficiente. A flexibilidade da JCA permite que o CANIS suporte diferentes tipos de dados, como arrays, mapas e strings, que podem ser usados como parte do protocolo para a troca de informações seguras.
+| Alternativa | Benefício verificável | Custo ou risco | Situação neste estudo |
+| --- | --- | --- | --- |
+| Arquivo `.dat` próprio | Controle do formato | Exige desenho de cifragem, integridade, migração e recuperação | Formato não disponibilizado |
+| `KeyStore` PKCS#12 | Formato e API padronizados no JDK | Proteção depende de senha, provedor e operação | Referência de comparação [1] |
+| `KeyStore` PKCS#11/HSM | Pode restringir exportação da chave | Custo, disponibilidade e dependência operacional | Não avaliado [1] |
+| AES-GCM para dados | Cifragem autenticada | Gestão rigorosa de IV por chave | Controle proposto [1, 3] |
 
-### **3. Armazenamento Seguro de Dados**
+Não há medições de latência, throughput, resistência a ataques ou disponibilidade para o CANIS. Assim, a tabela compara propriedades e obrigações de projeto, não resultados medidos. A complexidade operacional cresce com políticas de rotação, cópias de segurança, alta disponibilidade e integração de clientes; esses custos devem ser medidos antes de afirmar vantagem sobre um KMS gerenciado.
 
-Uma das funcionalidades chave do CANIS é o armazenamento seguro de dados, especificamente as chaves criptográficas e os metadados associados. O CANIS utiliza arquivos `.dat` para persistir os pares de chave-valor, onde cada chave é um identificador único e o valor contém as informações relacionadas à chave, como nome, chave pública e chave privada.
+## 5. Limitações e ameaças à validade
 
-A escolha do formato `.dat` e a segurança proporcionada pela JCA são essenciais para garantir que as chaves e dados sensíveis sejam armazenados de maneira segura. Além disso, a criptografia de dados em repouso é implementada através da JCA, que oferece funcionalidades de criptografia para garantir que os dados armazenados em disco não sejam acessíveis sem a devida autorização.
+A ausência de código, especificação CANISP e artefatos de teste impede verificar a implementação. As propriedades de um provedor JCA não se transferem automaticamente à persistência `.dat`, à rede ou às políticas de acesso. A análise também não cobre proteção física, side channels, comprometimento do host ou requisitos regulatórios específicos. Mudanças de versão do JDK e de provedor podem alterar suporte a algoritmos e desempenho. Qualquer conclusão de segurança ou escalabilidade exige revisão independente e medições reproduzíveis.
 
-### **4. Conclusão**
+## 6. Conclusão e trabalho futuro
 
-A combinação da linguagem Java e da JCA foi crucial para o desenvolvimento bem-sucedido do CANIS, pois garantiu a implementação de um sistema KMS seguro, flexível e eficiente. Java forneceu a base robusta e portátil para o CANIS, enquanto a JCA forneceu as ferramentas necessárias para implementar criptografia forte, gerenciamento seguro de chaves e autenticação dos dados. O uso dessas tecnologias não só permitiu o desenvolvimento de um sistema altamente seguro, mas também garantiu que o CANIS fosse capaz de integrar-se de forma eficiente com aplicações que exigem um alto nível de proteção de dados, seja em servidores locais ou na nuvem. A flexibilidade e a confiabilidade oferecidas pela JCA tornam o CANIS uma solução ideal para o gerenciamento de chaves em ambientes críticos, onde a segurança da informação é uma prioridade.
+Java/JCA fornece mecanismos úteis para implementar o CANIS, mas a segurança de um KMS depende principalmente de protocolo, política de acesso, proteção das chaves e operação auditável. O próximo passo é publicar a especificação CANISP e um modelo de ameaças, substituir afirmações de segurança por testes rastreáveis e comparar o armazenamento atual com PKCS#12 e HSM sob a mesma carga.
+
+## Referências
+
+1. Oracle. [Java Cryptography Architecture Reference Guide](https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html).
+2. NIST. [SP 800-57 Part 1 Rev. 5: Recommendation for Key Management](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final).
+3. NIST. [SP 800-38D: Galois/Counter Mode (GCM) and GMAC](https://csrc.nist.gov/pubs/sp/800/38/d/final).

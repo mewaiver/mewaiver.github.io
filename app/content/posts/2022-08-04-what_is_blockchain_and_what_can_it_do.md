@@ -2,7 +2,7 @@
 title: "Blockchain: Uma Revolução na Conexão e Transparência"
 date: "2022-08-04"
 excerpt: "A blockchain transforma a maneira como confiamos nas transações, eliminando intermediários e garantindo transparência em cada etapa do processo."
-category: "security"
+category: "blockchain"
 author: "Pedro Duprat"
 image: "https://cdn.pixabay.com/photo/2020/12/18/15/45/chain-5842374_1280.jpg"
 ---

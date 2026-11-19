@@ -5,8 +5,8 @@ import GoogleAnalytics from './components/GoogleAnalytics';
 import Head from "./components/Head";
 
 export const metadata = {
-  title: "Tech Chain",
-  description: "Chaining technology through the time.",
+  title: "Tech Chain — Publicações Técnicas",
+  description: "Pesquisa e análises técnicas em computação, engenharia e sistemas.",
 };
 
 export default function RootLayout({ children }) {

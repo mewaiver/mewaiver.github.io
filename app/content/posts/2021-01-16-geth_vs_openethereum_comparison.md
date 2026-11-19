@@ -2,7 +2,7 @@
 title: "Diferenças, benefícios e contras entre Geth e OpenEthereum"
 date: "2021-01-16"
 excerpt: "A Ethereum, uma das plataformas de blockchain mais populares, revolucionou o mundo das criptomoedas e contratos inteligentes desde seu lançamento. Ao longo do tempo, diversos clientes foram desenvolvidos para interagir com essa rede descentralizada, e dois dos mais conhecidos são o **Geth** e o **OpenEthereum**."
-category: "engineering"
+category: "blockchain"
 author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2017/01/06/09/23/leave-1957302_1280.jpg"
 ---

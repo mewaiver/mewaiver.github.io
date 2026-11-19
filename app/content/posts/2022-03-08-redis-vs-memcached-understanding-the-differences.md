@@ -2,7 +2,7 @@
 title: "Redis vs Memcached: Compreendendo as Diferenças"
 date: "2022-03-08"
 excerpt: "Redis e Memcached são duas soluções populares de cache em memória, cada uma com suas características únicas, sendo o Redis ideal para dados estruturados e persistência, enquanto o Memcached se destaca pela simplicidade e desempenho em cache de objetos simples."
-category: "engineering"
+category: "databases"
 author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2016/03/26/22/32/fast-1281628_1280.jpg"
 ---

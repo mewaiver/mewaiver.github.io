@@ -17,10 +17,10 @@ const BlogPost = async ({ params }) => {
     return <p>Post not found!</p>;
   }
 
-  const content = await markdownToHtml(post.content);
+  const { content, headings } = await markdownToHtml(post.content);
 
   return (
-    <Post title={post.title} date={post.date} content={content} category={post.category} author={post.author} image={post.image}/>
+    <Post post={post} content={content} headings={headings} />
   );
 }
 

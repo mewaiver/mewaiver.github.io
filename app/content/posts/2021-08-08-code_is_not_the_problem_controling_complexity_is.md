@@ -2,7 +2,7 @@
 title: "Código não é o problema, complexidade sim"
 date: "2021-08-08"
 excerpt: "Quando nos aventuramos no mundo da programação, muitas vezes nos deparamos com um dilema que pode ser contraditório à primeira vista: **escrever código não é o problema**, mas controlar a complexidade é."
-category: "cloud-computing"
+category: "engineering"
 author: "Diego Andrade"
 image: "https://cdn.pixabay.com/photo/2019/02/10/08/49/math-3986758_1280.jpg"
 ---

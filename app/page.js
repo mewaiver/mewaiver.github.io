@@ -8,11 +8,11 @@ export default async function Home() {
     <div className="home-page">
       <header className="home-intro">
         <h1>Tech Chain</h1>
-        <p>Chaining technology through the time.</p>
+        <p>Pesquisa em computação, engenharia e sistemas.</p>
       </header>
       <section className="section-heading" aria-labelledby="articles-heading">
-        <h2 id="articles-heading">Artigos</h2>
-        <PostList posts={posts} headingLevel="h3" />
+        <h2 id="articles-heading">Publicações</h2>
+        <PostList posts={posts} headingLevel="h3" searchable />
       </section>
     </div>
   );
