@@ -2,10 +2,17 @@
 import { getPostBySlug, getAllPosts } from '../../services/posts';
 import markdownToHtml from '../../services/markdownToHtml';
 import Post from '@/app/components/Post';
+import { publicationMetadata } from '../../services/publicationMetadata';
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((post) => ({ slug: post.slug }));
+}
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
+  return publicationMetadata(post);
 }
 
 const BlogPost = async ({ params }) => {

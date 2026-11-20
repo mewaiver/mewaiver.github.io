@@ -18,8 +18,8 @@ export default async function CategoryPage({ params }) {
 
   return (
     <div className="post-list-page">
-      <h1>Publicações em {categoryLabel(category)}</h1>
-      {filteredPosts.length > 0 ? <PostList posts={filteredPosts} /> : <p>Nenhuma publicação nesta categoria.</p>}
+      <h1>Artigos em {categoryLabel(category)}</h1>
+      {filteredPosts.length > 0 ? <PostList posts={filteredPosts} /> : <p>Nenhum artigo nesta categoria.</p>}
     </div>
   );
 }

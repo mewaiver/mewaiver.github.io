@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import PublicationActions from './PublicationActions';
-import { categoryLabel } from '../services/publicationLabels';
+import { categoryLabel, shouldShowVersion } from '../services/publicationLabels';
 
 export default function PostList({ posts, headingLevel = 'h2', searchable = false }) {
   const [query, setQuery] = useState('');
@@ -22,12 +22,12 @@ export default function PostList({ posts, headingLevel = 'h2', searchable = fals
   return (
     <div className="publication-index">
       {searchable && <div className="publication-filters">
-        <label htmlFor="publication-search">Buscar publicações</label>
+        <label htmlFor="publication-search">Buscar artigos</label>
         <input id="publication-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Título, resumo, palavras-chave ou autor" autoComplete="off" />
         <div className="tag-filters" role="group" aria-label="Filtrar por domínio">
           {['', ...tags].map(tag => <button key={tag || 'all'} type="button" className={activeTag === tag ? 'active' : ''} aria-pressed={activeTag === tag} onClick={() => setActiveTag(tag)}>{tag ? categoryLabel(tag) : 'All'}</button>)}
         </div>
-        <p className="filter-count" role="status">{visiblePosts.length} {visiblePosts.length === 1 ? 'publicação' : 'publicações'}</p>
+        <p className="filter-count" role="status">{visiblePosts.length} {visiblePosts.length === 1 ? 'artigo' : 'artigos'}</p>
       </div>}
       <div className="post-list">
         {visiblePosts.map(post => {
@@ -40,7 +40,7 @@ export default function PostList({ posts, headingLevel = 'h2', searchable = fals
               <div className="post-meta">
                 <time dateTime={post.date}>{post.date}</time>
                 {post.category && <><span className="meta-divider" aria-hidden="true">/</span><Link href={`/categories/${post.category}`}>{categoryLabel(post.category)}</Link></>}
-                <span className="meta-bullet" aria-hidden="true">•</span><span>{post.version}</span>
+                {shouldShowVersion(post) && <><span className="meta-bullet" aria-hidden="true">•</span><span>{post.version}</span></>}
               </div>
               <Heading><Link href={`/posts/${post.slug}`}>{post.title}</Link></Heading>
               {post.authors?.length > 0 && <p className="publication-authors">{post.authors.map(person => [person.name, person.affiliation].filter(Boolean).join(', ')).join('; ')}</p>}
@@ -49,7 +49,7 @@ export default function PostList({ posts, headingLevel = 'h2', searchable = fals
             </article>
           </div>;
         })}
-        {visiblePosts.length === 0 && <p className="no-results">Nenhuma publicação encontrada.</p>}
+        {visiblePosts.length === 0 && <p className="no-results">Nenhum artigo encontrado.</p>}
       </div>
     </div>
   );

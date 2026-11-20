@@ -9,7 +9,7 @@ import python from 'highlight.js/lib/languages/python';
 import java from 'highlight.js/lib/languages/java';
 import 'highlight.js/styles/github.css';
 import PublicationActions from './PublicationActions';
-import { categoryLabel } from '../services/publicationLabels';
+import { categoryLabel, shouldShowVersion } from '../services/publicationLabels';
 
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('python', python);
@@ -66,8 +66,7 @@ export default function Post({ post, content, headings }) {
         <div className="post-meta paper-meta">
           <time dateTime={post.date}>{post.date}</time>
           {post.category && <><span className="meta-divider" aria-hidden="true">/</span><Link href={`/categories/${post.category}`}>{categoryLabel(post.category)}</Link></>}
-          {post.is_whitepaper && <><span className="meta-divider" aria-hidden="true">/</span><span>White paper</span></>}
-          {post.version && <><span className="meta-divider" aria-hidden="true">/</span><span>Versão {post.version}</span></>}
+          {shouldShowVersion(post) && <><span className="meta-divider" aria-hidden="true">/</span><span>Versão {post.version}</span></>}
           {post.updated && <><span className="meta-divider" aria-hidden="true">/</span><span>Atualizado <time dateTime={post.updated}>{post.updated}</time></span></>}
           {doi && <><span className="meta-divider" aria-hidden="true">/</span><a href={`https://doi.org/${doi}`}>DOI: {doi}</a></>}
         </div>
