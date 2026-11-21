@@ -32,7 +32,6 @@ for (const name of files) {
     if (!data.professional_name || typeof data.professional_name !== 'string') issue('profile needs professional_name');
     if (!data.professional_headline || typeof data.professional_headline !== 'string') issue('profile needs professional_headline');
     if (!data.authors?.length && !data.author) issue('profile needs an independent author byline');
-    if (!data.image || typeof data.image !== 'string') issue('profile needs image');
     for (const field of ['sources', 'relevant_links']) {
       if (data[field] !== undefined && (!Array.isArray(data[field]) || data[field].some(item => typeof item !== 'string' && (!item || typeof item.label !== 'string' || typeof item.url !== 'string')))) issue(`${field} must contain strings or label/url objects`);
     }
@@ -41,6 +40,10 @@ for (const name of files) {
   if (data.keywords && (!Array.isArray(data.keywords) || data.keywords.some(word => typeof word !== 'string'))) issue('keywords must be strings');
   if (data.tags && (!Array.isArray(data.tags) || data.tags.some(tag => typeof tag !== 'string' || ['egineering', 'abstract'].includes(tag)))) issue('tags must be named string domains');
   for (const field of ['doi', 'pdf_url', 'code_url', 'bibtex', 'version']) {
+    if (data[field] !== undefined && typeof data[field] !== 'string') issue(`${field} must be a string`);
+  }
+  if (data.featuredImage !== undefined && (typeof data.featuredImage !== 'string' || !/^(\/(?!\/)|https?:\/\/)/.test(data.featuredImage.trim()))) issue('featuredImage must be a local /path or an absolute HTTP(S) URL');
+  for (const field of ['imageAlt', 'imageCaption', 'imageCredit']) {
     if (data[field] !== undefined && typeof data[field] !== 'string') issue(`${field} must be a string`);
   }
   if (data.type === 'whitepaper') {

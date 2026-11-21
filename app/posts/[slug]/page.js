@@ -37,6 +37,7 @@ const BlogPost = async ({ params }) => {
     author: post.authors.map(person => ({ '@type': 'Person', name: person.name })),
     publisher: { '@type': 'Organization', name: 'Tech Chain', url: 'https://www.techchain.com.br' },
     mainEntityOfPage: `https://www.techchain.com.br/posts/${encodeURIComponent(slug)}`,
+    ...(post.featuredImage ? { image: new URL(post.featuredImage, 'https://www.techchain.com.br').toString() } : {}),
     ...(post.type === 'profile' ? { mainEntity: { '@type': 'Person', name: post.professional_name } } : {}),
   };
 

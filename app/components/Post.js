@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element -- Published articles include remote image URLs from several sources. */
 import Link from 'next/link';
 import PublicationActions from './PublicationActions';
 import ArticleEnhancements from './ArticleEnhancements';
+import FeaturedImage from './FeaturedImage';
 import { categoryLabel, shouldShowVersion } from '../services/publicationLabels';
 import { displayDate, plainExcerpt } from '../services/editorial';
 
@@ -36,7 +36,7 @@ export default function Post({ post, content, headings, adjacent = {} }) {
       {(shouldShowVersion(post) || doi) && <p className="paper-keywords">{shouldShowVersion(post) && <>Versão {post.version}</>}{doi && <> · <a href={`https://doi.org/${doi}`}>DOI: {doi}</a></>}</p>}
       <PublicationActions post={post} paper />
     </header>
-    {post.image && <figure className="article-cover"><div className="article-visual"><img src={post.image} alt={post.image_alt || (isProfile ? `Imagem de ${post.professional_name || post.title}` : '')} /></div>{post.image_caption && <figcaption className="figcaption">{post.image_caption}</figcaption>}</figure>}
+    <FeaturedImage post={post} />
     <div className="article-shell"><div className="reading-column">
       {headings.length > 0 && <details className="article-mobile-toc"><summary>Nesta página</summary><TableOfContents headings={headings} /></details>}
       <div className="article-body" dangerouslySetInnerHTML={{ __html: content }} />

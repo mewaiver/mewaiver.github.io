@@ -19,8 +19,12 @@
 .article-container { padding-top: 0; }
 .editorial-article { width: 100%; min-width: 0; }
 .article-heading { max-width: 920px; }
-.article-cover { margin: 0 0 40px; }
-.article-cover .article-visual img { position: absolute; inset: 0; object-fit: contain; }
+.featured-image { width: 100%; max-width: 920px; margin: 0 0 38px; }
+.featured-image__frame { position: relative; width: 100%; height: clamp(220px, 43vw, 420px); overflow: hidden; background: var(--surface-soft); }
+.featured-image__frame img { object-fit: contain; }
+.featured-image__caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 20px; margin-top: 10px; color: var(--muted); font: 11px/1.6 var(--sans); }
+.featured-image__credit { margin-left: auto; }
+.featured-image--profile { max-width: 780px; }
 .article-body { overflow-wrap: anywhere; }
 .article-body > :first-child { margin-top: 0; }
 .article-body img, .article-body video, .article-body iframe { max-width: 100%; height: auto; }
@@ -80,7 +84,7 @@ body[data-bs-theme='dark'] {
 }
 body[data-bs-theme='dark'] .button-primary, body[data-bs-theme='dark'] .filter-button[aria-pressed='true'] { color: #102628; background: #a8cfc3; border-color: #a8cfc3; }
 body[data-bs-theme='dark'] .side-statement { background: #213936; }
-body[data-bs-theme='dark'] .hero-art, body[data-bs-theme='dark'] .article-visual { background: #253f3a; }
+body[data-bs-theme='dark'] .hero-art { background: #253f3a; }
 body[data-bs-theme='dark'] .hero-caption { background: rgba(24, 39, 42, .94); color: #dae8e1; }
 body[data-bs-theme='dark'] .story-num { color: #78958e; }
 body[data-bs-theme='dark'] .pillars, body[data-bs-theme='dark'] .policy-callout { background: #24444a; }
@@ -93,6 +97,7 @@ body[data-bs-theme='dark'] .searchbar { background: var(--surface); }
 @media (max-width: $breakpoint-mobile) {
   .site-main > .container { padding-inline: var(--space-page-mobile); }
   .site-header .masthead { padding-inline: var(--space-page-mobile); }
+  .featured-image__frame { height: clamp(200px, 55vw, 310px); }
   .nav-links .theme-toggle { width: 100%; border-left: 0; border-top: 1px solid var(--border); padding: 9px 8px; text-align: left; }
   .post-list-page { width: calc(100% - 36px); }
 }

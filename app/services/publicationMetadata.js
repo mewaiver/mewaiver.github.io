@@ -1,4 +1,5 @@
 const siteUrl = 'https://www.techchain.com.br';
+const fallbackImage = `${siteUrl}/editorial/og-fallback.png`;
 
 function descriptionFor(post) {
   const source = post.abstract || post.excerpt || post.title;
@@ -17,6 +18,8 @@ export function publicationMetadata(post) {
   const description = descriptionFor(post);
   const url = `${siteUrl}/posts/${encodeURIComponent(post.slug)}`;
   const authors = post.authors.map(person => person.name);
+  const socialImage = post.featuredImage ? new URL(post.featuredImage, siteUrl).toString() : fallbackImage;
+  const socialImageAlt = post.featuredImage ? post.imageAlt || post.title : 'Tech Chain — publicação sobre tecnologia';
 
   return {
     title,
@@ -32,8 +35,8 @@ export function publicationMetadata(post) {
       publishedTime: post.date,
       modifiedTime: post.updated || post.date,
       authors,
-      ...(post.image ? { images: [{ url: post.image, alt: post.image_alt || post.title }] } : {}),
+      images: [{ url: socialImage, alt: socialImageAlt }],
     },
-    twitter: { card: post.image ? 'summary_large_image' : 'summary', title, description },
+    twitter: { card: 'summary_large_image', title, description, images: [{ url: socialImage, alt: socialImageAlt }] },
   };
 }
