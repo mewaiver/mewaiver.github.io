@@ -8,6 +8,12 @@ export async function generateStaticParams() {
   return [...new Set(posts.map(post => post.category).filter(Boolean))].map(category => ({ category }));
 }
 
+export async function generateMetadata({ params }) {
+  const { category } = await params;
+  const label = categoryLabel(category);
+  return { title: `${label} | Tech Chain`, description: `Artigos de ${label} no Tech Chain.`, alternates: { canonical: `/categories/${category}` }, openGraph: { type: 'website', title: `${label} | Tech Chain`, description: `Artigos de ${label} no Tech Chain.`, url: `/categories/${category}` } };
+}
+
 export default async function CategoryPage({ params }) {
 
   const { category } = await params;

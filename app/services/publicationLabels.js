@@ -4,5 +4,5 @@ export function categoryLabel(value) {
 }
 
 export function shouldShowVersion(post) {
-  return post.type !== 'article' || post.hasExplicitVersion;
+  return post.type === 'whitepaper' || post.type === 'research-note' || post.hasExplicitVersion;
 }

@@ -32,7 +32,8 @@ export function publicationMetadata(post) {
       publishedTime: post.date,
       modifiedTime: post.updated || post.date,
       authors,
+      ...(post.image ? { images: [{ url: post.image, alt: post.image_alt || post.title }] } : {}),
     },
-    twitter: { card: 'summary', title, description },
+    twitter: { card: post.image ? 'summary_large_image' : 'summary', title, description },
   };
 }

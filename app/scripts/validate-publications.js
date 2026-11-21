@@ -7,7 +7,7 @@ const domains = new Set([
   'ai', 'blockchain', 'cloud-computing', 'databases', 'digital-commerce',
   'engineering', 'iot', 'security', 'sustainability',
 ]);
-const types = new Set(['whitepaper', 'research-note', 'article']);
+const types = new Set(['whitepaper', 'research-note', 'article', 'profile']);
 const requiredSections = [
   /^## 1\. Introdução/m,
   /^## 2\. Fundamentação/m,
@@ -27,6 +27,16 @@ for (const name of files) {
   if (typeof data.date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(data.date)) issue('date must be YYYY-MM-DD');
   if (!domains.has(data.category)) issue(`unknown category: ${data.category}`);
   if (data.type && !types.has(data.type)) issue(`unknown type: ${data.type}`);
+  if (data.type === 'profile') {
+    if (data.profile_format && !['profile', 'interview'].includes(data.profile_format)) issue('profile_format must be profile or interview');
+    if (!data.professional_name || typeof data.professional_name !== 'string') issue('profile needs professional_name');
+    if (!data.professional_headline || typeof data.professional_headline !== 'string') issue('profile needs professional_headline');
+    if (!data.authors?.length && !data.author) issue('profile needs an independent author byline');
+    if (!data.image || typeof data.image !== 'string') issue('profile needs image');
+    for (const field of ['sources', 'relevant_links']) {
+      if (data[field] !== undefined && (!Array.isArray(data[field]) || data[field].some(item => typeof item !== 'string' && (!item || typeof item.label !== 'string' || typeof item.url !== 'string')))) issue(`${field} must contain strings or label/url objects`);
+    }
+  }
   if (data.authors && (!Array.isArray(data.authors) || data.authors.some(person => !person || typeof person.name !== 'string' || !person.name.trim()))) issue('authors must contain named objects');
   if (data.keywords && (!Array.isArray(data.keywords) || data.keywords.some(word => typeof word !== 'string'))) issue('keywords must be strings');
   if (data.tags && (!Array.isArray(data.tags) || data.tags.some(tag => typeof tag !== 'string' || ['egineering', 'abstract'].includes(tag)))) issue('tags must be named string domains');

@@ -7,7 +7,7 @@ export default function PublicationActions({ post, paper = false }) {
   const [copyState, setCopyState] = useState('');
   const [showCitation, setShowCitation] = useState(false);
   const doi = post.doi?.replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, '');
-  const showCitationAction = post.hasExplicitBibtex || post.type !== 'article';
+  const showCitationAction = post.hasExplicitBibtex || post.type === 'whitepaper' || post.type === 'research-note';
 
   if (paper && !showCitationAction && !post.pdf_url && !post.code_url && !doi) return null;
 

@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), '/app/content/posts');
-const publicationTypes = new Set(['whitepaper', 'research-note', 'article']);
+const publicationTypes = new Set(['whitepaper', 'research-note', 'article', 'profile']);
 
 function generatedBibtex(post) {
   const entryType = post.type === 'whitepaper' ? 'techreport' : 'article';
@@ -16,7 +16,7 @@ function generatedBibtex(post) {
     `year = {${String(post.date || '').slice(0, 4)}}`,
     `url = {https://www.techchain.com.br/posts/${encodeURIComponent(post.slug)}}`,
   ];
-  if (post.type !== 'article' || post.hasExplicitVersion) {
+  if (post.type === 'whitepaper' || post.type === 'research-note' || post.hasExplicitVersion) {
     fields.push(`note = {Version ${value(post.version)}}`);
   }
   return `@${entryType}{${key},\n  ${fields.join(',\n  ')}\n}`;
