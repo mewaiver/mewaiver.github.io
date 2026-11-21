@@ -3,7 +3,7 @@ title: "Consistência e Confiabilidade em Testes de Integração"
 date: "2025-05-04"
 excerpt: "Nos sistemas críticos, especialmente em setores como o financeiro, a consistência e a confiabilidade dos dados são fundamentais."
 category: "engineering"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "/images/trust-in-enterprise-tests.jpeg"
 ---
 

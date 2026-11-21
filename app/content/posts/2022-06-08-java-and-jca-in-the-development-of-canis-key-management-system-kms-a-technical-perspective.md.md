@@ -3,7 +3,7 @@ title: "Java e JCA no Desenvolvimento do CANIS Key Management System (KMS): Uma 
 date: "2022-06-08"
 excerpt: "A combinação da linguagem Java com a Java Cryptography Architecture (JCA) foi essencial para o desenvolvimento de um sistema robusto e seguro de gerenciamento de chaves. A JCA proporcionou as ferramentas necessárias para implementar criptografia forte, gerenciamento seguro de chaves e autenticação dos dados, assegurando a integridade e confidencialidade das informações sensíveis."
 category: "engineering"
-author: "Tiago Souza"
+author: "Tech Chain Editorial"
 image: "https://images.unsplash.com/photo-1667124060133-c1074b0124be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 

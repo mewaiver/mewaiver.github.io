@@ -3,7 +3,7 @@ title: "Duplicação de Código Nem Sempre é Ruim: Duplicação de Código vs. 
 date: "2024-12-08"
 excerpt: "Embora a duplicação de código seja geralmente evitada por questões de manutenção e legibilidade, em alguns casos ela pode ser uma escolha estratégica para otimizar o desempenho, melhorar a clareza ou isolar mudanças, equilibrando flexibilidade e simplicidade no desenvolvimento de software."
 category: "engineering"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://images.unsplash.com/photo-1734181696810-0e857f823d9e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 draft: false
 ---

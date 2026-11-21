@@ -3,7 +3,7 @@ title: "JVM vs GraalVM: Compreendendo as Diferenças Entre Duas Tecnologias de E
 date: "2020-04-08"
 excerpt: "Explore as principais diferenças entre JVM e GraalVM, duas tecnologias de execução que oferecem abordagens distintas para otimização de desempenho e suporte a múltiplas linguagens."
 category: "engineering"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://images.pexels.com/photos/6612792/pexels-photo-6612792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 ---
 

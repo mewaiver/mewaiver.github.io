@@ -3,7 +3,7 @@ title: "Arquitetura de Software: O Modular Monolith"
 date: "2025-02-04"
 excerpt: "Um Modular Monolith é uma arquitetura de software que combina as vantagens de uma arquitetura monolítica com a modularização de uma arquitetura de microserviços, permitindo uma maior escalabilidade e manutenção do aplicativo."
 category: "engineering"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://images.unsplash.com/photo-1492355040260-cd982083603e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 draft: false
 ---

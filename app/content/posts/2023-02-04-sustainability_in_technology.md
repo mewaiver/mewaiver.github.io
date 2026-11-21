@@ -3,7 +3,7 @@ title: "Sustentabilidade em Tecnologia: Desafios e Oportunidades para um Futuro 
 date: "2023-02-04"
 excerpt: "A sustentabilidade em tecnologia não é apenas uma tendência, mas uma necessidade urgente para garantir um futuro equilibrado entre inovação e preservação ambiental."
 category: "sustainability"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2019/11/24/18/45/energy-4650142_1280.jpg"
 ---
 

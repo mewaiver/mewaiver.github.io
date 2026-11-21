@@ -3,7 +3,7 @@ title: "Desafios de segurança na nuvem"
 date: "2022-05-04"
 excerpt: "Quatro em cada cinco organizações relataram confusão sobre o modelo de segurança compartilhada associado à nuvem, e manter clareza nesse modelo tem sido desafiador."
 category: "security"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2020/10/28/19/18/cloud-5694354_1280.jpg"
 ---
 

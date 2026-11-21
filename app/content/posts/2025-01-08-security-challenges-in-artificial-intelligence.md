@@ -3,7 +3,7 @@ title: "Os Desafios de Segurança na Utilização da Inteligência Artificial: R
 date: "2025-01-08"
 excerpt: "A utilização da Inteligência Artificial traz benefícios incontestáveis, mas também levanta sérios desafios de segurança, privacidade e ética que precisam ser cuidadosamente abordados."
 category: "security"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2022/08/15/12/13/robot-7387740_1280.jpg"
 ---
 

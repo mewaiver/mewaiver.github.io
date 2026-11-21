@@ -3,7 +3,7 @@ title: "PostgreSQL vs MySQL: Benefícios e Contras de Cada Um"
 date: "2020-03-08"
 excerpt: "O PostgreSQL é um sistema de gerenciamento de banco de dados robusto e confiável que é projetado para lidar com grandes volumes de dados e pode ser escalado facilmente, enquanto o MySQL é um sistema de gerenciamento de banco de dados rápido e fácil de usar, mas pode ter problemas de escalabilidade e segurança."
 category: "databases"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://plus.unsplash.com/premium_photo-1680700103483-e49c10509934?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 

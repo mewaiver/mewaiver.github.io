@@ -3,7 +3,7 @@ title: "As Dificuldades do Open Source"
 date: "2024-11-04"
 excerpt: "Uma das principais dificuldades do open source é a sustentabilidade financeira. Muitos projetos de código aberto dependem do trabalho voluntário de desenvolvedores dedicados, que muitas vezes têm outras responsabilidades profissionais."
 category: "engineering"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2022/10/09/15/41/chess-7509509_1280.jpg"
 draft: false
 ---

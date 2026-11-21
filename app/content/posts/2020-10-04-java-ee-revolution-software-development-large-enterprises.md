@@ -3,7 +3,7 @@ title: "Como o Java 2EE revolucionou o desenvolvimento de software nas grandes e
 date: "2020-10-04"
 excerpt: "O Java 2EE revolucionou o desenvolvimento de software nas grandes empresas ao oferecer uma plataforma robusta, escalável e portátil, que possibilita a criação de aplicações modulares, garantindo integração, segurança e gerenciamento eficiente de transações."
 category: "engineering"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2022/01/31/10/47/coffee-6983209_1280.jpg"
 ---
 

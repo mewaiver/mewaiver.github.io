@@ -3,7 +3,7 @@ title: "Base de dados e suas diferentes utilizades"
 date: "2021-09-04"
 excerpt: "As bases de dados desempenham um papel fundamental no desenvolvimento de soluções corporativas modernas."
 category: "databases"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2019/08/14/05/04/data-4404730_1280.jpg"
 draft: false
 ---

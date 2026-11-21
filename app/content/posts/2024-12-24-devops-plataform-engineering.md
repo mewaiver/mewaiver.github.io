@@ -3,7 +3,7 @@ title: "Benefícios e Diferenças entre DevOps e Engenharia de Plataforma"
 date: "2024-12-24"
 excerpt: "DevOps e Engenharia de Plataforma são dois conceitos essenciais para otimizar os processos de desenvolvimento e operações de software. O DevOps foca na integração e colaboração entre as equipes de desenvolvimento e operações, promovendo automação, entrega contínua e comunicação constante, com o objetivo de acelerar o ciclo de vida do software."
 category: "engineering"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2016/10/07/14/38/lady-1721678_1280.jpg"
 draft: false
 ---

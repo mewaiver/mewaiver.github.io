@@ -3,7 +3,7 @@ title: "Desafios na Comunicação entre Stakeholders Técnicos e Não-Técnicos"
 date: "2020-02-04"
 excerpt: "Compreender as necessidades dos stakeholders de negócios e traduzi-las em soluções de software eficazes é um grande desafio no desenvolvimento de software."
 category: "engineering"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2023/03/22/20/06/coffee-7870461_1280.jpg"
 ---
 

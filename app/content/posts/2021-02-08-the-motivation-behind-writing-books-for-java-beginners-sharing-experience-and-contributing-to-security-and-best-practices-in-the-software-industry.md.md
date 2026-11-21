@@ -3,7 +3,7 @@ title: "A Motivação por Trás de Escrever Livros para Iniciantes em Java: Comp
 date: "2021-02-08"
 excerpt: "Escrever livros para iniciantes foi uma maneira de compartilhar minha experiência como engenheiro de software e ajudar novos desenvolvedores a entender a importância de boas práticas e segurança no desenvolvimento de sistemas."
 category: "engineering"
-author: "Tiago Souza"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2016/12/08/13/49/pencil-1891732_1280.jpg"
 ---
 

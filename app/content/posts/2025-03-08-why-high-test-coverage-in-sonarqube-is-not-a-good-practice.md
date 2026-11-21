@@ -3,7 +3,7 @@ title: "Cobertura de testes no SonarQube"
 date: "2025-03-08"
 excerpt: "A cobertura de testes é um indicador fundamental na avaliação da qualidade do software, sendo frequentemente usado em ferramentas como o SonarQube. Entretanto, a busca por uma cobertura de testes extremamente alta pode gerar mais problemas do que benefícios. Neste texto, veremos as razões pelas quais essa prática não é recomendável."
 category: "engineering"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBAq0eUJvNvNOcdudD_mvq34bOPprIHw_Hg&s"
 draft: false
 ---

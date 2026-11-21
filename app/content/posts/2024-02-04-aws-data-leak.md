@@ -3,7 +3,7 @@ title: "Vazamento de Dados da AWS S3"
 date: "2024-02-04"
 excerpt: "O incidente de vazamento de dados relacionado à AWS (Amazon Web Services) aconteceu em 2021, e ficou conhecido como o vazamento de dados da AWS S3."
 category: "security"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2015/06/23/23/14/laptop-819285_1280.jpg"
 ---
 

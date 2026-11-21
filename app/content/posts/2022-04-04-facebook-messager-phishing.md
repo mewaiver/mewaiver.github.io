@@ -3,7 +3,7 @@ title: "Facebook Virus"
 date: "2022-04-04"
 excerpt: "Hackers estão usando o Facebook Messenger para espalhar malware que rouba senhas — como se manter seguro."
 category: "security"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2022/04/22/12/05/mail-7149606_1280.png"
 ---
 

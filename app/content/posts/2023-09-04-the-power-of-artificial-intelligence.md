@@ -3,7 +3,7 @@ title: "Transformando Setores e Criando Novas Oportunidades com Inteligência Ar
 date: "2023-09-04"
 excerpt: "A inteligência artificial (IA) tem sido um dos campos mais dinâmicos e promissores da ciência e tecnologia nos últimos anos, transformando diversos setores e criando novas oportunidades para inovação."
 category: "ai"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2020/06/12/20/33/decision-5291766_1280.jpg"
 ---
 

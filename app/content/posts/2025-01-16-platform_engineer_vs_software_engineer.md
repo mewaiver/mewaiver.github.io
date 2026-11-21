@@ -3,7 +3,7 @@ title: "Engenheiro de Plataforma vs. Engenheiro de Software: Entendendo as Difer
 date: "2025-01-16"
 excerpt: "Engenheiros de plataforma e engenheiros de software têm responsabilidades distintas, com os primeiros focando na criação e manutenção da infraestrutura e ferramentas que suportam o desenvolvimento, enquanto os segundos se concentram no desenvolvimento do código e na implementação de funcionalidades. Ambas as funções são complementares e essenciais para garantir que o software seja eficiente, escalável e de alta qualidade."
 category: "engineering"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2018/07/13/23/03/planning-3536759_1280.jpg"
 draft: false
 ---

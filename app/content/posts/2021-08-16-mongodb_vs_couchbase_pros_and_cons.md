@@ -3,7 +3,7 @@ title: "MongoDB vs Couchbase: Prós e Contras"
 date: "2021-08-16"
 excerpt: "MongoDB e Couchbase são duas soluções NoSQL populares, cada uma com suas vantagens e desvantagens, que atendem a diferentes necessidades de desenvolvimento e escalabilidade."
 category: "databases"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2017/09/08/08/57/binary-2728117_1280.jpg"
 ---
 

@@ -3,7 +3,7 @@ title: "Tecnologia Sustentável: Inovações para um Futuro Mais Verde"
 date: "2020-01-08"
 excerpt: "A tecnologia sustentável é um campo em constante evolução, focado em desenvolver soluções que minimizem o impacto ambiental e promovam a conservação dos recursos naturais."
 category: "engineering"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2020/10/10/14/31/windmills-5643293_1280.jpg"
 ---
 

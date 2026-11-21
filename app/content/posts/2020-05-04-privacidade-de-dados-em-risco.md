@@ -3,7 +3,7 @@ title: "Entendendo as Ameaças e Protegendo Nossas Informações Pessoais"
 date: "2020-05-04"
 excerpt: "A privacidade de dados é um direito fundamental que está sob constante ameaça em nossa era digital, e é essencial que tomemos medidas para proteger nossas informações pessoais."
 category: "security"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2018/06/17/08/40/hacker-3480124_1280.jpg"
 ---
 

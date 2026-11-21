@@ -3,7 +3,7 @@ title: "O Dilema de Adotar Novas Tecnologias em Engenharia de Software: Benefíc
 date: "2024-12-16"
 excerpt: "Adotar novas tecnologias em engenharia de software pode trazer grandes benefícios, mas é essencial avaliar cuidadosamente se elas realmente resolvem os problemas do projeto, sem adicionar complexidade desnecessária."
 category: "engineering"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2017/06/09/22/56/lady-justice-2388500_1280.jpg"
 draft: false
 ---

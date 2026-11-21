@@ -3,7 +3,7 @@ title: "SRE vs. DevOps vs. Engenharia de Plataforma: Compreendendo as Diferença
 date: "2025-01-04"
 excerpt: "SRE, DevOps e Engenharia de Plataforma são abordagens que visam otimizar o ciclo de vida do software, cada uma com um foco distinto: o DevOps promove a colaboração entre as equipes de desenvolvimento e operações, o SRE garante a confiabilidade e escalabilidade dos sistemas em produção, e a Engenharia de Plataforma constrói a infraestrutura necessária para suportar essas operações. Juntas, essas práticas oferecem uma base sólida para entregar software de forma ágil, segura e eficiente."
 category: "engineering"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2024/02/14/22/47/pylon-8574348_1280.jpg"
 draft: false
 ---

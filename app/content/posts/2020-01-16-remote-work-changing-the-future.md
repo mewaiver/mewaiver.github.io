@@ -3,7 +3,7 @@ title: "A ascensão do trabalho remoto: como a tecnologia está moldando o futur
 date: "2020-01-16"
 excerpt: "A pandemia de Covid-19 acelerou a adoção do trabalho remoto, transformando-o de uma prática limitada a uma realidade global. Com o fechamento de escritórios e a necessidade de distanciamento social, a tecnologia tornou-se essencial para viabilizar essa mudança."
 category: "engineering"
-author: "Pedro Duprat"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg"
 ---
 

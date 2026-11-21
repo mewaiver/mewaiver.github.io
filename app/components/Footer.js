@@ -7,7 +7,6 @@ export default function Footer() {
       <nav className="footer-links" aria-label="Links do rodapé">
         <Link href="/artigos">Acervo</Link><Link href="/editorial">Sobre / Editorial</Link><Link href="/contact">Contato</Link>
         <Link href="/privacy-policy">Privacidade</Link><Link href="/terms-of-service">Termos</Link><Link href="/credits">Créditos</Link>
-        <a href="https://github.com/mewaiver/mewaiver.github.io" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
       </nav>
     </div>
     <div className="footer-lower"><span>© {new Date().getFullYear()} Tech Chain</span><span>Artigos, análises e perspectivas sobre tecnologia.</span></div>

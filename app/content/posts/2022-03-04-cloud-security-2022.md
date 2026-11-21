@@ -3,7 +3,7 @@ title: "Segurança em Nuvem: Desafios e Soluções em 2022"
 date: "2022-03-04"
 excerpt: "A segurança em nuvem é um desafio complexo que envolve várias camadas de proteção. Em 2022, as organizações devem estar cientes dos desafios e soluções de segurança em nuvem para proteger seus recursos em nuvem."
 category: "security"
-author: "Diego Andrade"
+author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2024/02/26/17/05/cloud-8598424_1280.jpg"
 ---
 
