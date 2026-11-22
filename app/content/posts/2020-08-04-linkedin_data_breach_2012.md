@@ -1,11 +1,13 @@
 ---
-title: "Vazamento de Dados do LinkedIn: 117 Milhões de E-mails e Senhas Expostos em Novo Hack"
+title: "Vazamento do LinkedIn: senhas e lições"
 date: "2020-08-04"
 excerpt: "Um hack do LinkedIn de 2012 ainda está causando problemas, com a recente divulgação de e-mails e senhas de 117 milhões de membros."
 category: "security"
 author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2017/07/04/12/16/social-2470870_1280.png"
 ---
+
+O vazamento do LinkedIn mostra como credenciais antigas continuam gerando riscos. Entenda o incidente e as medidas de proteção mencionadas no texto.
 
 Um hack do LinkedIn de 2012 ainda está causando problemas para seus usuários. A empresa anunciou esta manhã que um novo conjunto de dados do hack, que contém mais de 100 milhões de e-mails e senhas de membros do LinkedIn, foi liberado. Em resposta a esse novo vazamento de dados, o LinkedIn afirma que está trabalhando para validar as contas e contatar os usuários afetados para que possam redefinir suas senhas no site.
 
@@ -19,7 +21,7 @@ Se os usuários atuais do LinkedIn devem ou não se preocupar depende de alguns 
 
 Se você não tem certeza, uma boa prática seria mudá-la de qualquer forma, assim como em outros sites críticos onde você pode estar usando a mesma senha, como seu site bancário, e-mail ou Facebook, por exemplo.
 
-O LinkedIn afirma que aumentou suas medidas de segurança nos anos desde a violação, introduzindo criptografia mais forte, desafios por e-mail e autenticação de dois fatores. Mas esse hack foi de uma era anterior, antes que essas proteções estivessem em vigor. Elas também não protegeriam necessariamente os usuários de hackers que obtiveram combinações de e-mail e senha.
+O LinkedIn afirma que aumentou suas medidas de segurança nos anos desde a violação, introduzindo criptografia mais forte, desafios por e-mail e autenticação de dois fatores, mas esse hack foi de uma era anterior, antes que essas proteções estivessem em vigor. Elas também não protegeriam necessariamente os usuários de hackers que obtiveram combinações de e-mail e senha.
 
 O texto completo da declaração do LinkedIn está abaixo:
 
@@ -28,3 +30,9 @@ Em 2012, o LinkedIn foi vítima de acesso não autorizado e divulgação de algu
 Ontem, tomamos conhecimento de um conjunto adicional de dados que havia sido liberado, que afirma ser combinações de e-mails e senhas hash de mais de 100 milhões de membros do LinkedIn daquele mesmo roubo em 2012. Estamos tomando medidas imediatas para invalidar as senhas das contas impactadas e entraremos em contato com esses membros para redefinir suas senhas. Não temos indicação de que isso seja resultado de uma nova violação de segurança.
 
 Levamos a segurança das contas de nossos membros a sério. Há vários anos, temos criptografado e salgado cada senha em nosso banco de dados, e oferecemos ferramentas de proteção, como desafios por e-mail e autenticação de dois fatores. Incentivamos nossos membros a visitar nosso centro de segurança para aprender sobre como habilitar a verificação em duas etapas e usar senhas fortes para manter suas contas o mais seguras possível.
+
+Troque senhas reutilizadas e ative a autenticação em dois fatores nas contas afetadas.
+
+Leia também [Vazamento de Dados da AWS S3](/posts/2024-02-04-aws-data-leak).
+
+Próximo passo: leia [Heartland: lições de uma violação de dados](/posts/2021-02-04-heartland_data_breach_lessons).

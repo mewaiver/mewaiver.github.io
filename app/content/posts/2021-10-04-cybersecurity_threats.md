@@ -1,5 +1,5 @@
 ---
-title: "As 5 maiores ameaças à segurança cibernética de um banco"
+title: "Segurança bancária: cinco ameaças cibernéticas"
 date: "2021-10-04"
 excerpt: "Sem medidas sólidas de cibersegurança, os dados sensíveis do seu banco podem estar em risco."
 category: "security"
@@ -7,10 +7,14 @@ author: "Tech Chain Editorial"
 image: "https://images.pexels.com/photos/5475763/pexels-photo-5475763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 ---
 
+Quais ameaças cibernéticas exigem atenção de bancos e instituições financeiras? Veja cinco riscos e medidas para reduzir a exposição.
+
 Muito das operações de um banco ou instituição financeira ocorre com o uso de tecnologia, incluindo pela Internet. Sem medidas sólidas de cibersegurança, os dados sensíveis do seu banco podem estar em risco. Aqui estão as cinco maiores ameaças à cibersegurança de um banco.
 
 1. Dados Não Criptografados  
-Esta é uma parte muito básica, mas crucial, de uma boa cibersegurança. Todos os dados armazenados em computadores dentro da sua instituição financeira e online devem ser criptografados. Mesmo que seus dados sejam roubados por hackers, eles não podem ser usados imediatamente se estiverem criptografados – se deixados sem criptografia, os hackers podem usar os dados imediatamente, criando sérios problemas para sua instituição financeira.
+Esta é uma parte muito básica, mas crucial, de uma boa cibersegurança. Todos os dados armazenados em computadores dentro da sua instituição financeira e online devem ser criptografados.
+
+Mesmo que seus dados sejam roubados por hackers, eles não podem ser usados imediatamente se estiverem criptografados – se deixados sem criptografia, os hackers podem usar os dados imediatamente. Isso cria sérios problemas para sua instituição financeira.
 
 2. Malware  
 Dispositivos de usuários finais – como computadores e celulares – que foram comprometidos por malware representam um risco para a cibersegurança do seu banco cada vez que se conectam à sua rede. Dados sensíveis passam por essa conexão e, se o dispositivo do usuário final tiver malware instalado, sem a segurança adequada, esse malware pode atacar as redes do seu banco.
@@ -24,4 +28,8 @@ Muitos bancos e instituições financeiras contratam serviços de terceiros de o
 5. Spoofing  
 Um tipo mais recente de ameaça à cibersegurança é o spoofing – onde os hackers encontram uma maneira de imitar a URL de um site bancário com um site que parece e funciona exatamente da mesma forma. Quando um usuário insere suas informações de login, essas informações são então roubadas pelos hackers para serem usadas posteriormente. Ainda mais preocupante é que novas técnicas de spoofing não usam uma URL ligeiramente diferente, mas similar – elas conseguem direcionar usuários que visitaram a URL correta.
 
-Como um banco ou instituição financeira, é absolutamente imperativo que você encontre maneiras de mitigar as ameaças à sua cibersegurança, enquanto ainda consegue fornecer aos seus clientes opções convenientes e tecnologicamente avançadas. Na SQN, nos unimos ao líder da indústria de cibersegurança Q6Cyber para ajudar a fornecer maior segurança contra possíveis vazamentos de dados.
+Priorize o risco mais presente em sua instituição e teste a medida de mitigação correspondente.
+
+Leia também [Privacidade de dados: ameaças e proteção](/posts/2020-05-04-privacidade-de-dados-em-risco).
+
+Próximo passo: leia [Segurança no iOS: ameaças e proteção](/posts/2022-11-04-ios-security-threats-and-protection).

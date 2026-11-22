@@ -1,5 +1,5 @@
 ---
-title: "As Dificuldades do Open Source"
+title: "Open Source: dificuldades de manutenção"
 date: "2024-11-04"
 excerpt: "Uma das principais dificuldades do open source é a sustentabilidade financeira. Muitos projetos de código aberto dependem do trabalho voluntário de desenvolvedores dedicados, que muitas vezes têm outras responsabilidades profissionais."
 category: "engineering"
@@ -7,6 +7,8 @@ author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2022/10/09/15/41/chess-7509509_1280.jpg"
 draft: false
 ---
+
+Quais dificuldades podem comprometer um projeto open source? O texto examina manutenção, participação e sustentabilidade do trabalho.
 
 O movimento do software de código aberto (open source) tem sido uma força transformadora na indústria de tecnologia nas últimas décadas. Essa abordagem colaborativa e transparente de desenvolvimento de software trouxe inúmeros benefícios, como maior inovação, segurança aprimorada e custos reduzidos. No entanto, o open source também enfrenta desafios significativos que precisam ser superados para que seu potencial seja plenamente realizado.
 
@@ -22,4 +24,8 @@ A diversidade e a inclusão também são desafios importantes no ecossistema ope
 
 Finalmente, a questão da propriedade intelectual e dos direitos autorais também pode ser complexa no contexto do open source. A navegação entre diferentes licenças de software, a compreensão das obrigações legais e a proteção dos direitos dos contribuidores são desafios que as comunidades de código aberto precisam enfrentar continuamente.
 
-Apesar desses desafios, o movimento do open source continua a ter um impacto significativo na indústria de tecnologia e na sociedade em geral. À medida que essas dificuldades são abordadas de maneira proativa e colaborativa, o open source tem o potencial de se tornar ainda mais resiliente e impactante. Com soluções inovadoras, modelos de governança aprimorados e uma comunidade diversa e engajada, o futuro do open source permanece promissor.
+Ao depender de um projeto open source, verifique sua atividade e como você pode contribuir.
+
+Leia também [Linux Kernel: impacto nos sistemas operacionais](/posts/2024-05-04-how-linux-kernel-changed-technology).
+
+Próximo passo: leia [Open Source: É Bom, Mas Também Tem Seus Desafios](/posts/2024-06-04-open-source-good-challenges).

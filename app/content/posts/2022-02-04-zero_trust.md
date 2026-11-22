@@ -7,6 +7,8 @@ author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2019/07/07/06/32/trust-4321822_1280.jpg"
 ---
 
+O que significa aplicar Zero Trust a uma organização? O texto apresenta princípios de acesso e os desafios de colocá-los em prática.
+
 A segurança cibernética é um desafio constante para as organizações, pois os ataques e as ameaças estão em constante evolução. Uma das abordagens mais eficazes para proteger os ativos digitais é a implementação de uma estratégia de segurança baseada em Zero Trust. Neste artigo, vamos explorar o conceito de Zero Trust, seus benefícios e como implementá-lo em uma organização.
 
 **O que é Zero Trust?**
@@ -37,3 +39,11 @@ Implementar uma estratégia de segurança baseada em Zero Trust requer uma abord
 **Conclusão**
 
 O Zero Trust é uma abordagem de segurança eficaz que pode ajudar as organizações a proteger seus ativos digitais contra ataques cibernéticos. Ao implementar uma estratégia de segurança baseada em Zero Trust, as organizações podem reduzir o risco de ataques, melhorar a visibilidade, aumentar a segurança e aumentar a flexibilidade. No entanto, é importante lembrar que a implementação do Zero Trust requer uma abordagem holística e uma compreensão profunda dos recursos e dados críticos da organização.
+
+Exemplo prático: ao acessar um serviço interno, valide identidade e autorização para aquela requisição, mesmo quando ela parte da rede corporativa.
+
+Revise uma rota de acesso crítica e verifique como identidade e autorização são validadas.
+
+Leia também [Desafios de segurança na nuvem](/posts/2022-05-04-security_and_the_cloud).
+
+Próximo passo: leia [Segurança em Nuvem: Desafios e Soluções em 2022](/posts/2022-03-04-cloud-security-2022).

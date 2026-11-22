@@ -1,5 +1,5 @@
 ---
-title: "Cobertura de testes no SonarQube"
+title: "SonarQube: limites da cobertura de testes"
 date: "2025-03-08"
 excerpt: "A cobertura de testes é um indicador fundamental na avaliação da qualidade do software, sendo frequentemente usado em ferramentas como o SonarQube. Entretanto, a busca por uma cobertura de testes extremamente alta pode gerar mais problemas do que benefícios. Neste texto, veremos as razões pelas quais essa prática não é recomendável."
 category: "engineering"
@@ -7,6 +7,8 @@ author: "Tech Chain Editorial"
 image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBAq0eUJvNvNOcdudD_mvq34bOPprIHw_Hg&s"
 draft: false
 ---
+
+Por que uma alta porcentagem de cobertura no SonarQube pode enganar? Veja como avaliar a qualidade dos testes além do número.
 
 ## Por que ter uma cobertura de testes muito alta no SonarQube não é uma boa prática?
 
@@ -32,9 +34,10 @@ Uma cobertura de testes alta pode gerar uma falsa sensação de segurança, faze
 
 Uma alternativa mais adequada é adotar uma abordagem equilibrada, que priorize a qualidade do teste em vez de simplesmente aumentar números. Isso pode incluir o uso de técnicas como revisão de código, testes manuais em cenários críticos e a implementação de testes automatizados que realmente validem a lógica de negócios.
 
-### Conclusão
+Exemplo prático: um teste que apenas executa uma linha aumenta a cobertura, mas não verifica se o resultado da regra de negócio está correto.
 
-Embora a cobertura de testes no SonarQube possa oferecer insights valiosos sobre a saúde do código, a busca voraz por porcentagens altíssimas pode levar a resultados contraproducentes. A verdadeira qualidade do software deve ser medida não apenas pela quantidade de testes, mas pela eficácia e relevância desses testes na capacidade de garantir um produto robusto e confiável. A combinação de uma boa mentalidade de teste com uma cobertura sensata é o caminho mais eficaz para o desenvolvimento de software de alta qualidade.
+Revise se os testes exercitam os comportamentos críticos antes de perseguir uma meta de cobertura.
 
+Leia também [Consistência e Confiabilidade em Testes de Integração](/posts/2025-05-04-integration-testing-consistency-financial-systems).
 
-
+Próximo passo: leia [Testes de software: práticas de escrita](/posts/2025-04-04-best_practices_for_tests).

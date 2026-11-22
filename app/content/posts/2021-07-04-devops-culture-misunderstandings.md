@@ -1,5 +1,5 @@
 ---
-title: "Os Desafios da Cultura DevOps, Mal-entendidos e Seu Impacto."
+title: "Cultura DevOps: benefícios e mal-entendidos"
 date: "2021-07-04"
 excerpt: "DevOps surgiu como uma das habilidades mais procuradas entre os engenheiros de software, mas, embora o termo tenha sido amplamente utilizado na indústria por um longo tempo, ainda é amplamente mal compreendido."
 category: "engineering"
@@ -7,6 +7,8 @@ author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2022/05/12/03/19/binary-code-7190628_1280.jpg"
 draft: false
 ---
+
+O que a cultura DevOps realmente muda no trabalho de engenharia? Este texto discute benefícios e interpretações que atrapalham sua adoção.
 
 Há alguns anos, o 'DevOps' surgiu como uma nova tendência na engenharia de software, prometendo trazer muitos benefícios. De fato, ele cumpriu essa promessa. Vamos dar uma olhada em alguns desses benefícios abaixo.
 
@@ -38,6 +40,8 @@ Agora, vamos analisar as razões pelas quais essa falta de compreensão pode ser
 
 Para superar esses desafios, os gerentes precisam definir claramente os papéis e responsabilidades dos engenheiros de software e das equipes de operações dentro do framework DevOps, e fornecer os recursos, treinamento e suporte necessários para permitir uma transição bem-sucedida.
 
-Ao promover uma compreensão compartilhada e uma cultura colaborativa, os gerentes podem ajudar os engenheiros de software a abraçar a mentalidade DevOps e desbloquear todos os benefícios dessa abordagem transformadora para o desenvolvimento e entrega de software.
+Revise se suas práticas DevOps aproximam desenvolvimento e operações no trabalho diário.
 
-No geral, adotar a cultura DevOps pode ajudar os engenheiros de software a se tornarem mais ágeis, eficientes e responsivos às necessidades de sua organização e de seus clientes.
+Leia também [DevOps vs engenharia de plataforma](/posts/2024-12-24-devops-plataform-engineering).
+
+Próximo passo: leia [Kanban Kaizen: práticas e benefícios](/posts/2024-08-04-kaizen-process-in-software-development).

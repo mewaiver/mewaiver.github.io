@@ -1,5 +1,5 @@
 ---
-title: "A Evolução dos Sistemas Desktop para Web: Uma Jornada de Inovação e Transformação"
+title: "Sistemas desktop e web: evolução e escolhas"
 date: "2024-12-04"
 excerpt: "A evolução dos sistemas desktop para web é um processo que tem ocorrido ao longo das últimas décadas, impulsionado pelo avanço da tecnologia e pela necessidade de maior flexibilidade e acessibilidade."
 category: "engineering"
@@ -7,6 +7,8 @@ author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg"
 draft: false
 ---
+
+Como os sistemas evoluíram do desktop para a web e que trocas essa mudança trouxe? Veja vantagens e desafios dos dois modelos.
 
 A evolução dos sistemas desktop para web é um processo que tem ocorrido ao longo das últimas décadas, impulsionado pelo avanço da tecnologia e pela necessidade de maior flexibilidade e acessibilidade. Neste artigo, vamos explorar as principais etapas dessa evolução e como ela tem impactado a forma como trabalhamos e interagimos com os sistemas de informação.
 
@@ -16,7 +18,7 @@ Nos anos 80 e 90, os sistemas desktop eram a norma. Os usuários trabalhavam em 
 
 **A Emergência da Web**
 
-Com o surgimento da internet e da World Wide Web, nos anos 90, os sistemas começaram a migrar para a web. Os primeiros sistemas web eram basicamente páginas estáticas que forneciam informações e não permitiam interação. No entanto, com o avanço da tecnologia, os sistemas web começaram a se tornar mais interativos, permitindo que os usuários realizassem tarefas como preencher formulários e realizar transações online.
+Com o surgimento da internet e da World Wide Web, nos anos 90, os sistemas começaram a migrar para a web. Os primeiros sistemas web eram basicamente páginas estáticas que forneciam informações e não permitiam interação. No entanto, com o avanço da tecnologia, os sistemas web começaram a se tornar mais interativos. Isso permite que os usuários realizassem tarefas como preencher formulários e realizar transações online.
 
 **A Era dos Sistemas Web Dinâmicos**
 
@@ -49,4 +51,12 @@ No entanto, os sistemas web também apresentam alguns desafios. Algumas das prin
 
 **Conclusão**
 
-A evolução dos sistemas desktop para web é um processo que tem ocorrido ao longo das últimas décadas. Os sistemas web oferecem várias vantagens em relação aos sistemas desktop, incluindo acessibilidade, flexibilidade, colaboração e custo. No entanto, os sistemas web também apresentam alguns desafios, incluindo segurança, confiabilidade e compatibilidade. À medida que a tecnologia continua a avançar, é provável que os sistemas web continuem a se tornar mais sofisticados e eficazes, permitindo que os
+A evolução dos sistemas desktop para web é um processo que tem ocorrido ao longo das últimas décadas. Os sistemas web oferecem várias vantagens em relação aos sistemas desktop, incluindo acessibilidade, flexibilidade, colaboração e custo. No entanto, os sistemas web também apresentam alguns desafios, incluindo segurança, confiabilidade e compatibilidade. À medida que a tecnologia continua a avançar, é provável que os sistemas web continuem a se tornar mais sofisticados e eficazes. Isso permite que os
+
+Exemplo prático: ao migrar uma aplicação desktop para web, compare como cada modelo lida com acesso remoto, colaboração e manutenção.
+
+Compare requisitos de acesso, colaboração e operação antes de migrar uma aplicação desktop.
+
+Leia também [Trabalho remoto: tecnologia e colaboração](/posts/2020-12-04-how-technology-is-reshaping-remote-work-collaboration-tools-and-workplace-dynamics).
+
+Próximo passo: leia [Microsserviços: benefícios e desvantagens](/posts/2020-07-04-microservices-pros-cons).

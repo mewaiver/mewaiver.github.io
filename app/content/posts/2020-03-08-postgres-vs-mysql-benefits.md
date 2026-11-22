@@ -7,6 +7,8 @@ author: "Tech Chain Editorial"
 image: "https://plus.unsplash.com/premium_photo-1680700103483-e49c10509934?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 
+Quando PostgreSQL ou MySQL atende melhor a um projeto? Compare os recursos e limites descritos aqui antes de escolher o banco de dados.
+
 A escolha de um sistema de gerenciamento de banco de dados (SGBD) é uma decisão crítica para qualquer projeto de desenvolvimento de software. Dois dos SGBDs mais populares e amplamente utilizados são PostgreSQL e MySQL. Embora ambos sejam sistemas de gerenciamento de banco de dados relacionais, eles têm suas próprias características, vantagens e desvantagens. Neste artigo, vamos explorar os benefícios e contras de cada um deles.
 
 **PostgreSQL: Benefícios**
@@ -46,4 +48,10 @@ Embora o MySQL seja um sistema de gerenciamento de banco de dados popular e ampl
 
 **Conclusão**
 
-Em resumo, o PostgreSQL e o MySQL são dois sistemas de gerenciamento de banco de dados relacionais que têm suas próprias características, vantagens e desvantagens. O PostgreSQL é um sistema de gerenciamento de banco de dados robusto e confiável que é projetado para lidar com grandes volumes de dados e pode ser escalado facilmente. No entanto, ele pode ter uma curva de aprendizado mais acentuada e ser mais complexo de configurar e gerenciar. O MySQL é um sistema de ger
+Exemplo prático: uma equipe que precisa de consultas complexas pode testar a mesma consulta e carga de dados em PostgreSQL e MySQL antes da escolha.
+
+Teste os requisitos reais de consultas, escala e manutenção nos dois bancos antes de decidir.
+
+Leia também [Bancos de dados: usos e diferenças](/posts/2021-09-04-data-store-reference).
+
+Próximo passo: leia [MongoDB vs Couchbase: Prós e Contras](/posts/2021-08-16-mongodb_vs_couchbase_pros_and_cons).

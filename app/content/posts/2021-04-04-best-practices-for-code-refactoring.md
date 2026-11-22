@@ -1,5 +1,5 @@
 ---
-title: "Como melhorar a qualidade e a manutenção do seu software"
+title: "Refatoração de código: práticas e exemplos"
 date: "2021-04-04"
 excerpt: "Refatorar código é essencial para garantir a qualidade e a manutenibilidade de um software ao longo do tempo. Neste post, exploramos as melhores práticas para refatoração, como manter uma suíte de testes, refatorar em pequenos passos e aplicar princípios de design para melhorar a legibilidade e eficiência do código, sem alterar seu comportamento."
 category: "engineering"
@@ -7,9 +7,11 @@ author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2020/05/30/10/01/update-5238354_1280.jpg"
 ---
 
+Como refatorar código sem perder clareza nem segurança? Veja práticas de manutenção e exemplos em Java que tornam a mudança mais controlada.
+
 Refatorar código é essencial para garantir a qualidade e a manutenção de um software ao longo do tempo. Neste post, exploramos as melhores práticas para refatoração, com exemplos em Java para ilustrar como melhorar a legibilidade, estrutura e eficiência do seu código.
 
-### 1. **Mantenha os Testes**
+## 1. **Mantenha os Testes**
 
 Antes de iniciar a refatoração, é crucial garantir que haja uma suíte de testes automatizados em vigor. Isso ajuda a verificar que o comportamento do sistema não foi alterado após a refatoração. No Java, você pode usar frameworks como JUnit para garantir que seus testes sejam executados corretamente.
 
@@ -39,7 +41,7 @@ public class CalculatorTest {
 }
 ```
 
-### 2. **Refatore em Pequenos Passos**
+## 2. **Refatore em Pequenos Passos**
 
 Refatorar o código em pequenos incrementos permite que você teste cada mudança de maneira isolada. Isso facilita a identificação de problemas, caso eles surjam.
 
@@ -65,7 +67,7 @@ public class Order {
 ```
 
 Então para refatoração em pequenos passos, crie um método separado para calcular o desconto:
-   
+
 ```java
 public class Order {
     public double calculateTotalPrice(double price, int quantity, double discount) {
@@ -85,7 +87,7 @@ public class Order {
 }
 ```
 
-### 3. **Não Faça Mudanças Desnecessárias**
+## 3. **Não Faça Mudanças Desnecessárias**
 
 Durante a refatoração, evite mudar partes do código que não afetam a funcionalidade. O objetivo é melhorar o código sem introduzir riscos ou mudanças desnecessárias.
 
@@ -133,7 +135,7 @@ public class Employee {
 }
 ```
 
-### 4. **Aplicar os Princípios de Design de Software**
+## 4. **Aplicar os Princípios de Design de Software**
 
 A refatoração deve melhorar a aderência aos princípios de design, como o SOLID, para criar código modular e fácil de manter.
 
@@ -184,7 +186,7 @@ class InvoiceRepository {
 }
 ```
 
-### 5. **Renomeação Clara e Consistente**
+## 5. **Renomeação Clara e Consistente**
 
 Um bom nome de variável ou método torna o código mais legível e fácil de entender. Durante a refatoração, aproveite para melhorar a clareza dos nomes.
 
@@ -224,7 +226,7 @@ public class User {
 }
 ```
 
-### 6. **Evitar a Complexidade Desnecessária**
+## 6. **Evitar a Complexidade Desnecessária**
 
 A refatoração deve buscar simplificar o código, eliminando redundâncias ou lógicas complexas.
 
@@ -267,7 +269,12 @@ enum DiscountType {
 }
 ```
 
-### 7. **Refatoração Contínua**
+## 7. **Refatoração Contínua**
 
 Refatoração contínua não é um evento único, mas um processo contínuo. À medida que o sistema evolui, novas refatorações devem ser feitas para manter o código limpo e sustentável. Um exemplo disso, pode ser que a medida que novas funcionalidades forem adicionadas ao sistema, como a adição de mais tipos de desconto no exemplo acima, a refatoração contínua garantirá que o código se mantenha organizado e fácil de entender, sem se tornar um emaranhado de lógicas e regras.
 
+Escolha uma mudança pequena e verifique seu comportamento com testes antes de continuar a refatoração.
+
+Leia também [Falhas na engenharia de software: lições práticas](/posts/2020-03-04-software-engineering-failures).
+
+Próximo passo: leia [Duplicação de código vs flexibilidade](/posts/2024-12-08-code-duplication-vs-flexibility).

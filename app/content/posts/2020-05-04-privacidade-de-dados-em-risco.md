@@ -1,11 +1,13 @@
 ---
-title: "Entendendo as Ameaças e Protegendo Nossas Informações Pessoais"
+title: "Privacidade de dados: ameaças e proteção"
 date: "2020-05-04"
 excerpt: "A privacidade de dados é um direito fundamental que está sob constante ameaça em nossa era digital, e é essencial que tomemos medidas para proteger nossas informações pessoais."
 category: "security"
 author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2018/06/17/08/40/hacker-3480124_1280.jpg"
 ---
+
+Quais ameaças colocam dados pessoais em risco e como reduzir a exposição? Este texto reúne medidas práticas de proteção.
 
 A privacidade de dados é um tema cada vez mais relevante em nossa era digital. Com o aumento da dependência de tecnologias e a crescente quantidade de dados pessoais compartilhados online, a proteção dessas informações se tornou uma prioridade. Neste artigo, vamos discutir as últimas ameaças à privacidade de dados, estratégias de prevenção e a importância de proteger nossas informações pessoais.
 
@@ -37,4 +39,14 @@ A privacidade de dados é fundamental para proteger nossas informações pessoai
 
 Conclusão
 
-A privacidade de dados é um tema cada vez mais relevante em nossa era digital. Com o aumento da dependência de tecnologias e a crescente quantidade de dados pessoais compartilhados online, a proteção dessas informações se tornou uma prioridade. É importante adotar estratégias de prevenção, como o uso de senhas fortes e a atualização de software, para proteger nossas informações pessoais. Além disso, é fundamental entender a importância da privacidade de dados e como ela pode afetar nossa vida diária. Ao proteger nossas informações pessoais, podemos garantir que sejamos tratados com dignidade e respeito, e que possamos viver em um mundo mais seguro e livre.
+A privacidade de dados é um tema cada vez mais relevante em nossa era digital. Com o aumento da dependência de tecnologias e a crescente quantidade de dados pessoais compartilhados online, a proteção dessas informações se tornou uma prioridade. É importante adotar estratégias de prevenção, como o uso de senhas fortes e a atualização de software, para proteger nossas informações pessoais.
+
+Além disso, é fundamental entender a importância da privacidade de dados e como ela pode afetar nossa vida diária. Ao proteger nossas informações pessoais, podemos garantir que sejamos tratados com dignidade e respeito, e que possamos viver em um mundo mais seguro e livre.
+
+Exemplo prático: se um aplicativo solicita acesso a dados pessoais que não usa para sua função principal, revise a permissão antes de concedê-la.
+
+Revise as permissões e os dados pessoais compartilhados em seus serviços mais usados.
+
+Leia também [Heartland: lições de uma violação de dados](/posts/2021-02-04-heartland_data_breach_lessons).
+
+Próximo passo: leia [Segurança no iOS: ameaças e proteção](/posts/2022-11-04-ios-security-threats-and-protection).

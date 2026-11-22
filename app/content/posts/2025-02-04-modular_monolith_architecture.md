@@ -8,6 +8,8 @@ image: "https://images.unsplash.com/photo-1492355040260-cd982083603e?q=80&w=2070
 draft: false
 ---
 
+Como um Modular Monolith organiza limites internos sem distribuir a implantação? Veja a estrutura e os benefícios discutidos no texto.
+
 A arquitetura de software é um dos aspectos mais importantes do desenvolvimento de sistemas, pois define a estrutura e a organização do código. Existem várias abordagens diferentes para a arquitetura de software, cada uma com suas próprias vantagens e desvantagens. Neste artigo, vamos explorar a arquitetura de software conhecida como Modular Monolith.
 
 **O que é um Modular Monolith?**
@@ -50,39 +52,10 @@ Aqui estão alguns exemplos de aplicativos que podem ser considerados como Modul
 * Um aplicativo móvel com módulos separados para diferentes recursos, como mensagens, mídias sociais e jogos
 * Um aplicativo de desktop com módulos separados para diferentes ferramentas, como processamento de texto, análise de planilhas e design de apresentações
 
-**Conclusão**
+Exemplo prático: mantenha os módulos de pedidos e pagamentos com limites explícitos, mesmo que sejam implantados como uma única aplicação.
 
-Em resumo, um Modular Monolith é uma arquitetura de software que combina as vantagens de uma arquitetura monolítica com a modularização de uma arquitetura de microserviços. Embora tenha suas desvantagens, um Modular Monolith pode ser uma boa escolha para aplicativos que requerem uma alta integração e coesão, mas ainda precisam ser modulares e escaláveis.
+Defina limites claros entre módulos antes de pensar em separá-los em serviços.
 
-**Recomendações**
+Leia também [Microsserviços: quando a complexidade não compensa](/posts/2026-02-08).
 
-Se você está considerando adotar uma arquitetura de software para seu aplicativo, aqui estão algumas recomendações:
-
-* Defina claramente os requisitos do seu aplicativo e identifique as áreas que precisam ser modulares e escaláveis.
-* Considere a complexidade e a manutenção do seu aplicativo ao longo do tempo.
-* Avalie as vantagens e desvantagens de diferentes arquiteturas de software, incluindo a arquitetura monolítica, a arquitetura de microserviços e a arquitetura de Modular Monolith.
-* Escolha a arquitetura que melhor atende às necessidades do seu aplicativo e da sua equipe de desenvolvimento.
-
-**Ferramentas e Tecnologias**
-
-Aqui estão algumas ferramentas e tecnologias que podem ser úteis para implementar uma arquitetura de Modular Monolith:
-
-* Linguagens de programação como Java, C# e Python
-* Frameworks de desenvolvimento de software como Spring, .NET e Django
-* Ferramentas de gerenciamento de dependências como Maven, NuGet e pip
-* Ferramentas de teste e validação como JUnit, NUnit e PyUnit
-* Ferramentas de implantação e deploy como Docker, Kubernetes e Jenkins
-* Ferramentas de monitoramento e análise como Prometheus, Grafana e New Relic
-
-**Bibliotecas e Frameworks**
-
-Aqui estão algumas bibliotecas e frameworks que podem ser úteis para implementar uma arquitetura de Modular Monolith:
-
-* Bibliotecas de comunicação como Apache Kafka, RabbitMQ e Apache HTTP Server
-* Frameworks de autenticação e autorização como OAuth, OpenID Connect e JWT
-* Bibliotecas de armazenamento de dados como Hibernate, Entity Framework e Django ORM
-* Frameworks de segurança como OWASP, SSL/TLS e HTTPS
-
-**Conclusão**
-
-Em resumo, um Modular Monolith é uma arquitetura de software que combina as vantagens de uma arquitetura monolítica com a modularização de uma arquitetura de microserviços. Com as ferramentas e tecnologias certas, é possível implementar uma arquitetura de Modular Monolith que seja escalável, segura e fácil de manter.
+Próximo passo: leia [Monolith First: quando começar simples](/posts/2025-01-24-monolith_first_approach).

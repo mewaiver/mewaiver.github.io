@@ -7,6 +7,8 @@ author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2024/02/26/17/05/cloud-8598424_1280.jpg"
 ---
 
+Quais riscos aparecem ao armazenar e processar dados na nuvem? Este texto relaciona desafios de segurança e medidas de proteção.
+
 A computação em nuvem é uma tecnologia que permite armazenar e processar dados em servidores remotos, acessíveis via internet. Com o aumento da adoção da nuvem, a segurança em nuvem se tornou uma preocupação crescente para as organizações. Em 2022, a segurança em nuvem continua a ser um desafio importante, com novas ameaças e vulnerabilidades surgindo constantemente.
 
 **Desafios de Segurança em Nuvem**
@@ -53,3 +55,11 @@ Para garantir a segurança em nuvem, as organizações devem:
 * Cumprir com as regulamentações e padrões de segurança relevantes.
 
 Ao seguir essas recomendações, as organizações podem garantir a segurança de seus recursos em nuvem e proteger seus dados contra ameaças.
+
+Exemplo prático: revise se um usuário da nuvem possui apenas as permissões necessárias para a tarefa que executa.
+
+Revise permissões e responsabilidades de segurança de um serviço em nuvem que você já usa.
+
+Leia também [Desafios e Práticas de Segurança em um SaaS](/posts/2022-07-04-security-challenges-and-practices).
+
+Próximo passo: leia [Desafios de segurança na nuvem](/posts/2022-05-04-security_and_the_cloud).
