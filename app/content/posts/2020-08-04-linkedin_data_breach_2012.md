@@ -33,6 +33,5 @@ Levamos a segurança das contas de nossos membros a sério. Há vários anos, te
 
 Troque senhas reutilizadas e ative a autenticação em dois fatores nas contas afetadas.
 
-Leia também [Vazamento de Dados da AWS S3](/posts/2024-02-04-aws-data-leak).
 
 Próximo passo: leia [Heartland: lições de uma violação de dados](/posts/2021-02-04-heartland_data_breach_lessons).

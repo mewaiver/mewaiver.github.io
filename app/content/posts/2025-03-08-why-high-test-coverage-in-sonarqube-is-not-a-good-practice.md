@@ -38,6 +38,5 @@ Exemplo prático: um teste que apenas executa uma linha aumenta a cobertura, mas
 
 Revise se os testes exercitam os comportamentos críticos antes de perseguir uma meta de cobertura.
 
-Leia também [Consistência e Confiabilidade em Testes de Integração](/posts/2025-05-04-integration-testing-consistency-financial-systems).
 
 Próximo passo: leia [Testes de software: práticas de escrita](/posts/2025-04-04-best_practices_for_tests).

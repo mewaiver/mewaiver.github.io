@@ -84,5 +84,3 @@ A principal diferença técnica entre os dois clientes está na linguagem de pro
 Defina seus requisitos de operação e suporte antes de selecionar um cliente Ethereum.
 
 Leia também [Blockchain: Uma Revolução na Conexão e Transparência](/posts/2022-08-04-what_is_blockchain_and_what_can_it_do).
-
-Próximo passo: leia [Avaliando soluções de blockchain na BMW](/posts/2021-05-04-evaluating-the-feasibility-of-blockchain-solutions).

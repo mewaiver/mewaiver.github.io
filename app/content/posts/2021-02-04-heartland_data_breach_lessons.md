@@ -53,6 +53,5 @@ Embora essa violação tenha ocorrido há mais de seis anos, as lições que a H
 
 Revise como sua organização detecta e responde a violações de dados.
 
-Leia também [Vazamento de Dados da AWS S3](/posts/2024-02-04-aws-data-leak).
 
 Próximo passo: leia [Vazamento do LinkedIn: senhas e lições](/posts/2020-08-04-linkedin_data_breach_2012).

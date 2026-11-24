@@ -77,6 +77,5 @@ Exemplo prático: antes de escolher um algoritmo quântico, compare o problema c
 
 Antes de apostar em computação quântica, identifique um problema que realmente se beneficie de suas propriedades.
 
-Leia também [IA não tem inteligência suficiente para substituir humanos](/posts/2023-10-04-ai-not-intelligent-enough-to-replace-humans).
 
 Próximo passo: leia [Inteligência artificial: aplicações e oportunidades](/posts/2023-09-04-the-power-of-artificial-intelligence).

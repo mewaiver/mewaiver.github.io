@@ -4,6 +4,7 @@ date: "2025-05-04"
 excerpt: "Nos sistemas críticos, especialmente em setores como o financeiro, a consistência e a confiabilidade dos dados são fundamentais."
 category: "engineering"
 author: "Tech Chain Editorial"
+draft: true
 image: "/images/trust-in-enterprise-tests.jpeg"
 ---
 

@@ -4,6 +4,7 @@ date: "2021-05-04"
 excerpt: "Este artigo avalia a viabilidade de soluções de blockchain, focando em Ethereum e AWS QLDB. Através de uma análise detalhada, discutimos como essas tecnologias podem otimizar processos e melhorar a transparência na cadeia de suprimentos automotiva."
 category: "blockchain"
 author: "Tech Chain Editorial"
+draft: true
 image: "https://cdn.pixabay.com/photo/2021/05/22/06/53/btc-6272696_1280.jpg"
 ---
 

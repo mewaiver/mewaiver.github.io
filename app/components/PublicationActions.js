@@ -16,13 +16,13 @@ export default function PublicationActions({ post, paper = false }) {
       await navigator.clipboard.writeText(post.bibtex);
       setCopyState('Copied!');
     } catch {
-      setCopyState('Selecione a citação abaixo para copiar.');
+      setCopyState('Select the citation below to copy it.');
       setShowCitation(true);
     }
   }
 
   return <>
-    <div className="publication-actions" role="group" aria-label="Links do artigo">
+    <div className="publication-actions" role="group" aria-label="Article links">
       {!paper && <Link href={`/posts/${post.slug}`}>[{post.type === 'whitepaper' ? 'Read Paper' : post.type === 'research-note' ? 'Read Note' : 'Read Article'}]</Link>}
       {showCitationAction && <button type="button" onClick={copyCitation}>[Cite BibTeX]</button>}
       {post.pdf_url && <a href={post.pdf_url}>[{paper ? 'Download PDF' : 'PDF'}]</a>}

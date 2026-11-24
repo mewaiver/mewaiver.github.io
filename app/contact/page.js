@@ -40,11 +40,11 @@ export default function Contact() {
         timestamp: new Date(),
       });
 
-      setStatus('Mensagem enviada com sucesso!');
+      setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error saving data to Firestore:', error);
-      setStatus('Ocorreu um erro. Tente novamente mais tarde.');
+      setStatus('Error: Please try again later.');
     }
   };
 
@@ -54,12 +54,12 @@ export default function Contact() {
         <div className="row justify-content-center">
           <article className="col-lg-8 col-md-10">
             <header className="text-center mb-4">
-              <h1>Contato</h1>
+              <h1>Contact</h1>
             </header>
             <div className="text-justify">
               <form onSubmit={handleSubmit} className="mb-4">
                 <div className="mb-3">
-                  <label htmlFor="name" className="form-label">Nome</label>
+                  <label htmlFor="name" className="form-label">Name</label>
                   <input
                     type="text"
                     id="name"
@@ -67,7 +67,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     className="form-control"
-                    placeholder="Seu nome"
+                    placeholder="Your name"
                     required
                   />
                 </div>
@@ -81,20 +81,20 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     className="form-control"
-                    placeholder="Seu email"
+                    placeholder="Your email"
                     required
                   />
                 </div>
 
                 <div className="mb-3">
-                  <label htmlFor="message" className="form-label">Mensagem</label>
+                  <label htmlFor="message" className="form-label">Message</label>
                   <textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     className="form-control"
-                    placeholder="Sua mensagem"
+                    placeholder="Your message"
                     rows="5"
                     required
                   />
@@ -111,7 +111,7 @@ export default function Contact() {
                     type="submit"
                     className="btn btn-primary px-4 py-2"
                   >
-                    Enviar
+                    Send
                   </button>
                 </div>
               </form>

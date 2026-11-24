@@ -76,5 +76,3 @@ Além disso, com o advento da **computação quântica**, o blockchain provavelm
 Descreva o processo empresarial e os participantes antes de decidir se ele precisa de blockchain.
 
 Leia também [Blockchain: Uma Revolução na Conexão e Transparência](/posts/2022-08-04-what_is_blockchain_and_what_can_it_do).
-
-Próximo passo: leia [Avaliando soluções de blockchain na BMW](/posts/2021-05-04-evaluating-the-feasibility-of-blockchain-solutions).

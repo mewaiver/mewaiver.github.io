@@ -3,74 +3,76 @@ import Link from "next/link";
 export default function TermsOfService() {
     return (
         <div className="bg-background text-foreground">
+            <div className="container">
             <div className="d-flex justify-content-center">
                 <article>
                     <header className="text-center mb-4">
-                        <h1>Termos de Serviço</h1>
+                        <h1>Terms of Service</h1>
                     </header>
                     <div>
-                        <h2>1. Responsabilidades do Usuário</h2>
-                        <h3>Elegibilidade</h3>
-                        <p>Você deve ter pelo menos 13 anos para usar este Blog. Ao usar o Blog, você declara e garante que atende a esse requisito de elegibilidade.</p>
+                        <h2>1. User Responsibilities</h2>
+                        <h3>Eligibility</h3>
+                        <p>You must be at least 13 years old to use this Blog. By using the Blog, you represent and warrant that you meet this age requirement.</p>
 
-                        <h3>Conta do Usuário</h3>
-                        <p>Se você for um autor convidado e criar uma conta em nosso Blog, é responsável por manter a confidencialidade das informações da sua conta e por todas as atividades que ocorrem sob sua conta. Você concorda em nos notificar imediatamente sobre qualquer uso não autorizado de sua conta.</p>
+                        <h3>User Account</h3>
+                        <p>If you are a guest author and create an account on our Blog, you are responsible for keeping your account information confidential and for all activity under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
 
-                        <h3>Atividades Proibidas</h3>
-                        <p>Você concorda em não se envolver em nenhuma das seguintes atividades proibidas:</p>
+                        <h3>Prohibited Activities</h3>
+                        <p>You agree not to engage in any of the following prohibited activities:</p>
                         <ul>
-                            <li>Postar spam ou conteúdo irrelevante</li>
-                            <li>Assediar ou ameaçar outros usuários</li>
-                            <li>Impersonar qualquer pessoa ou entidade</li>
-                            <li>Violar quaisquer leis ou regulamentos aplicáveis</li>
+                            <li>Posting spam or irrelevant content</li>
+                            <li>Harassing or threatening other users</li>
+                            <li>Impersonating any person or entity</li>
+                            <li>Violating any applicable laws or regulations</li>
                         </ul>
                     </div>
 
                     <div>
-                        <h2>2. Propriedade do Conteúdo</h2>
-                        <h3>Conteúdo do Blog</h3>
-                        <p>Todo o conteúdo publicado no Blog, incluindo texto, imagens e vídeos, é propriedade da TechChain e é protegido por direitos autorais e outras leis de propriedade intelectual.</p>
+                        <h2>2. Content Ownership</h2>
+                        <h3>Blog Content</h3>
+                        <p>All content published on the Blog, including text, images, and videos, is the property of TechChain and is protected by copyright and other intellectual property laws.</p>
 
-                        <h3>Conteúdo Gerado pelo Usuário</h3>
-                        <p>Os usuários não têm permissão para enviar conteúdo. Apenas autores convidados podem publicar conteúdo no Blog.</p>
+                        <h3>User-Generated Content</h3>
+                        <p>Users may not submit content. Only guest authors may publish content on the Blog.</p>
                     </div>
 
                     <div>
-                        <h2>3. Propriedade Intelectual</h2>
-                        <p>Todas as marcas registradas, logotipos e marcas de serviço exibidos no Blog são propriedade da TechChain ou de terceiros. Você não pode usar nenhum desses sem nosso consentimento prévio por escrito.</p>
+                        <h2>3. Intellectual Property</h2>
+                        <p>All trademarks, logos, and service marks displayed on the Blog belong to TechChain or third parties. You may not use them without our prior written consent.</p>
                     </div>
 
                     <div>
-                        <h2>4. Isenções de Responsabilidade</h2>
-                        <p>As informações fornecidas no Blog são apenas para fins informativos. Não garantimos a precisão, integridade ou utilidade de qualquer informação no Blog. Você usa o Blog por sua conta e risco.</p>
+                        <h2>4. Disclaimers</h2>
+                        <p>Information on the Blog is provided for informational purposes only. We do not guarantee the accuracy, completeness, or usefulness of any information on the Blog. You use the Blog at your own risk.</p>
                     </div>
 
                     <div>
-                        <h2>5. Links para Outros Sites</h2>
-                        <p>Nosso Blog pode conter links para sites de terceiros. Não endossamos nem assumimos qualquer responsabilidade pelo conteúdo ou práticas desses sites. Use-os por sua conta e risco.</p>
+                        <h2>5. Links to Other Websites</h2>
+                        <p>Our Blog may link to third-party websites. We do not endorse or accept responsibility for their content or practices. You use those sites at your own risk.</p>
                     </div>
 
                     <div>
-                        <h2>6. Alterações nos Termos</h2>
-                        <p>Reservamo-nos o direito de modificar estes Termos de Serviço a qualquer momento. Notificaremos você sobre quaisquer alterações publicando os novos Termos nesta página. Seu uso contínuo do Blog após quaisquer alterações constitui sua aceitação dos novos Termos.</p>
+                        <h2>6. Changes to the Terms</h2>
+                        <p>We reserve the right to change these Terms of Service at any time. We will notify you by posting the revised Terms on this page. Continued use of the Blog after a change constitutes your acceptance of the revised Terms.</p>
                     </div>
 
                     <div>
-                        <h2>7. Lei Aplicável</h2>
-                        <p>Estes Termos de Serviço serão regidos e interpretados de acordo com as leis de [Seu Estado/País], sem considerar seus princípios de conflito de leis.</p>
+                        <h2>7. Governing Law</h2>
+                        <p>These Terms of Service are governed by and interpreted under the laws of [Your State/Country], without regard to its conflict-of-law principles.</p>
                     </div>
 
                     <div>
-                        <h2>8. Informações de Contato</h2>
-                        <p>Se você tiver alguma dúvida ou preocupação sobre estes Termos de Serviço, 
-                            entre em contato conosco clicando <Link href="/contact">aqui</Link>.
+                        <h2>8. Contact Information</h2>
+                        <p>If you have any questions or concerns about these Terms of Service,
+                            contact us <Link href="/contact">here</Link>.
                             </p>
                     </div>
 
                     <footer className="mt-10">
-                        <p>Ao usar nosso Blog, você reconhece que leu, entendeu e concorda em estar vinculado a estes Termos de Serviço.</p>
+                        <p>By using our Blog, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.</p>
                     </footer>
                 </article>
+            </div>
             </div>
         </div>
     );

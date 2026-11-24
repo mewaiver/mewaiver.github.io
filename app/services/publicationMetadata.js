@@ -19,7 +19,7 @@ export function publicationMetadata(post) {
   const url = `${siteUrl}/posts/${encodeURIComponent(post.slug)}`;
   const authors = post.authors.map(person => person.name);
   const socialImage = post.featuredImage ? new URL(post.featuredImage, siteUrl).toString() : fallbackImage;
-  const socialImageAlt = post.featuredImage ? post.imageAlt || post.title : 'Tech Chain — publicação sobre tecnologia';
+  const socialImageAlt = post.featuredImage ? post.imageAlt || post.title : 'Tech Chain — a technology publication';
 
   return {
     title,

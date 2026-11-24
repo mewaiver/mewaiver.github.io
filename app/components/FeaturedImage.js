@@ -15,7 +15,7 @@ export default function FeaturedImage({ post }) {
     </div>
     {(post.imageCaption || post.imageCredit) && <figcaption className="featured-image__caption">
       {post.imageCaption && <span>{post.imageCaption}</span>}
-      {post.imageCredit && <span className="featured-image__credit">Crédito: {post.imageCredit}</span>}
+      {post.imageCredit && <span className="featured-image__credit">Credit: {post.imageCredit}</span>}
     </figcaption>}
   </figure>;
 }

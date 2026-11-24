@@ -31,6 +31,5 @@ Por fim, é importante destacar que, apesar do grande potencial da IA, surgem qu
 
 Escolha um processo concreto e defina como medir o resultado de uma aplicação de IA.
 
-Leia também [IA não tem inteligência suficiente para substituir humanos](/posts/2023-10-04-ai-not-intelligent-enough-to-replace-humans).
 
 Próximo passo: leia [Segurança em inteligência artificial: riscos](/posts/2025-01-08-security-challenges-in-artificial-intelligence).

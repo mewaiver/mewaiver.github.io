@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { category } = await params;
   const label = categoryLabel(category);
-  return { title: `${label} | Tech Chain`, description: `Artigos de ${label} no Tech Chain.`, alternates: { canonical: `/categories/${category}` }, openGraph: { type: 'website', title: `${label} | Tech Chain`, description: `Artigos de ${label} no Tech Chain.`, url: `/categories/${category}` } };
+  return { title: `${label} | Tech Chain`, description: `${label} articles on Tech Chain.`, alternates: { canonical: `/categories/${category}` }, openGraph: { type: 'website', title: `${label} | Tech Chain`, description: `${label} articles on Tech Chain.`, url: `/categories/${category}` } };
 }
 
 export default async function CategoryPage({ params }) {
@@ -24,8 +24,8 @@ export default async function CategoryPage({ params }) {
 
   return (
     <div className="post-list-page">
-      <h1>Artigos em {categoryLabel(category)}</h1>
-      {filteredPosts.length > 0 ? <PostList posts={filteredPosts} /> : <p>Nenhum artigo nesta categoria.</p>}
+      <h1>Articles in {categoryLabel(category)}</h1>
+      {filteredPosts.length > 0 ? <PostList posts={filteredPosts} /> : <p>No articles in this category.</p>}
     </div>
   );
 }

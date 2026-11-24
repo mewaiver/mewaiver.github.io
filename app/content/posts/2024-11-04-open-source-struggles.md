@@ -1,31 +1,40 @@
 ---
-title: "Open Source: dificuldades de manutenção"
+title: "Open Source Maintenance Is an Engineering Responsibility"
 date: "2024-11-04"
-excerpt: "Uma das principais dificuldades do open source é a sustentabilidade financeira. Muitos projetos de código aberto dependem do trabalho voluntário de desenvolvedores dedicados, que muitas vezes têm outras responsabilidades profissionais."
+updated: "2026-11-24"
+excerpt: "Source availability does not guarantee a maintained or trustworthy dependency. The xz backdoor shows why teams must examine release artifacts, ownership, update paths, and the cost of responding when a project fails."
 category: "engineering"
 author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2022/10/09/15/41/chess-7509509_1280.jpg"
 draft: false
 ---
 
-Quais dificuldades podem comprometer um projeto open source? O texto examina manutenção, participação e sustentabilidade do trabalho.
+A dependency can be free to download and expensive to trust. In March 2024, investigators found a backdoor in xz/liblzma releases 5.6.0 and 5.6.1. The [Red Hat advisory](https://access.redhat.com/security/cve/cve-2024-3094) describes a build process that extracted a malicious object from a disguised test file and altered the resulting library. The case does not mean every open-source project is suspect. It shows that the code an engineer can browse, the release archive a package manager fetches, and the binary a system runs are distinct objects that require a chain of trust.
 
-O movimento do software de código aberto (open source) tem sido uma força transformadora na indústria de tecnologia nas últimas décadas. Essa abordagem colaborativa e transparente de desenvolvimento de software trouxe inúmeros benefícios, como maior inovação, segurança aprimorada e custos reduzidos. No entanto, o open source também enfrenta desafios significativos que precisam ser superados para que seu potencial seja plenamente realizado.
+The useful question for an organization is not whether open source is good or bad. It is what work the organization takes on when it makes another project's software part of its own service. License fees may be absent, but version management, security response, integration testing, and migration still have owners. Source availability makes inspection and repair possible; it does not ensure that anyone has inspected a particular release or will maintain it on the consuming team's schedule.
 
-Uma das principais dificuldades do open source é a sustentabilidade financeira. Muitos projetos de código aberto dependem do trabalho voluntário de desenvolvedores dedicados, que muitas vezes têm outras responsabilidades profissionais. Manter o ímpeto e a continuidade desses projetos pode ser um desafio, especialmente quando os recursos financeiros são escassos. Embora existam modelos de negócios baseados em open source, como o suporte e serviços profissionais, nem sempre é fácil gerar receita suficiente para cobrir os custos de desenvolvimento e manutenção.
+## A dependency includes its release process
 
-Outro desafio é a coordenação e a governança dos projetos de código aberto. Com uma comunidade diversa de contribuidores, muitas vezes espalhados pelo mundo, é necessário estabelecer processos eficientes de tomada de decisão, resolução de conflitos e priorização de tarefas. Isso pode ser especialmente difícil em projetos de grande escala, onde múltiplas partes interessadas têm diferentes interesses e perspectivas.
+A team often evaluates a library by reading its repository and trying its API. Production exposure depends on more: which version the build resolves, what transitive packages it brings in, who can publish releases, and whether the shipped artifact corresponds to the reviewed source. The xz case made the artifact boundary concrete. A malicious change in a release process can affect downstream users even if their application code is unchanged. [OpenSSF's account of the incident](https://openssf.org/blog/2024/03/30/xz-backdoor-cve-2024-3094/) documents the supply-chain compromise; the operational lesson is to track the exact artifact deployed, not merely the name of the upstream project.
 
-A questão da segurança também é um ponto crítico no open source. Embora a transparência do código-fonte possa ser um ponto forte, ela também significa que qualquer vulnerabilidade ou falha de segurança pode ser rapidamente identificada e explorada por atacantes. Manter o código atualizado, aplicar correções de segurança de maneira oportuna e educar a comunidade sobre práticas de segurança seguras são desafios constantes.
+A lockfile or pinned version makes a build more repeatable, but pinning also leaves a team on a vulnerable version until it updates. Automated dependency alerts help identify published advisories; they cannot detect an unknown backdoor. [GitHub's dependency guidance](https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-review) explains how review of lockfile changes and advisories can catch known issues before a merge. The engineering choice is a controlled update path: know what is running, evaluate proposed changes, test them against the application, and retain a way to deploy a fix promptly.
 
-Além disso, a adoção e a aceitação do open source podem enfrentar resistência em alguns setores. Algumas organizações ainda têm preocupações quanto à confiabilidade, suporte e conformidade regulatória de soluções de código aberto. Superar essas barreiras de percepção e demonstrar o valor do open source requer esforços contínuos de educação e advocacy.
+## Maintenance signals are evidence, not verdicts
 
-A diversidade e a inclusão também são desafios importantes no ecossistema open source. Embora o movimento se orgulhe de sua natureza colaborativa e aberta, muitas vezes as comunidades de código aberto carecem de representação e participação de grupos sub-representados, como mulheres, minorias étnicas e pessoas de países em desenvolvimento. Criar ambientes mais acolhedores e inclusivos é fundamental para aproveitar todo o potencial da diversidade.
+A project with many recent commits is not necessarily safe; a mature, stable component may change rarely for good reasons. Useful questions include whether maintainers respond to security reports, whether releases and support policies are clear, whether more than one person can review sensitive changes, and whether the project tests the environments that matter to its users. The answers differ by dependency. A parser exposed to untrusted input deserves closer scrutiny than a build-time formatting tool, even if both have the same popularity.
 
-Finalmente, a questão da propriedade intelectual e dos direitos autorais também pode ser complexa no contexto do open source. A navegação entre diferentes licenças de software, a compreensão das obrigações legais e a proteção dos direitos dos contribuidores são desafios que as comunidades de código aberto precisam enfrentar continuamente.
+Automated assessments can make this review repeatable. [OpenSSF Scorecard](https://openssf.org/projects/scorecard/) checks repository practices and reports risk signals. A score is a starting point for investigation, not a certification that a release is harmless or that maintainers will answer an urgent issue. A team should record why it accepts a high-impact dependency, who owns it internally, and which warning signs would trigger a review. Without an owner, an alert can remain visible while nobody is responsible for acting on it.
 
-Ao depender de um projeto open source, verifique sua atividade e como você pode contribuir.
+## The cost appears when something changes
 
-Leia também [Linux Kernel: impacto nos sistemas operacionais](/posts/2024-05-04-how-linux-kernel-changed-technology).
+When an upstream project releases a security fix, the consuming team must determine whether its deployed version is affected, build and test an update, and roll it out. A fix can break an API or change behavior, especially when a service has depended on undocumented details. If the project is abandoned, the options become more expensive: maintain a private patch, find a supported fork, replace the dependency, or reduce the feature that requires it. The right response depends on blast radius and available engineering capacity, not on whether the source code is publicly accessible.
 
-Próximo passo: leia [Open Source: É Bom, Mas Também Tem Seus Desafios](/posts/2024-06-04-open-source-good-challenges).
+Commercial support can buy a response commitment or tested packages, but the contract's scope matters. It may not cover a particular extension, deployment mode, or the organization's own integration code. Likewise, forking grants control but creates an obligation to merge future security fixes and maintain the build. The apparent freedom to modify source becomes useful only if someone can operate that fork over time. License review belongs in the same decision because redistribution and modification obligations can affect how the resulting product is shipped; the relevant license and distribution model should be checked rather than inferred from the phrase “open source.”
+
+## Adopt according to consequence
+
+For a critical dependency, map where it is used, retain the exact resolved version, and test the path for updating or replacing it. Review release and maintainer practices before making it a hard dependency. Define how quickly a security update must reach production, which team will approve it, and what the service can do if the dependency becomes unavailable or unmaintained. These checks are proportionate decisions: a low-risk internal tool need not receive the same review as a library that parses customer-controlled input in a public service.
+
+Open source is valuable partly because it lets users inspect, adapt, and participate in software they depend on. Those capabilities improve resilience only when an organization funds the maintenance work they enable. The serious adoption decision is therefore a continuing one: which external code is essential, what evidence makes its releases trustworthy enough, and who will respond when that evidence changes.
+
+Related reading: [How the Linux Kernel Changed Technology](/posts/2024-05-04-how-linux-kernel-changed-technology).

@@ -52,6 +52,5 @@ Como o Linux é gratuito e de código aberto, ele oferece uma solução de baixo
 
 Identifique onde o kernel sustenta sua infraestrutura antes de avaliar alternativas ou customizações.
 
-Leia também [WebAssembly: Benefícios e Desafios](/posts/2024-07-04-webassembly-beneficios-e-desafios).
 
-Próximo passo: leia [Open Source: É Bom, Mas Também Tem Seus Desafios](/posts/2024-06-04-open-source-good-challenges).
+Próximo passo: leia [Open Source Maintenance Is an Engineering Responsibility](/posts/2024-11-04-open-source-struggles).

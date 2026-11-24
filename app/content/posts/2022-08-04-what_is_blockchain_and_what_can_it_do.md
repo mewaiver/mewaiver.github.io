@@ -34,5 +34,3 @@ Outro aspecto interessante da blockchain é sua capacidade de registrar ativos i
 Defina qual necessidade de confiança ou rastreabilidade sua solução precisa atender antes de escolher blockchain.
 
 Leia também [Blockchain empresarial: segurança e usos](/posts/2023-01-04-blockchain-for-enterprise).
-
-Próximo passo: leia [Avaliando soluções de blockchain na BMW](/posts/2021-05-04-evaluating-the-feasibility-of-blockchain-solutions).

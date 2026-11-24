@@ -26,7 +26,7 @@ export async function POST(req) {
 
   try {
     await transporter.sendMail(mailOptions);
-    return new Response('Mensagem enviada com sucesso!', { status: 200 });
+    return new Response('Message sent successfully!', { status: 200 });
   } catch (error) {
     console.error('Error sending email:', error);
     return new Response('Error sending email. Please try again later.', { status: 500 });

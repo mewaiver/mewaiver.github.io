@@ -23,12 +23,12 @@ export default function ArticleEnhancements() {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'code-copy';
-      button.textContent = 'Copiar código';
-      button.setAttribute('aria-label', 'Copiar código');
+      button.textContent = 'Copy code';
+      button.setAttribute('aria-label', 'Copy code');
       button.setAttribute('aria-live', 'polite');
       button.addEventListener('click', async () => {
-        try { await navigator.clipboard.writeText(block.textContent); button.textContent = 'Copiado!'; }
-        catch { button.textContent = 'Selecione e copie'; }
+        try { await navigator.clipboard.writeText(block.textContent); button.textContent = 'Copied!'; }
+        catch { button.textContent = 'Select and copy'; }
       });
       pre.appendChild(button);
       buttons.push(button);
