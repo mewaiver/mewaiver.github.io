@@ -5,7 +5,7 @@ excerpt: "O Monolith First é uma abordagem de desenvolvimento de software que p
 category: "engineering"
 author: "Tech Chain Editorial"
 image: "https://plus.unsplash.com/premium_photo-1666739087204-956268b843cd?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-draft: false
+draft: true
 ---
 
 Por que começar por um monólito antes de adotar microsserviços? Este texto explica os ganhos iniciais e os limites dessa escolha.
