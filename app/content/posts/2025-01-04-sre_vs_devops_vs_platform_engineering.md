@@ -70,4 +70,4 @@ Mapeie o problema de confiabilidade ou entrega antes de atribuí-lo a uma dessas
 
 Leia também [Engenheiro de plataforma vs software](/posts/2025-01-16-platform_engineer_vs_software_engineer).
 
-Próximo passo: leia [DevOps vs engenharia de plataforma](/posts/2024-12-24-devops-plataform-engineering).
+Próximo passo: leia [SRE vs DevOps vs engenharia de plataforma](/posts/2025-01-04-sre_vs_devops_vs_platform_engineering).

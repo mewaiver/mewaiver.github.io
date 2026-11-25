@@ -114,7 +114,3 @@ no que diz respeito a infraestrutuara e segurança.
 Exemplo prático: para rastrear uma peça na cadeia automotiva, liste quem registra cada etapa e quem precisa consultar o histórico antes de propor blockchain.
 
 Antes de propor blockchain, documente o problema de rastreabilidade e compare alternativas existentes.
-
-Leia também [Blockchain empresarial: segurança e usos](/posts/2023-01-04-blockchain-for-enterprise).
-
-Próximo passo: leia [Blockchain: Uma Revolução na Conexão e Transparência](/posts/2022-08-04-what_is_blockchain_and_what_can_it_do).

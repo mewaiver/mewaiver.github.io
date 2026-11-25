@@ -40,7 +40,3 @@ Por outro lado, a infraestrutura interna oferece um custo mais previsível, pois
 Exemplo prático: compare uma mesma aplicação na nuvem pública e na infraestrutura interna, incluindo capacidade, operação e crescimento da demanda.
 
 Calcule o custo total de uma carga específica nos dois ambientes antes de migrá-la.
-
-Leia também [Computação em nuvem: conceitos e aplicações](/posts/2021-12-04-cloud-computing).
-
-Próximo passo: leia [Computação em nuvem: custos e empregos](/posts/2021-11-04-cloud-computing-challenges-costs-and-job-impacts).

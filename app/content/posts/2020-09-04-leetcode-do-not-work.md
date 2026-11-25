@@ -60,7 +60,3 @@ Além disso, entrevistas que se concentram em perguntas comportamentais, situaç
 **Conclusão**
 
 Inclua uma tarefa próxima do trabalho diário ao avaliar candidatos técnicos.
-
-Leia também [Livros de Java para iniciantes: por que escrever](/posts/2021-02-08-the-motivation-behind-writing-books-for-java-beginners-sharing-experience-and-contributing-to-security-and-best-practices-in-the-software-industry.md).
-
-Próximo passo: leia [Falhas na engenharia de software: lições práticas](/posts/2020-03-04-software-engineering-failures).

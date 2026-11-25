@@ -22,19 +22,19 @@ Os sistemas financeiros operam sob regulamentações rigorosas e expectativas de
 
 ### Desafios do Uso de Bancos em Memória
 
-1. **Consistência dos Dados**: 
+1. **Consistência dos Dados**:
    Bancos de dados em memória, como o H2, não garantem o mesmo nível de consistência que as soluções de banco de dados tradicionais. A falta de persistência dos dados pode levar a inconsistências, especialmente durante operações complexas, como transações financeiras, que envolvem múltiplas etapas. Isso pode resultar em dados incorretos sendo retornados durante os testes, levando a uma falsa sensação de segurança.
 
-2. **Cenários de Concorrência**: 
+2. **Cenários de Concorrência**:
    Nos sistemas financeiros, as operações simultâneas de múltiplos usuários são comuns. Bancos em memória frequentemente não lidam bem com cenários de concorrência, levando a problemas como deadlocks ou dados corrompidos. Isso é crucial em um ambiente financeiro, onde a integridade dos processos é vital. O uso de um banco de dados real para testes de integração permite simular melhor esses cenários complexos.
 
-3. **Replicação de Erros**: 
+3. **Replicação de Erros**:
    Em sistemas financeiros, é imperativo que situações de erro, como falhas de conexão com o banco de dados, sejam testadas e tratadas adequadamente. Bancos de memória não simulam esses problemas de forma eficaz. Isso significa que aspectos críticos do comportamento do sistema em situações de erro podem não ser testados adequadamente.
 
-4. **Testes de Performance**: 
+4. **Testes de Performance**:
    O desempenho é uma preocupação importante em sistemas financeiros, onde picos de carga podem ser esperados, por exemplo, durante períodos de transações elevadas. Um banco em memória geralmente se comporta de forma distinta em comparação com soluções persistentes sob carga. Isso pode levar a uma subestimação dos requisitos de desempenho em um ambiente real.
 
-5. **Mudanças de Esquema e Evolução**: 
+5. **Mudanças de Esquema e Evolução**:
    À medida que um sistema evolui, mudanças no esquema do banco de dados são inevitáveis. Testar um sistema em um banco de dados em memória pode não capturar a complexidade dessas mudanças, levando a problemas quando implementações reais são feitas. A falta de reflexão do comportamento do banco de dados real pode resultar em falhas inesperadas em produção.
 
 ### Alternativas para Garantir Consistência
@@ -49,6 +49,5 @@ Para mitigar esses riscos, os times de desenvolvimento devem considerar abordage
 
 Execute os testes críticos contra um banco compatível com o ambiente real.
 
-Leia também [Testes de software: práticas de escrita](/posts/2025-04-04-best_practices_for_tests).
 
 Próximo passo: leia [SonarQube: limites da cobertura de testes](/posts/2025-03-08-why-high-test-coverage-in-sonarqube-is-not-a-good-practice).

@@ -48,6 +48,6 @@ Exemplo prático: coloque as tarefas em um quadro Kanban e observe em qual etapa
 
 Visualize o trabalho em andamento e identifique o principal gargalo antes de alterar o processo.
 
-Leia também [Kanban Kaizen: práticas e benefícios](/posts/2024-08-04-kaizen-process-in-software-development).
+Leia também [Kanban: Um Processo Prático no Desenvolvimento de Software](/posts/2023-12-04-kanban-process-in-software-development).
 
 Próximo passo: leia [Scrum vs Kanban Kaizen: diferenças práticas](/posts/2024-01-04-scrum-process-in-software-development).

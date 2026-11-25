@@ -1,10 +1,11 @@
 import Link from 'next/link';
 
 const principles = [
-  ['About Tech Chain', 'Tech Chain publishes articles and analysis on technology and software engineering. Its archive brings together work by different authors across technical fields.'],
-  ['Editorial approach', 'We aim to present ideas with context, clear language, and practical value for readers. Future profiles and interviews should be identified by format and supported by verifiable information.'],
+  ['About Tech Chain', 'Tech Chain is an independent technical publication focused on computing, software engineering, and applied technology. We favor depth, evidence, and durable engineering insight.'],
+  ['Editorial approach', 'We publish fewer, stronger pieces that define a real technical question, examine alternatives and limits, and show where the evidence comes from. This is an editorial goal, not a claim that every archive article already meets it.'],
   ['Authorship and attribution', 'Every publication should show its author and original publication date. Contributions, interviews, opinions, and any commercial relationships should be clearly identified when applicable.'],
-  ['Sources and verification', 'Factual claims, data, and results deserve appropriate sources. In future reported stories, we intend to distinguish interviewees’ statements, documents, and independent analysis.'],
+  ['Sources and verification', 'Technical claims should be supported by primary sources or reproducible evidence. Hypothetical examples are identified as such; authentic case studies require verifiable implementation records.'],
+  ['Review and independence', 'Editorial and technical checks are being developed. We do not describe archive articles as peer-reviewed. Commercial relationships and substantial AI assistance should be disclosed when they affect a publication.'],
   ['Corrections and transparency', 'Readers can report errors through the contact page. Substantial changes should preserve the publication date and, where relevant, indicate when the text was updated.'],
   ['Story ideas and contact', 'Story ideas and correction requests can be sent through the contact page. Submitting a suggestion does not guarantee publication.'],
 ];

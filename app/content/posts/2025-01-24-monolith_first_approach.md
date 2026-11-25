@@ -47,5 +47,3 @@ Exemplo prático: uma funcionalidade nova pode começar como módulo de um monó
 Antes de dividir um sistema, identifique um limite de negócio estável e uma necessidade operacional concreta.
 
 Leia também [Microsserviços: quando a complexidade não compensa](/posts/2026-02-08).
-
-Próximo passo: leia [Arquitetura de Software: O Modular Monolith](/posts/2025-02-04-modular_monolith_architecture).

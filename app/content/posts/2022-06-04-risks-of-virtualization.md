@@ -47,6 +47,5 @@ A configuração inadequada de ambientes virtualizados pode levar a riscos de se
 
 Inclua as camadas de virtualização na próxima revisão de segurança da infraestrutura.
 
-Leia também [Segurança em Nuvem: Desafios e Soluções em 2022](/posts/2022-03-04-cloud-security-2022).
 
 Próximo passo: leia [Zero Trust: Uma Abordagem de Segurança em Evolução](/posts/2022-02-04-zero_trust).

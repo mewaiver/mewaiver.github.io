@@ -83,6 +83,5 @@ Exemplo prático: sensores em uma área de cultivo podem coletar uma variável e
 
 Escolha uma decisão agrícola específica e identifique os dados necessários para apoiá-la.
 
-Leia também [Tecnologia Sustentável: Inovações para um Futuro Mais Verde](/posts/2020-01-08-sustainable-technology-innovations-for-a-greener-future).
 
-Próximo passo: leia [Agricultura inteligente com IoT](/posts/2022-10-04-smart-agriculture-using-iot).
+Próximo passo: leia [Tecnologias Emergentes para a Agricultura Inteligente](/posts/2022-09-04-emerging-technologies-in-smart-agriculture-iot).

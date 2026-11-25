@@ -38,7 +38,3 @@ O modelo de Software como Serviço (SaaS) tem se tornado cada vez mais popular, 
 6. **Planos de Resposta a Incidentes**: Ter um plano de resposta a incidentes bem definido é crucial para lidar com violações de segurança. Isso deve incluir procedimentos para identificar, conter e remediar incidentes, bem como comunicação com as partes afetadas. Um exemplo é a resposta rápida da Microsoft a uma violação de dados, onde eles informaram os usuários afetados e tomaram medidas para mitigar o impacto.
 
 Verifique como sua aplicação SaaS protege os dados entre clientes e controla permissões.
-
-Leia também [Desafios de segurança na nuvem](/posts/2022-05-04-security_and_the_cloud).
-
-Próximo passo: leia [Segurança em Nuvem: Desafios e Soluções em 2022](/posts/2022-03-04-cloud-security-2022).

@@ -47,4 +47,4 @@ The policy also needs failure testing before production traffic supplies the exp
 
 Retries are useful because distributed calls fail in ways that a second attempt can sometimes repair. Their danger is that each attempt is new work imposed on a system whose capacity and state may already be uncertain. A resilient retry policy is therefore a bounded claim about time, load, and side effects: the operation remains safe to repeat, another attempt can finish before the caller's deadline, and the dependency has a plausible path to serving it. When any of those claims fails, stopping or deferring work is part of reliability, not a failure to try hard enough.
 
-Related reading: [Observability in Microservices: Beyond the Data](/posts/2026-03-08).
+Related reading: [Why Distributed Systems Remain Hard to Diagnose](/posts/2020-01-04-the-rise-of-quantum-computing).

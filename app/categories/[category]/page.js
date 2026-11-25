@@ -5,7 +5,7 @@ import { categoryLabel } from '@/app/services/publicationLabels';
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
-  return [...new Set(posts.map(post => post.category).filter(Boolean))].map(category => ({ category }));
+  return [...new Set(posts.filter(post => !post.draft).map(post => post.category).filter(Boolean))].map(category => ({ category }));
 }
 
 export async function generateMetadata({ params }) {

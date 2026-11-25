@@ -126,7 +126,3 @@ public class TemperatureReceiver {
 3. **Compile e Execute o Receptor**: Execute a classe `TemperatureReceiver`, que irá escutar e imprimir as mensagens recebidas.
 
 Experimente o exemplo em Java com um dispositivo ou fluxo de dados pequeno antes de ampliar a solução.
-
-Leia também [Java 2EE e o desenvolvimento empresarial](/posts/2020-10-04-java-ee-revolution-software-development-large-enterprises).
-
-Próximo passo: leia [Java EE: especificações para aplicações empresariais](/posts/2020-06-04-overview-of-java-ee-specifications).

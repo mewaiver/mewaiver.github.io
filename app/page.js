@@ -6,7 +6,7 @@ import { byline, displayDate, plainExcerpt } from './services/editorial';
 
 export const metadata = {
   alternates: { canonical: '/' },
-  openGraph: { type: 'website', title: 'Tech Chain', description: 'Articles, analysis, and perspectives on technology and engineering.', url: '/' },
+  openGraph: { type: 'website', title: 'Tech Chain', description: 'Independent, evidence-based analysis of computing and software engineering.', url: '/' },
 };
 
 export default async function Home() {
@@ -30,7 +30,7 @@ export default async function Home() {
         <section aria-labelledby="latest-title"><div className="section-top"><div><span className="eyebrow">The archive</span><h2 className="section-title" id="latest-title">Latest stories.</h2></div><Link href="/artigos" className="button-text">View all articles <span className="arrow" aria-hidden="true">↗</span></Link></div>
           <div className="story-list">{latest.map((post, index) => <article className="story-row" key={post.slug}><div className="story-num" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div><div><span className="eyebrow">{categoryLabel(post.category)} / <time dateTime={post.date}>{displayDate(post.date)}</time></span><h3><Link href={`/posts/${post.slug}`}>{post.title}</Link></h3><div className="meta">{byline(post) && <span>{byline(post)}</span>}</div></div><Link href={`/posts/${post.slug}`} className="story-arrow" aria-label={`Read ${post.title}`}>↗</Link></article>)}</div>
         </section>
-        <aside className="side-statement"><span className="eyebrow">About the publication</span><h2>Good technology deserves good stories.</h2><p>Tech Chain brings together articles and analysis on technology and engineering. The publication is also set up to feature professional profiles when original reporting calls for that format.</p><Link href="/editorial" className="button-text">Explore our editorial approach <span className="arrow" aria-hidden="true">↗</span></Link></aside>
+        <aside className="side-statement"><span className="eyebrow">About the publication</span><h2>Engineering questions deserve evidence.</h2><p>Tech Chain is an independent technical publication focused on computing and software engineering. We examine mechanisms, trade-offs, and limits through sources and reproducible work.</p><Link href="/editorial" className="button-text">Explore our editorial approach <span className="arrow" aria-hidden="true">↗</span></Link></aside>
       </div>
     </div>
     <section className="pillars"><div className="container"><span className="eyebrow">A clear editorial focus</span><h2>Depth over volume.</h2><div className="pillar-grid"><div className="pillar"><span>01</span><h3>Ideas</h3><p>Technical articles and analysis of real engineering questions.</p></div><div className="pillar"><span>02</span><h3>People</h3><p>Room for future profiles and interviews of editorial interest.</p></div><div className="pillar"><span>03</span><h3>Context</h3><p>Clear authorship, dates, sources, and formats for every publication.</p></div></div></div></section>

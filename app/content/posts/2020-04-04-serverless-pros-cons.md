@@ -52,5 +52,3 @@ Exemplo prático: uma função acionada por evento pode processar uma tarefa iso
 Antes de migrar uma função, verifique seu padrão de uso, seus custos e as dependências operacionais.
 
 Leia também [Descontinuação de serviços AWS: como reagir](/posts/2021-08-04-deprecation-services-challenges-and-strategies).
-
-Próximo passo: leia [AI Cloud Code: proposta e desafios](/posts/2026-01-08).

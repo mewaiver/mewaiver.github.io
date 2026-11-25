@@ -52,6 +52,5 @@ Exemplo prático: uma equipe que precisa de consultas complexas pode testar a me
 
 Teste os requisitos reais de consultas, escala e manutenção nos dois bancos antes de decidir.
 
-Leia também [Bancos de dados: usos e diferenças](/posts/2021-09-04-data-store-reference).
 
 Próximo passo: leia [MongoDB vs Couchbase: Prós e Contras](/posts/2021-08-16-mongodb_vs_couchbase_pros_and_cons).

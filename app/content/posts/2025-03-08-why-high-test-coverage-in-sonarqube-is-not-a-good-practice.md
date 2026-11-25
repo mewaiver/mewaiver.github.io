@@ -37,6 +37,3 @@ Uma alternativa mais adequada é adotar uma abordagem equilibrada, que priorize 
 Exemplo prático: um teste que apenas executa uma linha aumenta a cobertura, mas não verifica se o resultado da regra de negócio está correto.
 
 Revise se os testes exercitam os comportamentos críticos antes de perseguir uma meta de cobertura.
-
-
-Próximo passo: leia [Testes de software: práticas de escrita](/posts/2025-04-04-best_practices_for_tests).

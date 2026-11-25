@@ -66,7 +66,3 @@ Em vez de uma adoção total e abrupta, uma abordagem incremental pode ser mais 
 O processo de escolha de novas tecnologias deve ser cuidadosamente considerado, levando em conta as necessidades reais do sistema, os desafios específicos e os impactos que a mudança pode ter a curto e longo prazo. Em um mundo de rápidas inovações, a tentação de seguir tendências pode ser grande, mas a verdadeira chave para o sucesso está em escolher soluções que atendam aos requisitos específicos do projeto e ofereçam o melhor retorno sobre o investimento.
 
 Registre o problema, o ganho esperado e o custo de manutenção antes de adotar uma tecnologia.
-
-Leia também [Livros de Java para iniciantes: por que escrever](/posts/2021-02-08-the-motivation-behind-writing-books-for-java-beginners-sharing-experience-and-contributing-to-security-and-best-practices-in-the-software-industry.md).
-
-Próximo passo: leia [Falhas na engenharia de software: lições práticas](/posts/2020-03-04-software-engineering-failures).

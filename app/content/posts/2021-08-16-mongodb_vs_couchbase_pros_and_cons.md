@@ -61,6 +61,5 @@ Exemplo prático: teste MongoDB e Couchbase com a mesma consulta e o mesmo volum
 
 Teste os dois bancos com as consultas e a carga que sua aplicação realmente terá.
 
-Leia também [Bancos de dados: usos e diferenças](/posts/2021-09-04-data-store-reference).
 
 Próximo passo: leia [PostgreSQL vs MySQL: Benefícios e Contras de Cada Um](/posts/2020-03-08-postgres-vs-mysql-benefits).

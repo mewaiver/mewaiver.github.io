@@ -106,7 +106,3 @@ A principal diferença entre a JVM e a GraalVM é que, enquanto a JVM é uma pla
 Exemplo prático: execute a mesma aplicação nos modos de execução discutidos e compare tempo de inicialização, memória e comportamento em produção.
 
 Meça a inicialização e o consumo de recursos da sua aplicação antes de escolher uma estratégia de execução.
-
-Leia também [Java 2EE e o desenvolvimento empresarial](/posts/2020-10-04-java-ee-revolution-software-development-large-enterprises).
-
-Próximo passo: leia [Java EE: especificações para aplicações empresariais](/posts/2020-06-04-overview-of-java-ee-specifications).

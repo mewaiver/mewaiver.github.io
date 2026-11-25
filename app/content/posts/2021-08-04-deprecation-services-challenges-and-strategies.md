@@ -50,7 +50,3 @@ Para mitigar os impactos desses problemas, as organizações podem adotar alguma
    - **Comunicação com stakeholders**: Manter uma comunicação clara e constante com clientes e parceiros sobre os impactos da descontinuação e os planos de migração.
 
 Inventarie os serviços AWS usados pela equipe e planeje alternativas antes da descontinuação.
-
-Leia também [Computação em nuvem: conceitos e aplicações](/posts/2021-12-04-cloud-computing).
-
-Próximo passo: leia [Computação em nuvem: custos e empregos](/posts/2021-11-04-cloud-computing-challenges-costs-and-job-impacts).

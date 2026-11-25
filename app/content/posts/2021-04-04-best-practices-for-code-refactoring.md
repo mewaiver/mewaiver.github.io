@@ -275,6 +275,5 @@ Refatoração contínua não é um evento único, mas um processo contínuo. À 
 
 Escolha uma mudança pequena e verifique seu comportamento com testes antes de continuar a refatoração.
 
-Leia também [Falhas na engenharia de software: lições práticas](/posts/2020-03-04-software-engineering-failures).
 
 Próximo passo: leia [Duplicação de código vs flexibilidade](/posts/2024-12-08-code-duplication-vs-flexibility).

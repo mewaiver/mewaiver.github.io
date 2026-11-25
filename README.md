@@ -22,3 +22,5 @@ npm run dev
 ```
 
 Run `npm run validate:publications` to check post metadata. `npm run build` creates the static export and regenerates the sitemap.
+
+The internal editorial audit, backlog, consolidation records, standards, and roadmap live in `docs/editorial/`. They are not part of the public article collection. Run `npm run validate:editorial` to check the retained collection, internal article links, redirect fallbacks, and audit/backlog consistency. After a build, run `node app/scripts/validate-editorial-content.js --export` to verify exported routes and that editorial documents were not published. GitHub Pages supports the six HTML redirect fallbacks in `public/posts/`, but cannot issue HTTP 301 redirects from this static export.

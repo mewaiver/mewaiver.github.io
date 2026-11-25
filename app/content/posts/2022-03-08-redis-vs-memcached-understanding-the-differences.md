@@ -104,5 +104,3 @@ Exemplo prático: compare Redis e Memcached usando a mesma chave, o mesmo volume
 Teste o padrão de acesso da aplicação nas duas opções antes de definir o cache.
 
 Leia também [PostgreSQL vs MySQL: Benefícios e Contras de Cada Um](/posts/2020-03-08-postgres-vs-mysql-benefits).
-
-Próximo passo: leia [Bancos de dados: usos e diferenças](/posts/2021-09-04-data-store-reference).

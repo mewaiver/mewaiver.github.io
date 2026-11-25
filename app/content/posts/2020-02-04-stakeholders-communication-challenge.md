@@ -110,7 +110,3 @@ Incentive os membros da equipe a praticarem empatia e escuta ativa ao interagir 
 ## Pontos de atenção
 
 Valide o entendimento dos requisitos com stakeholders técnicos e de negócio antes de iniciar a implementação.
-
-Leia também [Trabalho remoto: tecnologia e colaboração](/posts/2020-12-04-how-technology-is-reshaping-remote-work-collaboration-tools-and-workplace-dynamics).
-
-Próximo passo: leia [Trabalho remoto: o papel da tecnologia](/posts/2020-01-16-remote-work-changing-the-future).

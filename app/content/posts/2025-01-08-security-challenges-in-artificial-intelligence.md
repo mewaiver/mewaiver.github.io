@@ -36,7 +36,3 @@ Essa tecnologia pode ser usada para espalhar desinformação, prejudicar a reput
 A falta de regulamentação e governança também é um problema significativo na segurança da IA. Embora os governos e as organizações estejam começando a elaborar políticas para controlar o uso da IA, as tecnologias ainda avançam rapidamente, e muitas vezes as regulamentações ficam atrás do desenvolvimento tecnológico. Isso cria um vácuo jurídico e regulatório, no qual a IA pode ser utilizada de maneiras imprevistas ou nocivas. É necessário um esforço colaborativo entre governos, empresas e pesquisadores para criar normas éticas e regulamentações que garantam que a IA seja utilizada de maneira segura e responsável.
 
 Inclua dados, modelos e acessos na próxima revisão de segurança de um sistema de IA.
-
-Leia também [Malware no Android: riscos e proteção](/posts/2024-03-04-android-malwares).
-
-Próximo passo: leia [Inteligência artificial: aplicações e oportunidades](/posts/2023-09-04-the-power-of-artificial-intelligence).

@@ -43,4 +43,4 @@ Compare o fluxo real da equipe com as exigências de cada método antes de escol
 
 Leia também [Kanban: Um Processo Prático no Desenvolvimento de Software](/posts/2023-12-04-kanban-process-in-software-development).
 
-Próximo passo: leia [Kanban Kaizen: práticas e benefícios](/posts/2024-08-04-kaizen-process-in-software-development).
+Próximo passo: leia [Kanban: Um Processo Prático no Desenvolvimento de Software](/posts/2023-12-04-kanban-process-in-software-development).

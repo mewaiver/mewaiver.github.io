@@ -60,6 +60,5 @@ Um código que faz uso excessivo de duplicação pode se tornar difícil de ente
 
 Antes de extrair uma abstração, confirme que os trechos duplicados mudam pelos mesmos motivos.
 
-Leia também [Falhas na engenharia de software: lições práticas](/posts/2020-03-04-software-engineering-failures).
 
 Próximo passo: leia [Refatoração de código: práticas e exemplos](/posts/2021-04-04-best-practices-for-code-refactoring).

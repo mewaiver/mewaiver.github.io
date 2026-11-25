@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Java e JCA no CANIS KMS"
 date: "2022-06-08"
 excerpt: "A combinação da linguagem Java com a Java Cryptography Architecture (JCA) foi essencial para o desenvolvimento de um sistema robusto e seguro de gerenciamento de chaves. A JCA proporcionou as ferramentas necessárias para implementar criptografia forte, gerenciamento seguro de chaves e autenticação dos dados, assegurando a integridade e confidencialidade das informações sensíveis."
@@ -60,7 +61,3 @@ Mas também garantiu que o CANIS fosse capaz de integrar-se de forma eficiente c
 Exemplo prático: antes de integrar o CANIS KMS, descreva onde uma chave é gerada, quem pode usá-la e como a aplicação solicita uma operação criptográfica.
 
 Revise como chaves são criadas, armazenadas e usadas antes de integrar um KMS à aplicação.
-
-Leia também [Java EE: especificações para aplicações empresariais](/posts/2020-06-04-overview-of-java-ee-specifications).
-
-Próximo passo: leia [Java 2EE e o desenvolvimento empresarial](/posts/2020-10-04-java-ee-revolution-software-development-large-enterprises).

@@ -5,7 +5,7 @@ import GoogleAnalytics from './components/GoogleAnalytics';
 
 export const metadata = {
   title: "Tech Chain",
-  description: "Articles, analysis, and perspectives on technology and engineering.",
+  description: "Independent, evidence-based analysis of computing and software engineering.",
   metadataBase: new URL('https://www.techchain.com.br'),
 };
 

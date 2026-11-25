@@ -43,7 +43,3 @@ O Zero Trust é uma abordagem de segurança eficaz que pode ajudar as organizaç
 Exemplo prático: ao acessar um serviço interno, valide identidade e autorização para aquela requisição, mesmo quando ela parte da rede corporativa.
 
 Revise uma rota de acesso crítica e verifique como identidade e autorização são validadas.
-
-Leia também [Desafios de segurança na nuvem](/posts/2022-05-04-security_and_the_cloud).
-
-Próximo passo: leia [Segurança em Nuvem: Desafios e Soluções em 2022](/posts/2022-03-04-cloud-security-2022).
