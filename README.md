@@ -23,4 +23,10 @@ npm run dev
 
 Run `npm run validate:publications` to check post metadata. `npm run build` creates the static export and regenerates the sitemap.
 
+## Contact form
+
+The contact form writes to `public.contact_submissions` in the existing Supabase project used by `metiago.github.io`. Apply [`supabase/migrations/20261126000000_contact_submissions.sql`](supabase/migrations/20261126000000_contact_submissions.sql) to that project before deploying. The table accepts inserts from anonymous visitors through row level security and does not expose submitted messages for reading, editing, or deletion through the public API.
+
+Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the same values used by the reference project. Set those variables in the deployment environment as well. Only the public anon key belongs in this client-side application; do not use a service-role key. The form is part of the static export, so it sends directly to Supabase.
+
 The internal editorial audit, backlog, consolidation records, standards, and roadmap live in `docs/editorial/`. They are not part of the public article collection. Run `npm run validate:editorial` to check the retained collection, internal article links, redirect fallbacks, and audit/backlog consistency. After a build, run `node app/scripts/validate-editorial-content.js --export` to verify exported routes and that editorial documents were not published. GitHub Pages supports the six HTML redirect fallbacks in `public/posts/`, but cannot issue HTTP 301 redirects from this static export.

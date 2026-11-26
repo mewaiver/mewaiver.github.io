@@ -1,50 +1,49 @@
 'use client';
 
-import { addDoc, collection } from 'firebase/firestore';
 import { useState } from 'react';
-import { db } from '../services/firebase';
+import { getSupabaseClient } from '../lib/supabase';
+import { saveContactSubmission } from '../services/contact';
+
+const emptyForm = { name: '', email: '', subject: '', message: '' };
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const [status, setStatus] = useState('');
+  const [formData, setFormData] = useState(emptyForm);
+  const [status, setStatus] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData((current) => ({ ...current, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.message) {
-      setStatus('Please fill in all fields.');
+    if (isSubmitting) return;
+
+    if (Object.values(formData).some((value) => !value.trim())) {
+      setStatus({ type: 'error', message: 'Please fill in all fields.' });
       return;
     }
 
-    setStatus('Sending...');
+    if (!emailPattern.test(formData.email.trim())) {
+      setStatus({ type: 'error', message: 'Please enter a valid email address.' });
+      return;
+    }
+
+    setIsSubmitting(true);
+    setStatus(null);
 
     try {
-
-      await addDoc(collection(db, 'contacts'), {
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-        timestamp: new Date(),
-      });
-
-      setStatus('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
+      await saveContactSubmission(getSupabaseClient(), formData);
+      setStatus({ type: 'success', message: 'Message sent successfully!' });
+      setFormData(emptyForm);
     } catch (error) {
-      console.error('Error saving data to Firestore:', error);
-      setStatus('Error: Please try again later.');
+      console.error('Error saving contact submission:', error);
+      setStatus({ type: 'error', message: 'Unable to send your message. Please try again later.' });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -68,6 +67,7 @@ export default function Contact() {
                     onChange={handleChange}
                     className="form-control"
                     placeholder="Your name"
+                    maxLength={200}
                     required
                   />
                 </div>
@@ -82,6 +82,22 @@ export default function Contact() {
                     onChange={handleChange}
                     className="form-control"
                     placeholder="Your email"
+                    maxLength={320}
+                    required
+                  />
+                </div>
+
+                <div className="mb-3">
+                  <label htmlFor="subject" className="form-label">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="form-control"
+                    placeholder="Your subject"
+                    maxLength={200}
                     required
                   />
                 </div>
@@ -96,13 +112,14 @@ export default function Contact() {
                     className="form-control"
                     placeholder="Your message"
                     rows="5"
+                    maxLength={10000}
                     required
                   />
                 </div>
 
                 {status && (
-                  <div className={`mt-3 text-center ${status.startsWith('Error') ? 'text-danger' : 'text-success'}`}>
-                    {status}
+                  <div role={status.type === 'error' ? 'alert' : 'status'} className={`mt-3 text-center ${status.type === 'error' ? 'text-danger' : 'text-success'}`}>
+                    {status.message}
                   </div>
                 )}
 
@@ -110,8 +127,9 @@ export default function Contact() {
                   <button
                     type="submit"
                     className="btn btn-primary px-4 py-2"
+                    disabled={isSubmitting}
                   >
-                    Send
+                    {isSubmitting ? 'Sending...' : 'Send'}
                   </button>
                 </div>
               </form>
