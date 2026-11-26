@@ -50,11 +50,11 @@ Article URLs are derived from source filenames.
 
 For example:
 
-`app/content/posts/2020-01-04-the-rise-of-quantum-computing.md`
+`app/content/posts/2020-01-04-quantum-computings-promise-depends-on-the-problem.md`
 
 corresponds to:
 
-`/posts/2020-01-04-the-rise-of-quantum-computing`
+`/posts/2020-01-04-quantum-computings-promise-depends-on-the-problem`
 
 The source filename is therefore part of the article's publication identity.
 

@@ -4,7 +4,7 @@ Operational source of truth. The JSON file mirrors these item records for automa
 
 ## TC-ED-001 — Why Distributed Systems Remain Hard to Diagnose
 
-- **Article:** TC-A-001; `app/content/posts/2020-01-04-the-rise-of-quantum-computing.md`; `/posts/2020-01-04-the-rise-of-quantum-computing`
+- **Article:** TC-A-001; `app/content/posts/2020-01-04-quantum-computings-promise-depends-on-the-problem.md`; `/posts/2020-01-04-quantum-computings-promise-depends-on-the-problem`
 - **Proposed title:** Retain current title pending editorial review
 - **Score, action, format:** 81; `MINOR_REVISION`; current `article`; target `TECHNICAL_ARTICLE`
 - **Priority, status, complexity:** `P1`; `READY_FOR_REVISION`; Small

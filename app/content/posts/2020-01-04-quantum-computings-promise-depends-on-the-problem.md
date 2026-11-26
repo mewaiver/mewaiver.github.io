@@ -7,7 +7,7 @@ author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg"
 ---
 
-*Editor's note (November 2026): This article has been revised since its original 2020 publication. The original publication date and URL are retained.*
+*Editor's note (November 2026): This article has been revised since its original 2020 publication. The original publication date is retained; the former URL redirects here.*
 
 In 2019, researchers at Google used a 53-qubit processor to sample the output of a specially designed random quantum circuit. The [published experiment](https://www.nature.com/articles/s41586-019-1666-5) was an important test of control over a difficult quantum system. It was not a demonstration that a quantum computer could design a drug or optimize a delivery network. IBM researchers subsequently [proposed a different classical simulation method](https://arxiv.org/abs/1910.09534) for circuits of this kind, illustrating how claims of speed depend on the task and the best available classical comparison.
 
