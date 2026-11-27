@@ -5,7 +5,7 @@ excerpt: "Adotar novas tecnologias em engenharia de software pode trazer grandes
 category: "engineering"
 author: "Tech Chain Editorial"
 image: "https://cdn.pixabay.com/photo/2017/06/09/22/56/lady-justice-2388500_1280.jpg"
-draft: true
+draft: false
 ---
 
 Como decidir se uma nova tecnologia resolve um problema de engenharia? Este texto pesa benefícios, custos e contexto de adoção.

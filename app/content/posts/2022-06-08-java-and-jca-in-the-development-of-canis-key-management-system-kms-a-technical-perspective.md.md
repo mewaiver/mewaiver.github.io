@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Tiago Souza's CANIS: Java Cryptography and the Limits of Key Recovery"
 date: "2022-06-08"
 updated: "2026-11-26"
